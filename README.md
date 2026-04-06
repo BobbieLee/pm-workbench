@@ -56,19 +56,14 @@ It asks for missing critical context when needed, and defaults to reusable PM ar
 You can use `pm-workbench` in two common ways:
 
 ### Option 1 — Use the packaged skill file
-
-* packaged file: `output/pm-workbench.skill`
-
-* import it through your OpenClaw skill installation workflow
+Quick install: download the latest `pm-workbench.skill` from Releases, then import it into OpenClaw.
 
 ### Option 2 — Use the local skill source
+- clone or download this repository
+- place the `pm-workbench` folder under your OpenClaw skills workspace
 
-* place or keep the source under your OpenClaw skills workspace
-
-* current skill folder: `skills/pm-workbench/`
-
-If you are working locally and iterating on the skill, the source folder is the best place to edit.\
-If you want to distribute or share the skill, use the packaged `.skill` file.
+If you are iterating on the skill, the source folder is the best place to edit.
+If you want the fastest install path, use the packaged `.skill` file from Releases.
 
 ***
 
