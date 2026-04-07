@@ -139,16 +139,17 @@ In other words:
 
 ## Installation
 
-### Option 1 — Use the packaged skill file
-- packaged file: `output/pm-workbench.skill`
+### Option 1 — Install from GitHub Releases
+- download the latest packaged `.skill` file from the repository **Releases** page
 - import it through your OpenClaw skill installation flow
 
-### Option 2 — Use the local source
-- keep the source under your OpenClaw skills workspace
-- current folder: `skills/pm-workbench/`
+### Option 2 — Use the repository source
+- clone or download this repository
+- place the `pm-workbench` folder under your OpenClaw skills workspace
+- use the source version if you want to inspect, edit, or iterate on the skill
 
-If you are iterating on the skill, use the source folder.
-If you want the fastest install path, use the packaged `.skill` file.
+If you want the fastest install path, use the packaged `.skill` file from Releases.
+If you want to customize or improve the skill, use the source folder from this repository.
 
 ## Even if you don’t use OpenClaw
 
