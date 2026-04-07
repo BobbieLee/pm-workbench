@@ -65,56 +65,16 @@ Outputs are shaped like reusable PM deliverables, such as:
 ### 4. It is built for actual product work
 This is for meetings, reviews, leadership syncs, and decision-making — not just demo chats.
 
-## Generic AI vs pm-workbench
+## Why the difference matters
 
-### Input
-> “My boss said our AI product needs more wow factor.”
+Most AI tools can discuss product work.
+`pm-workbench` is designed to turn ambiguity into **usable PM judgment** — not just broader discussion.
 
-### What generic AI often does
-- jumps into brainstorming too early
-- suggests delight, innovation, personalization, gamification
-- sounds reasonable, but stays abstract
-- leaves the real product question unresolved
-
-### What `pm-workbench` should do
-- recognize this is a fuzzy strategic ask, not a ready-made requirement
-- separate the signal from the wording
-- identify what “wow factor” may actually mean in this context
-- ask the few missing questions that matter
-- turn the ask into a clearer problem statement, decision path, or leadership-ready summary
-
-### Why this matters
-The difference is not just “better wording.”
-It is the difference between **interesting discussion** and **usable product judgment**.
-
-## Before vs after
-
-### Before
-Input:
-> “My boss said our AI product needs more wow factor.”
-
-Typical generic AI response:
-- brainstorm some creative features
-- suggest adding personalization, gamification, delight
-- talk broadly about innovation and user experience
-
-Result:
-- sounds reasonable
-- still unclear what the real problem is
-- no usable PM output
-
-### After
-What `pm-workbench` should do:
-- recognize this is a fuzzy strategic ask, not a ready-made requirement
-- separate the signal from the wording
-- identify what “wow factor” might actually mean
-- ask the few missing questions that matter
-- turn it into a clearer problem statement or leadership-ready summary
-
-Result:
-- less opinion trading
-- more structured judgment
-- a usable output that moves the work forward
+That usually means:
+- less jumping into solutions too early
+- less opinion trading disguised as analysis
+- more clarity on the real product question
+- more outputs a PM can actually take into a meeting, review, or leadership sync
 
 ## Core workflows
 
@@ -140,23 +100,12 @@ When the task calls for it, `pm-workbench` can naturally shape outputs into:
 
 ## Example use cases
 
-### Clarify a vague request
-> “Help me clarify this request before we jump to solutions.”
-
-### Evaluate whether something is worth building
-> “Operations wants a daily AI fortune card feature. I’m worried it’s a gimmick. Help me evaluate it.”
-
-### Compare product directions
-> “Compare these two product directions and recommend one.”
-
-### Draft a lightweight PRD
-> “Help me draft a lightweight PRD for conversation history search.”
-
-### Prepare a leadership summary
-> “Turn this into an executive summary for leadership.”
-
-### Write a postmortem
-> “We launched this last month and adoption was weak. Help me write a lightweight postmortem.”
+- “Help me clarify this request before we jump to solutions.”
+- “Operations wants a daily AI fortune card feature. I’m worried it’s a gimmick. Help me evaluate it.”
+- “Compare these two product directions and recommend one.”
+- “Help me draft a lightweight PRD for conversation history search.”
+- “Turn this into an executive summary for leadership.”
+- “We launched this last month and adoption was weak. Help me write a lightweight postmortem.”
 
 ## Best for
 
