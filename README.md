@@ -1,363 +1,228 @@
 # pm-workbench
 
-**A scenario-driven PM workflow skill for product managers and product leaders.**
-
-Turn vague asks into clear decisions, lightweight docs, leadership-ready summaries, and reusable PM artifacts.
-
-***
-
-## What it is
-
-`pm-workbench` is not a generic PM prompt pack.
-
-It is a structured workflow skill designed for real product work such as:
-
-* clarifying vague requests
-
-* evaluating whether a feature is worth building
-
-* comparing options and trade-offs
-
-* prioritizing under constraints
-
-* drafting lightweight PRDs
-
-* building roadmap one-pagers
-
-* preparing executive summaries
-
-* reviewing outcomes and writing postmortems
-
-It asks for missing critical context when needed, and defaults to reusable PM artifacts when the task calls for them.
-
-***
-
-## Why this skill is different
-
-* **Scenario-driven, not framework-driven**\
-  Route by task, not by abstract PM theory.
-
-* **Asks critical questions before making strong conclusions**\
-  Especially when 1-2 missing premises would change the recommendation.
-
-* **Produces PM artifacts, not just advice**\
-  Includes evaluation memos, exec summaries, PRD Lite, roadmap one-pagers, and postmortem templates.
-
-* **Designed for actual work, not demo conversations**\
-  Outputs are meant to be taken into meetings, reviews, and decision-making.
-
-* **Works for PMs and product leaders**\
-  It supports not only feature thinking, but also prioritization, roadmap decisions, and upward communication.
-
-***
-
-## Installation
-
-You can use `pm-workbench` in two common ways:
-
-### Option 1 — Use the packaged skill file
-Quick install: download the latest `pm-workbench.skill` from Releases, then import it into OpenClaw.
-
-### Option 2 — Use the local skill source
-- clone or download this repository
-- place the `pm-workbench` folder under your OpenClaw skills workspace
-
-If you are iterating on the skill, the source folder is the best place to edit.
-If you want the fastest install path, use the packaged `.skill` file from Releases.
-
-***
-
-## How to use
-
-Use `pm-workbench` in natural language.\
-It routes by intent and should choose the right workflow based on the task.
-
-You can ask for help in broad PM language, such as:
-
-* "Help me clarify this request before we jump to solutions."
-
-* "Evaluate whether this feature is worth building now."
-
-* "Compare these two product directions and recommend one."
-
-* "Draft a lightweight PRD for this feature."
-
-* "Turn this into an executive summary for leadership."
-
-* "Help me write a postmortem for this launch."
-
-You can also ask for a specific artifact directly, for example:
-
-* "Write this as a Feature Evaluation Memo."
-
-* "Turn this into an Executive Summary."
-
-* "Draft this as a PRD Lite."
-
-* "Summarize this as a Roadmap One-Pager."
-
-* "Write a lightweight postmortem for this launch."
-
-***
-
-## Core workflows
-
-* Clarify vague requests
-
-* Evaluate feature value
-
-* Compare solutions
-
-* Prioritize competing requests
-
-* Draft PRD / solution docs
-
-* Build roadmap plans
-
-* Design metrics
-
-* Prepare executive summaries
-
-* Write postmortems
-
-***
-
-## Built-in PM artifacts
-
-* Feature Evaluation Memo
-
-* Executive Summary
-
-* PRD Lite
-
-* Roadmap One-Pager
-
-* Postmortem Lite
-
-***
-
-## Use cases
-
-### 1. Clarify a vague request
-
-**Input**
-
-> "My boss said our AI product needs more of a wow factor. Help me think about what that actually means."
-
-**What** **`pm-workbench`** **should do**
-
-* treat this as a fuzzy strategic request, not a ready-made requirement
-
-* separate the problem from possible solutions
-
-* identify what kind of “wow factor” is actually being asked for
-
-* guide the conversation toward a usable problem statement
-
-### 2. Evaluate whether a feature is worth building
-
-**Input**
-
-> "Operations wants a daily AI fortune card feature to improve engagement. I’m worried it’s a gimmick. Help me evaluate it."
-
-**What** **`pm-workbench`** **should do**
-
-* ask about the critical missing premises if they affect the decision
-
-* evaluate user value, business value, strategic fit, and opportunity cost
-
-* produce a Feature Evaluation Memo
-
-* give a usable recommendation such as build now / test first / not now
-
-### 3. Prepare a leadership summary
-
-**Input**
-
-> "I need to explain to leadership why we should start the digital avatar + smart editing project. Help me turn this into an executive summary."
-
-**What** **`pm-workbench`** **should do**
-
-* lead with the bottom line
-
-* explain why the topic matters now
-
-* highlight risks and support needed
-
-* produce a concise Executive Summary
-
-### 4. Draft a lightweight PRD
-
-**Input**
-
-> "Help me draft a lightweight PRD for conversation history search."
-
-**What** **`pm-workbench`** **should do**
-
-* define the problem clearly before listing features
-
-* keep the document lightweight and execution-ready
-
-* make scope boundaries explicit
-
-* produce a PRD Lite artifact
-
-### 5. Write a postmortem
-
-**Input**
-
-> "We launched a feature last month and adoption was weaker than expected. Help me write a lightweight postmortem."
-
-**What** **`pm-workbench`** **should do**
-
-* compare expected vs actual
-
-* identify root causes rather than only symptoms
-
-* avoid blame-heavy wording
-
-* produce lessons and concrete next actions
-
-***
+**Turn vague product asks into decision-ready PM artifacts.**
+
+An AI PM workbench for product managers and product leaders.  
+From fuzzy requests and messy discussions to clear judgments, lightweight docs, and leadership-ready outputs.
+
+![pm-workbench hero](docs/images/pm-workbench-hero.png)
+
+## Why it feels different
+
+![Generic AI vs pm-workbench](docs/images/pm-workbench-vs-generic-ai.png)
+
+## 30-second overview
+
+Most AI tools can talk about product work.
+`pm-workbench` is designed to **do product work in a more usable way**.
+
+It is especially good at:
+- turning vague asks into clear product questions
+- evaluating whether something is worth building
+- comparing options and trade-offs
+- drafting lightweight but usable PM artifacts
+- helping PMs and product leaders communicate upward
+
+This is **not** a generic PM prompt pack.
+It is a **scenario-driven PM decision workbench**.
+
+## What problem it solves
+
+In real product work:
+- vague requests turn into vague discussions
+- feature evaluation becomes opinion trading
+- PRDs become either bloated or shallow
+- roadmap conversations become wish lists
+- leadership updates bury the actual point
+- postmortems describe symptoms but miss the lesson
+
+`pm-workbench` is built to fix that.
+
+## What makes it different
+
+### 1. It routes by task, not by PM theory
+Instead of dumping frameworks at you, it starts from the actual job:
+- clarify the request
+- evaluate the idea
+- compare options
+- prioritize requests
+- draft the doc
+- prepare the summary
+- review the outcome
+
+### 2. It asks for missing critical context
+If 1–2 missing premises would change the recommendation, it asks first.
+If not, it moves.
+
+### 3. It produces artifacts, not just advice
+Outputs are shaped like reusable PM deliverables, such as:
+- Feature Evaluation Memo
+- Executive Summary
+- PRD Lite
+- Roadmap One-Pager
+- Postmortem Lite
+
+### 4. It is built for actual product work
+This is for meetings, reviews, leadership syncs, and decision-making — not just demo chats.
+
+## Generic AI vs pm-workbench
+
+### Input
+> “My boss said our AI product needs more wow factor.”
+
+### What generic AI often does
+- jumps into brainstorming too early
+- suggests delight, innovation, personalization, gamification
+- sounds reasonable, but stays abstract
+- leaves the real product question unresolved
+
+### What `pm-workbench` should do
+- recognize this is a fuzzy strategic ask, not a ready-made requirement
+- separate the signal from the wording
+- identify what “wow factor” may actually mean in this context
+- ask the few missing questions that matter
+- turn the ask into a clearer problem statement, decision path, or leadership-ready summary
+
+### Why this matters
+The difference is not just “better wording.”
+It is the difference between **interesting discussion** and **usable product judgment**.
 
 ## Before vs after
 
-### Before using `pm-workbench`
+### Before
+Input:
+> “My boss said our AI product needs more wow factor.”
 
-* vague requests turn into vague discussions
+Typical generic AI response:
+- brainstorm some creative features
+- suggest adding personalization, gamification, delight
+- talk broadly about innovation and user experience
 
-* feature evaluation becomes opinion trading
+Result:
+- sounds reasonable
+- still unclear what the real problem is
+- no usable PM output
 
-* PRDs are too long or too shallow
+### After
+What `pm-workbench` should do:
+- recognize this is a fuzzy strategic ask, not a ready-made requirement
+- separate the signal from the wording
+- identify what “wow factor” might actually mean
+- ask the few missing questions that matter
+- turn it into a clearer problem statement or leadership-ready summary
 
-* roadmap conversations become wish lists
+Result:
+- less opinion trading
+- more structured judgment
+- a usable output that moves the work forward
 
-* executive summaries bury the conclusion
+## Core workflows
 
-* postmortems become blameful or useless
+`pm-workbench` currently supports workflow patterns such as:
+- clarify vague requests
+- evaluate feature value
+- compare solutions
+- prioritize competing requests
+- draft PRD / solution docs
+- build roadmap plans
+- design metrics
+- prepare executive summaries
+- write postmortems
 
-### After using `pm-workbench`
+## Built-in PM artifacts
 
-* fuzzy asks become clear product questions
+When the task calls for it, `pm-workbench` can naturally shape outputs into:
+- Feature Evaluation Memo
+- Executive Summary
+- PRD Lite
+- Roadmap One-Pager
+- Postmortem Lite
 
-* decisions are supported by assumptions, trade-offs, and next steps
+## Example use cases
 
-* outputs look like reusable PM artifacts
+### Clarify a vague request
+> “Help me clarify this request before we jump to solutions.”
 
-* roadmap discussions become focus decisions
+### Evaluate whether something is worth building
+> “Operations wants a daily AI fortune card feature. I’m worried it’s a gimmick. Help me evaluate it.”
 
-* leadership summaries become scan-friendly and decision-ready
+### Compare product directions
+> “Compare these two product directions and recommend one.”
 
-* reviews turn into lessons and follow-up actions
+### Draft a lightweight PRD
+> “Help me draft a lightweight PRD for conversation history search.”
 
-***
+### Prepare a leadership summary
+> “Turn this into an executive summary for leadership.”
 
-## Quick start
-
-Use `pm-workbench` when you need help with real PM work such as:
-
-* clarifying a vague request
-
-* deciding whether something is worth building
-
-* drafting a lightweight PRD
-
-* preparing a leadership update
-
-* writing a postmortem
-
-### Example prompts
-
-1. "Help me clarify this request before we jump to solutions."
-2. "Evaluate whether this feature is worth building now."
-3. "Compare these two product directions and recommend one."
-4. "Draft a lightweight PRD for this feature."
-5. "Turn this into an executive summary for leadership."
-6. "Help me write a postmortem for this launch."
-
-***
+### Write a postmortem
+> “We launched this last month and adoption was weak. Help me write a lightweight postmortem.”
 
 ## Best for
 
-`pm-workbench` works best for:
+`pm-workbench` works best when you need:
+- product judgment, not just content generation
+- structure for ambiguous product conversations
+- lightweight but usable PM deliverables
+- clearer trade-off thinking
+- stronger upward communication
+- postmortem and learning loops
 
-* vague requests that need problem framing
-
-* early product judgments and feature evaluation
-
-* lightweight PM artifacts that need to be usable quickly
-
-* roadmap and prioritization discussions under constraints
-
-* leadership communication and decision support
-
-* postmortem and learning loops after launches or projects
-
-## Not ideal for
+## Less ideal for
 
 `pm-workbench` is less ideal for:
+- analytics-heavy SQL or dashboard work
+- pure research repository management
+- highly specialized compliance or regulatory writing
+- long enterprise documentation workflows with heavy governance
+- tasks that depend more on raw data processing than product judgment
 
-* analytics-heavy SQL or dashboard building work
+## Where it fits in an agent workflow
 
-* full user research repository management
+`pm-workbench` works especially well as the **PM judgment layer** in a larger workflow:
+- research skills gather evidence
+- `pm-workbench` turns evidence into decisions and artifacts
+- document or slide skills turn those artifacts into shareable outputs
+- visualization skills turn plans into leadership-ready visuals
 
-* highly specialized regulatory or compliance specs
+In other words:
+**research finds information, `pm-workbench` makes it usable.**
 
-* very long enterprise documentation processes with custom governance
+## Installation
 
-* tasks that depend more on raw data processing than product judgment
+### Option 1 — Use the packaged skill file
+- packaged file: `output/pm-workbench.skill`
+- import it through your OpenClaw skill installation flow
 
-***
+### Option 2 — Use the local source
+- keep the source under your OpenClaw skills workspace
+- current folder: `skills/pm-workbench/`
+
+If you are iterating on the skill, use the source folder.
+If you want the fastest install path, use the packaged `.skill` file.
+
+## Even if you don’t use OpenClaw
+
+You can still use this repository as:
+- a PM workflow reference
+- a reusable artifact library
+- a set of structured prompting patterns
+- a benchmark for evaluating PM-oriented agents
 
 ## Current status
 
-`pm-workbench` is currently a validated and packaged v0 workbench:
+`pm-workbench` is currently a validated and packaged v0:
+- core workflows implemented
+- artifact templates added
+- artifact mapping wired into the skill
+- compressed artifact behavior added for quick use
+- packaged and ready for iteration
 
-* core workflows implemented
-
-* artifact templates added
-
-* artifact mapping wired into the core skill
-
-* compressed artifact behavior added for lightweight usage
-
-* packaged and ready for testing / iteration
-
-This is already useful in real PM work, but still evolving.
-
-***
-
-## Positioning keywords
-
-* Scenario-driven
-
-* Artifact-first
-
-* Decision-ready
-
-***
-
-## Repository direction
-
-Suggested next packaging steps:
-
-* add screenshots or before/after samples
-
-* keep improving artifact quality through real usage feedback
-
-* continue expanding high-value examples only when they sharpen understanding
-
-* evolve from a validated v0 into a stronger distribution-ready v1
-
-***
+Already useful. Still evolving.
 
 ## Who this is for
 
-* PMs dealing with vague requests and messy decisions
-
-* senior PMs who need stronger judgment artifacts
-
-* product leaders who need roadmap and executive communication support
-
-* builders who want a reusable PM workflow system instead of a prompt collection
-
+- PMs dealing with vague requests and messy decisions
+- senior PMs who need stronger judgment artifacts
+- product leaders who need roadmap and executive communication support
+- builders who want a reusable PM workflow system instead of a prompt collection
