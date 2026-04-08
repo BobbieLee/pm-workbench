@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="pm-workbench hero">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" rx="28"/>
+  <rect x="56" y="56" width="1088" height="518" rx="28" fill="#0b1220" opacity="0.35"/>
+  <text x="84" y="145" font-family="Inter, Arial, sans-serif" font-size="28" fill="#93c5fd">OpenClaw skill for product managers</text>
+  <text x="84" y="225" font-family="Inter, Arial, sans-serif" font-size="64" font-weight="700" fill="#f8fafc">pm-workbench</text>
+  <text x="84" y="292" font-family="Inter, Arial, sans-serif" font-size="34" fill="#cbd5e1">Turn vague product asks into decision-ready PM artifacts.</text>
+
+  <rect x="84" y="348" width="326" height="150" rx="20" fill="url(#card)" stroke="#334155"/>
+  <text x="108" y="390" font-family="Inter, Arial, sans-serif" font-size="22" fill="#60a5fa">INPUT</text>
+  <text x="108" y="435" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600" fill="#f8fafc">Messy asks</text>
+  <text x="108" y="470" font-family="Inter, Arial, sans-serif" font-size="22" fill="#cbd5e1">vague requests · boss pressure</text>
+
+  <rect x="438" y="328" width="326" height="190" rx="20" fill="url(#card)" stroke="#334155"/>
+  <text x="462" y="370" font-family="Inter, Arial, sans-serif" font-size="22" fill="#34d399">WORKBENCH</text>
+  <text x="462" y="415" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600" fill="#f8fafc">Route · Clarify · Judge</text>
+  <text x="462" y="450" font-family="Inter, Arial, sans-serif" font-size="22" fill="#cbd5e1">trade-offs · risks · next steps</text>
+  <text x="462" y="483" font-family="Inter, Arial, sans-serif" font-size="22" fill="#cbd5e1">artifact-first output</text>
+
+  <rect x="792" y="348" width="326" height="150" rx="20" fill="url(#card)" stroke="#334155"/>
+  <text x="816" y="390" font-family="Inter, Arial, sans-serif" font-size="22" fill="#f59e0b">OUTPUT</text>
+  <text x="816" y="435" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600" fill="#f8fafc">PM artifacts</text>
+  <text x="816" y="470" font-family="Inter, Arial, sans-serif" font-size="22" fill="#cbd5e1">memo · exec summary · roadmap</text>
+
+  <path d="M410 423 L438 423" stroke="#60a5fa" stroke-width="6" stroke-linecap="round"/>
+  <path d="M764 423 L792 423" stroke="#34d399" stroke-width="6" stroke-linecap="round"/>
+</svg>

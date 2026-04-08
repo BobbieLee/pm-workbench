@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="pm-workbench benchmark card">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" rx="28"/>
+  <text x="72" y="110" font-family="Inter, Arial, sans-serif" font-size="28" fill="#93c5fd">OpenClaw skill for product managers</text>
+  <text x="72" y="180" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" fill="#f8fafc">pm-workbench beats generic AI</text>
+  <text x="72" y="232" font-family="Inter, Arial, sans-serif" font-size="30" fill="#cbd5e1">where PM judgment actually matters</text>
+
+  <rect x="72" y="286" width="1056" height="248" rx="24" fill="#0f172a" stroke="#334155"/>
+
+  <text x="120" y="338" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#cbd5e1">Scenario</text>
+  <text x="730" y="338" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#fca5a5">Generic AI</text>
+  <text x="930" y="338" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#86efac">pm-workbench</text>
+
+  <line x1="96" y1="360" x2="1104" y2="360" stroke="#334155" stroke-width="2"/>
+  <line x1="96" y1="438" x2="1104" y2="438" stroke="#334155" stroke-width="2"/>
+
+  <text x="120" y="408" font-family="Inter, Arial, sans-serif" font-size="26" fill="#f8fafc">Clarify vague leadership ask</text>
+  <text x="730" y="408" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#fca5a5">3</text>
+  <text x="930" y="408" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#86efac">18</text>
+
+  <text x="120" y="486" font-family="Inter, Arial, sans-serif" font-size="26" fill="#f8fafc">Product-leader prioritization</text>
+  <text x="730" y="486" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#fca5a5">8</text>
+  <text x="930" y="486" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#86efac">19</text>
+
+  <text x="120" y="564" font-family="Inter, Arial, sans-serif" font-size="26" fill="#f8fafc">Executive summary with real ask</text>
+  <text x="730" y="564" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#fca5a5">10</text>
+  <text x="930" y="564" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#86efac">19</text>
+
+  <text x="1128" y="604" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="18" fill="#94a3b8">Illustrative scores from repo benchmark worked examples</text>
+</svg>

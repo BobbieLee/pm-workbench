@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="pm-workbench benchmark summary">
+  <rect width="1200" height="760" fill="#0b1220"/>
+  <text x="600" y="74" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700" fill="#f8fafc">pm-workbench benchmark summary</text>
+  <text x="600" y="114" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#94a3b8">Illustrative repo-native comparison across 3 realistic PM jobs</text>
+
+  <rect x="56" y="150" width="1088" height="544" rx="24" fill="#111827" stroke="#334155"/>
+
+  <text x="160" y="205" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#cbd5e1">Scenario</text>
+  <text x="585" y="205" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#fca5a5">Generic AI</text>
+  <text x="865" y="205" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#86efac">pm-workbench</text>
+  <text x="1060" y="205" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Gap</text>
+
+  <line x1="84" y1="226" x2="1116" y2="226" stroke="#334155" stroke-width="2"/>
+  <line x1="84" y1="378" x2="1116" y2="378" stroke="#334155" stroke-width="2"/>
+  <line x1="84" y1="530" x2="1116" y2="530" stroke="#334155" stroke-width="2"/>
+
+  <text x="96" y="275" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">Clarify vague leadership ask</text>
+  <text x="96" y="310" font-family="Inter, Arial, sans-serif" font-size="20" fill="#94a3b8">Upstream framing before random solutioning</text>
+  <text x="585" y="298" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" fill="#fca5a5">3</text>
+  <text x="865" y="298" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" fill="#86efac">18</text>
+  <text x="1060" y="298" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700" fill="#60a5fa">+15</text>
+
+  <text x="96" y="427" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">Product-leader prioritization</text>
+  <text x="96" y="462" font-family="Inter, Arial, sans-serif" font-size="20" fill="#94a3b8">Top-3 call, below-the-line clarity, leadership framing</text>
+  <text x="585" y="450" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" fill="#fca5a5">8</text>
+  <text x="865" y="450" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" fill="#86efac">19</text>
+  <text x="1060" y="450" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700" fill="#60a5fa">+11</text>
+
+  <text x="96" y="579" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">Executive summary with real ask</text>
+  <text x="96" y="614" font-family="Inter, Arial, sans-serif" font-size="20" fill="#94a3b8">Decision-ready upward communication</text>
+  <text x="585" y="602" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" fill="#fca5a5">10</text>
+  <text x="865" y="602" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" fill="#86efac">19</text>
+  <text x="1060" y="602" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700" fill="#60a5fa">+9</text>
+
+  <text x="600" y="725" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" fill="#94a3b8">Illustrative benchmark scores from repo worked examples · rubric total range: 0–21</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Generic AI vs pm-workbench comparison">
+  <rect width="1200" height="760" fill="#0f172a"/>
+  <text x="600" y="78" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="700" fill="#f8fafc">Generic AI vs pm-workbench</text>
+  <rect x="70" y="130" width="470" height="560" rx="24" fill="#111827" stroke="#374151"/>
+  <rect x="660" y="130" width="470" height="560" rx="24" fill="#0b1f1a" stroke="#14532d"/>
+  <text x="305" y="185" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#f8fafc">Generic AI</text>
+  <text x="895" y="185" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#f8fafc">pm-workbench</text>
+
+  <g font-family="Inter, Arial, sans-serif" font-size="26">
+    <text x="110" y="255" fill="#fca5a5">• Explains frameworks well</text>
+    <text x="110" y="320" fill="#fca5a5">• May answer before the problem is clear</text>
+    <text x="110" y="385" fill="#fca5a5">• Often gives discussion, not decisions</text>
+    <text x="110" y="450" fill="#fca5a5">• Outputs can be hard to reuse in meetings</text>
+    <text x="110" y="515" fill="#fca5a5">• Weak on explicit “not now” calls</text>
+    <text x="110" y="580" fill="#fca5a5">• Can sound smart while staying vague</text>
+
+    <text x="700" y="255" fill="#86efac">• Routes by the PM job to be done</text>
+    <text x="700" y="320" fill="#86efac">• Clarifies missing premises first when needed</text>
+    <text x="700" y="385" fill="#86efac">• Produces recommendation + trade-offs</text>
+    <text x="700" y="450" fill="#86efac">• Prefers reusable PM artifacts</text>
+    <text x="700" y="515" fill="#86efac">• Makes assumptions and risks explicit</text>
+    <text x="700" y="580" fill="#86efac">• Better for real PM decision flow</text>
+  </g>
+</svg>

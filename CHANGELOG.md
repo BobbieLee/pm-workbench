@@ -4,63 +4,74 @@ All notable changes to `pm-workbench` will be documented in this file.
 
 ---
 
-## v0.1.0 — Initial workflow foundation
+## v1.0.0 — Release-ready PM judgment layer
 
 ### Added
-- initial `pm-workbench` skill scaffold
-- core `SKILL.md` positioning and routing logic
-- first batch of workflow references:
-  - `clarify-request`
-  - `evaluate-feature-value`
-  - `prepare-exec-summary`
-- second batch of workflow references:
-  - `compare-solutions`
-  - `prioritize-requests`
-  - `draft-prd`
-- third batch of workflow references:
-  - `build-roadmap`
-  - `design-metrics`
-  - `write-postmortem`
-
-### Notes
-This version established the core idea of `pm-workbench` as a scenario-driven PM workflow skill instead of a framework lookup or generic PM prompt pack.
-
----
-
-## v0.2.0 — Validation and packaging
+- benchmark proof layer:
+  - `benchmark/README.md`
+  - `benchmark/CONTRIBUTING-BENCHMARKS.md`
+  - `benchmark/scenarios.md`
+  - `benchmark/rubric.md`
+  - `benchmark/scorecard.md`
+  - `benchmark/worked-example-product-leader.md`
+  - `benchmark/worked-example-clarify-request.md`
+  - `benchmark/worked-example-exec-summary.md`
+- cold-start evaluation assets:
+  - `docs/GETTING-STARTED.md`
+  - `docs/TRY-3-PROMPTS.md`
+- product-leader / founder support assets:
+  - `docs/PRODUCT-LEADER-PLAYBOOK.md`
+  - `references/templates/portfolio-review-summary.md`
+  - `references/templates/head-of-product-operating-review.md`
+  - `references/templates/founder-business-review.md`
+- share-friendly benchmark visuals:
+  - `docs/images/pm-workbench-benchmark-summary.svg`
+  - `docs/images/pm-workbench-benchmark-card.svg`
+- expanded examples:
+  - `10-product-leader-quarterly-priority-call.md`
+  - `11-founder-strategy-decision.md`
+  - `12-portfolio-review-summary.md`
+  - `13-head-of-product-operating-review.md`
+  - `14-founder-business-review.md`
+- lightweight repo validation tooling:
+  - `scripts/validate-repo.js`
+  - `package.json` with `npm run validate`
 
 ### Improved
-- compressed the main `SKILL.md` into a more trigger-friendly and packaging-friendly core file
-- kept workflow detail in `references/workflows/`
-- standardized workflow structure for consistency across all core workflows
+- strengthened the repo from a GitHub-packaged skill into a more complete PM judgment layer with clearer differentiation from generic AI
+- expanded reusable artifact coverage across workflow, leadership, and operating-review scenarios
+- improved onboarding, first-use evaluation, and GitHub discovery flow
+- made benchmark evidence and proof-of-value much more visible in the README and repo structure
+- improved support for heads of product, product leaders, and founders in higher-altitude decision scenarios
 
 ### Validated
-- completed workflow consistency checks across the first 9 workflow files
-- fixed YAML frontmatter validation issue in `SKILL.md`
-- successfully packaged the first working `.skill` bundle
+- `npm run validate` passes locally
+- `openclaw skills info pm-workbench` reports **Ready**
+- `openclaw skills check` recognizes the skill in the local workspace
 
 ### Notes
-This version made `pm-workbench` testable, packageable, and easier to maintain.
+This is the first version that feels like a coherent 1.0 release point: clear product thesis, reusable artifact system, initial proof layer, stronger leadership scenarios, and enough validation to publish with confidence.
 
 ---
 
-## v0.3.0 — Stronger follow-up behavior
+## v0.5.0 — GitHub packaging layer
 
 ### Added
-- critical-premise rule to the main `SKILL.md`
-- critical-premise rule added into high-frequency workflows:
-  - `evaluate-feature-value`
-  - `compare-solutions`
-  - `prioritize-requests`
-  - `draft-prd`
-  - `prepare-exec-summary`
+- `README.md` with positioning, workflows, built-in artifacts, use cases, quick start, and current status
+- initial `examples/` directory with example cases for:
+  - vague request clarification
+  - feature evaluation memo
+  - executive summary
+  - PRD Lite
+  - Postmortem Lite
 
 ### Improved
-- stronger behavior for asking 1-2 missing premises before giving strong conclusions
-- clearer support for assumption-labeled `v0` outputs when speed matters
+- clearer GitHub-facing product story
+- easier first-use understanding for external users
+- stronger demonstration of scenario-driven and artifact-first behavior
 
 ### Notes
-This version improved judgment stability in low-context and high-pressure PM scenarios.
+This version made `pm-workbench` more ready for open distribution, GitHub discovery, and external testing.
 
 ---
 
@@ -87,36 +98,60 @@ This version shifted `pm-workbench` from "strong analysis skill" toward "artifac
 
 ---
 
-## v0.5.0 — GitHub packaging layer
+## v0.3.0 — Stronger follow-up behavior
 
 ### Added
-- `README.md` with positioning, workflows, built-in artifacts, use cases, before/after framing, quick start, and current status
-- `examples/` directory with example cases for:
-  - vague request clarification
-  - feature evaluation memo
-  - executive summary
-  - PRD Lite
-  - Postmortem Lite
+- critical-premise rule to the main `SKILL.md`
+- critical-premise rule added into high-frequency workflows:
+  - `evaluate-feature-value`
+  - `compare-solutions`
+  - `prioritize-requests`
+  - `draft-prd`
+  - `prepare-exec-summary`
 
 ### Improved
-- clearer GitHub-facing product story
-- easier first-use understanding for external users
-- stronger demonstration of scenario-driven and artifact-first behavior
+- stronger behavior for asking 1-2 missing premises before giving strong conclusions
+- clearer support for assumption-labeled `v0` outputs when speed matters
 
 ### Notes
-This version made `pm-workbench` more ready for open distribution, GitHub discovery, and external testing.
+This version improved judgment stability in low-context and high-pressure PM scenarios.
 
 ---
 
-## Current state
+## v0.2.0 — Validation and packaging
 
-`pm-workbench` is currently:
-- validated
-- packaged
-- structured around 9 core workflows
-- extended with 5 PM artifact templates
-- equipped with critical-premise behavior
-- equipped with compressed artifact behavior
-- documented for GitHub-facing distribution
+### Improved
+- compressed the main `SKILL.md` into a more trigger-friendly and packaging-friendly core file
+- kept workflow detail in `references/workflows/`
+- standardized workflow structure for consistency across all core workflows
 
-It is already useful for real PM work, but still evolving through testing and iteration.
+### Validated
+- completed workflow consistency checks across the first 9 workflow files
+- fixed YAML frontmatter validation issue in `SKILL.md`
+- successfully packaged the first working `.skill` bundle
+
+### Notes
+This version made `pm-workbench` testable, packageable, and easier to maintain.
+
+---
+
+## v0.1.0 — Initial workflow foundation
+
+### Added
+- initial `pm-workbench` skill scaffold
+- core `SKILL.md` positioning and routing logic
+- first batch of workflow references:
+  - `clarify-request`
+  - `evaluate-feature-value`
+  - `prepare-exec-summary`
+- second batch of workflow references:
+  - `compare-solutions`
+  - `prioritize-requests`
+  - `draft-prd`
+- third batch of workflow references:
+  - `build-roadmap`
+  - `design-metrics`
+  - `write-postmortem`
+
+### Notes
+This version established the core idea of `pm-workbench` as a scenario-driven PM workflow skill instead of a framework lookup or generic PM prompt pack.

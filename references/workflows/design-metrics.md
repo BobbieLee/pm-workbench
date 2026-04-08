@@ -91,6 +91,7 @@ Follow this sequence:
 4. Add guardrail metrics to catch harmful side effects.
 5. Define observation window and interpretation notes.
 6. Recommend how to use the metric set in decision-making.
+7. When useful, shape the output as a **Metrics Scorecard**.
 
 ## Output structure
 
@@ -105,6 +106,9 @@ Use this structure when helpful:
 7. Notes on interpretation or risk
 8. Suggested next step
 
+Default artifact when the user needs something reusable:
+- `references/templates/metrics-scorecard.md`
+
 ## Output length control
 
 ### Short
@@ -117,6 +121,7 @@ For immediate setup:
 ### Standard
 For normal PM usage:
 - full output structure above
+- or a compact **Metrics Scorecard**
 
 ### Long
 For launch docs or leadership review:
@@ -130,6 +135,7 @@ A good result should:
 - include at least one meaningful guardrail when relevant
 - explain how success will be judged, not just what will be watched
 - reduce later ambiguity around evaluation
+- make the metric set easy to reuse in launch or review discussions
 
 ## Failure cases
 

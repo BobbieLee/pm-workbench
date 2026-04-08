@@ -98,6 +98,7 @@ Follow this sequence:
 5. Highlight explicit trade-offs.
 6. Recommend one path, or recommend a phased combination if appropriate.
 7. Give the next action.
+8. When useful, shape the output as a **Decision Brief**.
 
 ## Output structure
 
@@ -112,6 +113,9 @@ Use this structure when helpful:
 7. Why not the others
 8. Suggested next step
 
+Default artifact when the user needs something reusable:
+- `references/templates/decision-brief.md`
+
 ## Output length control
 
 ### Short
@@ -123,6 +127,7 @@ For fast alignment:
 ### Standard
 For team discussion:
 - full output structure above
+- or a compact **Decision Brief**
 
 ### Long
 For inclusion in a decision memo:
@@ -136,6 +141,7 @@ A good result should:
 - give a clear recommendation
 - explain why other options are less suitable now
 - leave the team knowing what to do next
+- produce a reusable decision artifact when needed
 
 ## Failure cases
 

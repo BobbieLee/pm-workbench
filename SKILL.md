@@ -1,6 +1,6 @@
 ---
 name: pm-workbench
-description: "Structured workflow skill for product managers and product leaders. Use for scenario-driven PM work: clarify vague requests, evaluate whether a feature or initiative is worth doing, compare options, prioritize requests, draft PRDs or solution docs, build roadmaps, design metrics, prepare executive summaries, or write postmortems. Best when the user needs judgment, structure, and actionable outputs rather than framework lookup."
+description: "Structured workflow skill for product managers and product leaders. Use for scenario-driven PM work: clarify vague requests, evaluate whether a feature or initiative is worth doing, compare options, prioritize requests, draft PRDs or solution docs, build roadmaps, design metrics, prepare executive summaries, write postmortems, produce portfolio review summaries, prepare head-of-product operating reviews, or produce founder business reviews. Best when the user needs judgment, structure, and actionable outputs rather than framework lookup."
 ---
 
 # pm-workbench
@@ -18,6 +18,8 @@ Treat this skill as a **PM workbench**: route to the right workflow, ask only fo
 7. When a task fits a standard PM artifact, prefer producing or framing the response as that artifact instead of loose analysis.
 8. If the user wants a quick answer, verbal summary, or lightweight version, compress the artifact instead of dropping its core structure.
 9. Make trade-offs, risks, information gaps, and next steps explicit.
+10. Prefer decision-grade artifacts over open-ended commentary when the output is likely to be reused in review, planning, or leadership communication.
+11. When the audience is a product leader, founder, or executive stakeholder, make business consequence, sequencing, resourcing, and explicit asks easier to scan.
 
 Default style:
 - lead with the conclusion
@@ -38,6 +40,9 @@ Route by intent unless the user names a workflow directly:
 - define success metrics -> `design-metrics`
 - prepare boss / leadership communication -> `prepare-exec-summary`
 - review launch or project outcome -> `write-postmortem`
+- portfolio review / above-the-line vs below-the-line call -> use `prioritize-requests` or `build-roadmap`, then shape the output as `portfolio-review-summary`
+- head-of-product operating review / monthly operating view / leadership product review -> synthesize diagnosis across product, growth, delivery, and cross-functional constraints, then shape the output as `head-of-product-operating-review`
+- founder business review / growth-quality review / business reality check -> synthesize growth, retention, monetization, and strategic pressure, then shape the output as `founder-business-review`
 
 If the request spans multiple workflows, solve the most upstream problem first.
 
@@ -87,11 +92,18 @@ If the user wants a short version, try not to lose: conclusion, main risk, next 
 
 When the task naturally calls for a reusable PM artifact, default to these output shapes:
 
+- `clarify-request` -> `references/templates/request-clarification-brief.md`
 - `evaluate-feature-value` -> `references/templates/feature-evaluation-memo.md`
-- `prepare-exec-summary` -> `references/templates/exec-summary.md`
+- `compare-solutions` -> `references/templates/decision-brief.md`
+- `prioritize-requests` -> `references/templates/prioritization-stack.md`
 - `draft-prd` -> `references/templates/prd-lite.md`
 - `build-roadmap` -> `references/templates/roadmap-one-pager.md`
+- `design-metrics` -> `references/templates/metrics-scorecard.md`
+- `prepare-exec-summary` -> `references/templates/exec-summary.md`
 - `write-postmortem` -> `references/templates/postmortem-lite.md`
+- portfolio review / head-of-product allocation summary -> `references/templates/portfolio-review-summary.md`
+- head-of-product monthly / period review -> `references/templates/head-of-product-operating-review.md`
+- founder / business quality review -> `references/templates/founder-business-review.md`
 
 If the user asks for a lighter answer, compress the artifact instead of abandoning the structure entirely.
 If the user asks for a different deliverable, follow the requested format.
@@ -106,11 +118,18 @@ When the user wants a quick take, short version, verbal answer, chat reply, or o
 - do not let template completeness override speed or readability
 
 Minimum compressed artifact expectations:
+- request clarification brief -> likely problem, embedded solution assumption, key gap, next move
 - evaluation memo -> conclusion, why, main risk, next step
-- exec summary -> bottom line, why it matters, ask
+- decision brief -> recommendation, key trade-off, why not the others, next move
+- prioritization stack -> period objective, top items, what is below the line, next move
 - PRD lite -> problem, goal, proposed solution, scope boundary
 - roadmap one-pager -> stage goal, top priorities, what is not prioritized
+- metrics scorecard -> core metric, 2-4 supporting metrics, guardrail, review window
+- exec summary -> bottom line, why it matters, ask
 - postmortem lite -> outcome, what worked, what did not work, key lesson, next action
+- portfolio review summary -> period objective, above-the-line bets, below-the-line decisions, main trade-off, leadership ask
+- head-of-product operating review -> bottom line, signal pattern, key diagnosis, above-the-line focus, leadership ask
+- founder business review -> bottom line, signal truth, strategic diagnosis, what to double down on, founder decision ask
 
 If the user later asks for a fuller version, expand from the compressed artifact instead of rewriting from scratch.
 
@@ -142,11 +161,18 @@ Read only the workflow file(s) that match the task:
 
 Use template references when the output should be shaped like a standard artifact:
 
+- `references/templates/request-clarification-brief.md`
 - `references/templates/feature-evaluation-memo.md`
-- `references/templates/exec-summary.md`
+- `references/templates/decision-brief.md`
+- `references/templates/prioritization-stack.md`
 - `references/templates/prd-lite.md`
 - `references/templates/roadmap-one-pager.md`
+- `references/templates/metrics-scorecard.md`
+- `references/templates/exec-summary.md`
 - `references/templates/postmortem-lite.md`
+- `references/templates/portfolio-review-summary.md`
+- `references/templates/head-of-product-operating-review.md`
+- `references/templates/founder-business-review.md`
 
 Do not load all references by default.
 
@@ -156,6 +182,7 @@ Prioritize these workflows first because they best show differentiated PM value:
 - `clarify-request`
 - `evaluate-feature-value`
 - `prepare-exec-summary`
+- `prioritize-requests`
 
 ## Success standard
 
@@ -166,3 +193,7 @@ This skill is working if it helps the user do at least one of these:
 - create a draft that moves a decision or project forward
 - turn scattered analysis into an executive-ready summary
 - extract lessons and next actions from a completed effort
+- produce a portfolio review summary that clearly shows above-the-line and below-the-line decisions
+- produce a head-of-product operating review that turns mixed signals into leadership decisions
+- produce a founder business review that separates narrative momentum from business truth
+- produce an artifact that a PM can reuse with minimal rewriting in a meeting, review, or planning discussion

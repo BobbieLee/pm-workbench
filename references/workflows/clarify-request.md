@@ -94,6 +94,7 @@ Follow this sequence:
 4. Separate facts from assumptions.
 5. Mark the most important information gaps.
 6. Recommend the next best move.
+7. When useful, shape the output as a **Request Clarification Brief**.
 
 ## Output structure
 
@@ -108,6 +109,9 @@ Use this structure when helpful:
 7. Initial judgment
 8. Suggested next step
 
+Default artifact when the user needs something reusable:
+- `references/templates/request-clarification-brief.md`
+
 ## Output length control
 
 ### Short
@@ -119,6 +123,7 @@ Use for chat surfaces:
 ### Standard
 Use for normal PM collaboration:
 - full output structure above
+- or a compact **Request Clarification Brief**
 
 ### Long
 Use when the output will feed later documentation:
@@ -132,6 +137,7 @@ A good result should give the user at least two of these outcomes:
 - target user / scenario is identified
 - missing information is exposed
 - the next action becomes obvious
+- the output is reusable as a brief for later evaluation or stakeholder clarification
 
 ## Failure cases
 

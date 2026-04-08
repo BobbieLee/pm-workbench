@@ -99,6 +99,7 @@ Follow this sequence:
 5. Explain the prioritization logic clearly.
 6. Call out what is intentionally not prioritized.
 7. Recommend the next planning step.
+8. When useful, shape the output as a **Prioritization Stack**.
 
 ## Output structure
 
@@ -113,6 +114,9 @@ Use this structure when helpful:
 7. Risks or sequencing notes
 8. Suggested next step
 
+Default artifact when the user needs something reusable:
+- `references/templates/prioritization-stack.md`
+
 ## Output length control
 
 ### Short
@@ -124,6 +128,7 @@ For quick team sync:
 ### Standard
 For normal PM usage:
 - full output structure above
+- or a compact **Prioritization Stack**
 
 ### Long
 For a decision memo or planning input:
@@ -137,6 +142,7 @@ A good result should:
 - show what is intentionally delayed
 - make the top priorities easy to defend
 - help the user move into planning or communication
+- make the below-the-line trade-offs easy to explain
 
 ## Failure cases
 

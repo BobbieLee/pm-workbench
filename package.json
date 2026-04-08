@@ -1,0 +1,9 @@
+{
+  "name": "pm-workbench-local",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Local validation helpers for the pm-workbench OpenClaw skill",
+  "scripts": {
+    "validate": "node scripts/validate-repo.js"
+  }
+}
