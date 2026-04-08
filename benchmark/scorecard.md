@@ -1,1 +1,58 @@
-# Benchmark scorecard\n\nCopy this sheet for each side-by-side evaluation.\n\n---\n\n## Session info\n- Date:\n- Evaluator:\n- Scenario:\n- Model / setup A:\n- Model / setup B:\n- Notes on prompt consistency:\n\n## Criterion scoring\n\n| Criterion | A score (0-3) | B score (0-3) | Notes |\n|---|---:|---:|---|\n| Upstream problem framing |  |  |  |\n| Follow-up question quality |  |  |  |\n| Recommendation quality |  |  |  |\n| Trade-off and non-decision clarity |  |  |  |\n| Artifact reuse quality |  |  |  |\n| Product-leader relevance |  |  |  |\n| Honesty about uncertainty |  |  |  |\n| **Total** |  |  |  |\n\n## Quick comparison summary\n\n### Winner on substance\n- A / B / Tie\n\n### Why\n- \n- \n- \n\n### Most obvious weakness in A\n- \n\n### Most obvious weakness in B\n- \n\n### Would I reuse either output in real PM work?\n- A:\n- B:\n\n### What would I improve in `pm-workbench` after this test?\n- \n- \n- \n\n---\n\n## Lightweight interpretation\n- If the winner is obvious in under 2 minutes, the benchmark scenario is probably good.\n- If both outputs feel similarly vague, the scenario may be too easy or the prompt may be over-specified.\n- If `pm-workbench` loses on recommendation clarity or artifact reuse, that is a useful signal to improve the repo.\n
+# Benchmark scorecard
+
+Copy this sheet for each side-by-side evaluation.
+
+---
+
+## Session info
+- Date:
+- Evaluator:
+- Scenario:
+- Model / setup A:
+- Model / setup B:
+- Notes on prompt consistency:
+
+## Criterion scoring
+
+| Criterion | A score (0-3) | B score (0-3) | Notes |
+|---|---:|---:|---|
+| Upstream problem framing |  |  |  |
+| Follow-up question quality |  |  |  |
+| Recommendation quality |  |  |  |
+| Trade-off and non-decision clarity |  |  |  |
+| Artifact reuse quality |  |  |  |
+| Product-leader relevance |  |  |  |
+| Honesty about uncertainty |  |  |  |
+| **Total** |  |  |  |
+
+## Quick comparison summary
+
+### Winner on substance
+- A / B / Tie
+
+### Why
+- 
+- 
+- 
+
+### Most obvious weakness in A
+- 
+
+### Most obvious weakness in B
+- 
+
+### Would I reuse either output in real PM work?
+- A:
+- B:
+
+### What would I improve in `pm-workbench` after this test?
+- 
+- 
+- 
+
+---
+
+## Lightweight interpretation
+- If the winner is obvious in under 2 minutes, the benchmark scenario is probably good.
+- If both outputs feel similarly vague, the scenario may be too easy or the prompt may be over-specified.
+- If `pm-workbench` loses on recommendation clarity or artifact reuse, that is a useful signal to improve the repo.
