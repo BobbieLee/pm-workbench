@@ -102,6 +102,24 @@ Follow this sequence:
 6. Produce a go / hold / no-go recommendation.
 7. Add a rough priority and next step.
 
+## Common failure modes
+
+Weak output usually looks like this:
+- listing pros and cons without making a call
+- mirroring stakeholder enthusiasm instead of judging the request
+- talking only about upside and ignoring opportunity cost
+- sounding careful but never answering why now or why not now
+- outputting a neat memo shape with soft judgment inside
+
+## What strong output looks like
+
+Strong output should:
+- define the real value question before scoring anything
+- make a clear go / hold / no-go / experiment call
+- explain why now or why not now in relation to the current stage goal
+- surface opportunity cost, resource consequence, and downside risk
+- produce something a PM or leader can defend in review with light editing
+
 ## Output structure
 
 Use this structure when helpful:

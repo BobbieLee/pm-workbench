@@ -165,3 +165,10 @@ If you only test three scenarios, use:
 3. Scenario 5
 
 That combination usually reveals whether the skill is genuinely better than generic AI at PM work, not just better formatted.
+
+## Want a harsher test?
+
+If the baseline scenarios now feel too easy, use:
+- [high-pressure-acceptance-suite.md](high-pressure-acceptance-suite.md)
+
+That suite is intentionally closer to messy real-world PM work with leadership pressure, conflict, and incomplete evidence.

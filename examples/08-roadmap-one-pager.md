@@ -13,6 +13,7 @@ A strong `pm-workbench` response should:
 - sequence work in a realistic order
 - call out what is intentionally not the focus this period
 - surface risks and capacity constraints honestly
+- make the roadmap feel like a real portfolio choice, not a backlog dump with dates
 
 ## Expected artifact
 **Roadmap One-Pager**

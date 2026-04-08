@@ -18,6 +18,7 @@ The best contributions usually do one of these:
 - add a realistic example that helps cold readers understand value fast
 - reduce adoption friction in docs or onboarding
 - strengthen product-leader usefulness, not just IC PM usefulness
+- make the benchmark layer more inspectable, fair, or honest
 
 ## What to avoid
 
@@ -27,6 +28,7 @@ Please avoid contributions that mainly:
 - add heavy templates no one would really use
 - expand scope without improving clarity
 - make README claims that cannot be verified from the repo
+- improve structure while weakening judgment sharpness
 
 ## Project principles
 
@@ -48,6 +50,10 @@ Prefer explicit recommendation, downside, assumption, and next move.
 If the repo does not yet support something clearly, do not imply it does.
 Trust compounds. So does README fluff.
 
+### 6. The artifact is not the judgment
+A cleaner template is useful only if it helps sharper PM output.
+If a change makes the repo look more complete but the decision quality gets softer, it is not a good trade.
+
 ## Typical contribution types
 
 ## A. Improve an existing workflow
@@ -61,6 +67,7 @@ Questions to ask:
 - did the workflow become more decisive?
 - did it become more reusable in real PM work?
 - did it reduce ambiguity or just add more words?
+- did it become sharper on why now / why not now / what waits?
 
 ## B. Add a new artifact template
 Touch:
@@ -73,17 +80,32 @@ Touch:
 Questions to ask:
 - is this a real PM artifact or just formatted commentary?
 - does it make the output easier to reuse?
+- does it strengthen judgment, or only structure?
 
 ## C. Improve onboarding / GitHub conversion
 Touch:
 - `README.md`
 - `docs/GETTING-STARTED.md`
+- `docs/TRY-IN-3-MINUTES.md`
 - `examples/README.md`
 - image or diagram assets only when they help understanding quickly
 
 Questions to ask:
 - would a new visitor understand what this project does in under 60 seconds?
 - can they verify value without guessing?
+- can they get to a meaningful first trial in under 3-10 minutes?
+
+## D. Improve benchmark credibility
+Touch:
+- `benchmark/README.md`
+- benchmark worked examples
+- rubric / scorecard / scenarios if needed
+- `README.md` only if the benchmark story changes materially
+
+Questions to ask:
+- does this make the comparison chain easier to audit?
+- does it reduce self-serving ambiguity?
+- does it state limitations honestly?
 
 ## Suggested quality checklist
 
@@ -105,6 +127,7 @@ High-value areas:
 - clearer prioritization and “below the line” explanation patterns
 - benchmark scenarios for evaluating the skill against generic AI behavior
 - contributor tooling or lightweight validation guidance
+- more “bad input corrected” examples
 
 ## If you add something substantial
 

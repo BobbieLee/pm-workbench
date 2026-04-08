@@ -2,17 +2,39 @@
 
 > **Turn vague product asks into decision-ready PM artifacts.**
 
-`pm-workbench` is an OpenClaw skill for product managers, senior PMs, heads of product, and founders.
-It is built for the real work between “someone asked for something” and “we need a recommendation, artifact, or next move that can survive stakeholder review.”
+`pm-workbench` is an OpenClaw skill for PMs, product leaders, and founders who need sharper product judgment under messy real-world constraints.
+It is built for the work between **“someone asked for something”** and **“we need a recommendation, artifact, or next move that can survive review.”**
 
-**Current release target:** `v1.0.0`
+**Current release target:** `v1.0.4`
 
-**What it is:** a scenario-driven PM judgment layer  
-**What it is not:** a generic PM prompt pack, framework encyclopedia, or bloated PRD generator
+## Start here if you only have 3 minutes
 
-- **Best for:** clarifying messy asks, evaluating feature value, comparing options, prioritizing under constraints, drafting lightweight PM docs, preparing leadership summaries, and turning launches into usable lessons
-- **Especially strong for:** product-leader / founder trade-offs involving sequencing, resourcing, leadership communication, and explicit “not now” calls
-- **Current local validation:** recognized as **Ready** by OpenClaw in the active workspace via `openclaw skills info pm-workbench` and `openclaw skills check`
+### What this is
+A workflow skill for turning ambiguity into **decisions, artifacts, and explicit trade-offs**.
+
+### Best fit
+- PMs handling messy asks
+- product leaders making priority or resource calls
+- founders needing sharper product / business trade-offs
+
+### Try these 3 prompts first
+1. **Vague leadership ask**  
+   “My boss said our AI product needs more wow factor. Help me unpack what that actually means.”
+2. **Quarterly prioritization**  
+   “We only have room for 3 of these 8 requests next quarter. Help me prioritize them and explain what waits.”
+3. **Founder / product path trade-off**  
+   “Help me choose between a fast marketable AI layer and a slower trust-building product path.”
+
+### Why install this instead of asking a generic model directly?
+`pm-workbench` is **not** a PM theory pack or prompt pile. It is a workflow skill designed to:
+- clarify the upstream problem first
+- ask only the missing questions that change the decision
+- force explicit trade-offs and “not now” calls
+- shape outputs into reusable PM artifacts instead of polished rambling
+
+If you want the shortest path, go here:
+- [3-minute quick start](docs/TRY-IN-3-MINUTES.md)
+- [Try 3 prompts in 10 minutes](docs/TRY-3-PROMPTS.md)
 
 ![pm-workbench hero](docs/images/pm-workbench-hero.svg)
 
@@ -23,17 +45,17 @@ Most AI tools can talk about product work.
 
 It is opinionated in a few useful ways:
 - it routes by the **actual PM job to be done**, not by abstract framework recital
-- it asks for **only the missing context that would change the recommendation**
+- it asks for **only the missing context that would materially change the recommendation**
 - it prefers **artifacts you can reuse in meetings, reviews, and leadership syncs**
 - it makes **trade-offs, assumptions, risks, and “not now” calls** explicit
-- it works for both **single-feature PM work** and **product-leader communication / prioritization work**
-- it now includes a **benchmark layer** so visitors can compare it against generic AI in realistic scenarios
+- it works for both **single-feature PM work** and **product-leader / founder decision work**
+- it includes a **benchmark layer** so visitors can inspect side-by-side differences versus generic AI
 
 ![Generic AI vs pm-workbench](docs/images/pm-workbench-vs-generic-ai.svg)
 
 ## Benchmark snapshot
 
-This repo now includes a visible proof layer, not just positioning copy.
+This repo includes a visible proof layer, not just positioning copy.
 
 ![pm-workbench benchmark summary](docs/images/pm-workbench-benchmark-summary.svg)
 
@@ -43,39 +65,32 @@ Illustrative worked-example totals using the repo rubric:
 - **Executive summary with real ask:** generic AI `10` vs `pm-workbench 19`
 
 Why this matters:
-- the repo now shows differentiation across **upstream framing**, **portfolio prioritization**, and **leadership communication**
-- visitors can inspect the worked comparisons instead of relying on README claims
-- benchmark contributions now have a documented contribution path
+- the repo shows differentiation across **upstream framing**, **portfolio prioritization**, and **leadership communication**
+- visitors can inspect the comparison chain instead of relying on README claims
+- the benchmark now documents **fairness controls** and **known limitations**, not just self-scoring
 
 Start here:
 - [Benchmark kit](benchmark/README.md)
 - [Benchmark contribution guide](benchmark/CONTRIBUTING-BENCHMARKS.md)
 - [Share-friendly benchmark card](docs/images/pm-workbench-benchmark-card.svg)
 
-## Why a cold GitHub visitor should care
+## The core product logic
 
-A lot of PM-flavored AI repos look good until you ask:
-- does this help with an actual decision?
-- does it make the trade-offs visible?
-- can I reuse the output in a real review?
-- does it work for product leadership, not just feature-writing?
-- is there any proof beyond README claims?
+`pm-workbench` is built around a simple idea:
 
-`pm-workbench` is trying to answer **yes** to those questions.
+**Fuzzy ask → Clarify → Evaluate / Compare / Prioritize → Artifact → Leadership communication / planning / alignment**
 
-## The product thesis
+![pm-workbench workflow map](docs/images/pm-workbench-workflow-map.svg)
 
-In real teams, PM work usually breaks down in one of these ways:
+This matters because a lot of PM work fails at the upstream handoff:
 - vague asks turn into vague discussion
 - solution ideas arrive before the problem is clear
 - feature evaluation becomes opinion trading
 - prioritization becomes politics or scorecard theater
-- PRDs get too fluffy or too heavy
 - roadmap reviews hide what is intentionally *not* being done
 - leadership summaries bury the actual conclusion
-- postmortems describe symptoms but fail to change future behavior
 
-`pm-workbench` is built to reduce those failure modes.
+`pm-workbench` is designed to reduce those failure modes.
 
 ## What you get
 
@@ -96,7 +111,7 @@ In real teams, PM work usually breaks down in one of these ways:
 ### Artifact-first outputs
 
 This repo does not stop at “analysis.”
-It includes reusable PM artifact templates under `references/templates/` so the skill can naturally shape outputs into documents a PM can actually use.
+It includes reusable PM artifact templates under `references/templates/` so the skill naturally shapes outputs into things a PM can actually use.
 
 Current built-in artifact library:
 - Request Clarification Brief
@@ -112,16 +127,31 @@ Current built-in artifact library:
 - Head of Product Operating Review
 - Founder Business Review
 
+### Anti-template by design
+
+Artifact-first is a delivery choice, **not** a substitute for judgment.
+
+This repo explicitly tries to avoid template theater:
+- do **not** fill every section mechanically
+- skip sections that add no decision value
+- sharpen the conclusion before expanding the structure
+- when speed matters, prefer a sharp compressed artifact over a bloated “complete” one
+
+The goal is not to output something that merely **looks like a PM doc**.
+The goal is to output something that can actually **move a decision, alignment, or review forward**.
+
 ### Benchmark and trust layer
 
-This repo now includes a concrete proof layer under [`benchmark/`](benchmark/README.md):
+This repo includes a concrete proof layer under [`benchmark/`](benchmark/README.md):
 - realistic PM scenarios
 - a comparison rubric
 - a reusable scorecard
-- three worked comparison artifacts
+- worked comparison artifacts with fuller evidence chains
+- higher-pressure worked examples for launch readiness and mixed-signal diagnosis
+- fairness-control notes
+- known benchmark limitations
 - a benchmark contribution guide
-- a README-ready visual summary asset
-- a share-friendly benchmark card
+- README-ready visual summary assets
 
 It also includes a lightweight local validation script so the repo can check its own structural integrity:
 
@@ -130,97 +160,76 @@ cd skills/pm-workbench
 npm run validate
 ```
 
+What the validate script actually checks:
+- required repo structure exists
+- workflow and template references are not broken
+- important docs link to the right files
+- benchmark assets are present
+- example coverage is still wired correctly
+- newer onboarding assets are not missing from the repo
+
 That is not glamorous, but it matters. Repos feel more trustworthy when they can verify more than prose.
 
-## 5-minute evaluation
+## High-tension case studies
 
-If you want to know whether this skill is for you, test it with 4 prompts:
+If you want to understand the difference fast, start with these:
+- [Boss says the product needs more wow factor](examples/15-case-study-boss-wow-factor.md)
+- [Ops wants an AI gimmick feature, PM is unconvinced](examples/16-case-study-gimmick-feature.md)
+- [8 requests, only 3 fit next quarter](examples/17-case-study-quarterly-priority-conflict.md)
 
-### Prompt 1 — vague ask
-> “My boss said our AI product needs more of a wow factor. Help me figure out what that actually means before we jump to solutions.”
+These are intentionally more conflict-heavy than standard format examples.
+They are there to show where the skill should outperform generic AI:
+- messy stakeholder input
+- hidden assumptions
+- real trade-offs
+- explicit non-decisions
 
-What to look for:
-- it should separate **problem / goal / proposed solution**
-- it should ask only the **1–2 highest-value missing questions**
-- it should turn the ask into a clearer product question
+## Examples that show correction, not just output
 
-### Prompt 2 — feature value judgment
-> “Operations wants a daily AI fortune card feature to improve engagement. I’m worried it’s a gimmick. Help me evaluate it.”
+A good PM workbench should not only answer clean prompts.
+It should also **repair bad prompts**.
 
-What to look for:
-- it should not blindly mirror stakeholder enthusiasm
-- it should weigh **user value, business value, strategic fit, cost, and opportunity cost**
-- it should end with a clear **go / hold / no-go / experiment** recommendation
+Start here:
+- [Bad input → clarified problem framing](examples/18-bad-input-reframed.md)
+- [Bad priority request → defendable priority stack](examples/19-bad-priority-input-corrected.md)
 
-### Prompt 3 — product-leader prioritization
-> “We only have room for 3 of these 8 requests next quarter. Help me prioritize them and explain what should wait.”
+## Higher-pressure leader examples
 
-What to look for:
-- it should anchor on the **period objective**
-- it should say what is **top priority and what is explicitly not prioritized now**
-- it should produce reasoning you can defend to leadership
+If you want to see where the repo is now aiming to feel more like a real product-leadership workbench, start here:
+- [Launch readiness call under pressure](examples/20-launch-readiness-call.md)
+- [Mixed signals operating review](examples/21-mixed-signals-operating-review.md)
 
-### Prompt 4 — founder trade-off
-> “Help me choose between a fast marketable AI layer and a slower but more trust-building product improvement path.”
-
-What to look for:
-- it should define the real decision objective under company conditions
-- it should make sequencing and opportunity cost visible
-- it should recommend one path or a staged path with conditions
-
-If the outputs feel more like usable PM judgment than generic AI explanation, the skill is doing its job.
-
-## How it behaves
-
-### 1. Upstream first
-It solves the most upstream bottleneck first.
-If the request is still fuzzy, it clarifies before evaluating.
-If evaluation is unresolved, it does not pretend the PRD is the real next step.
-
-### 2. Minimum necessary questioning
-It asks follow-up questions only when missing facts would materially change the answer.
-If not, it moves.
-
-### 3. Artifact-first by default
-When a task naturally maps to a PM deliverable, it prefers a reusable artifact shape instead of loose analysis.
-
-### 4. Fast-path friendly
-If the user needs a quick take, it can produce a clearly labeled compressed artifact instead of stalling for perfect context.
-
-### 5. Trade-off honest
-It is expected to name:
-- assumptions
-- information gaps
-- risks
-- dependencies
-- what should *not* be done now
-
-### 6. Leader-mode aware
-When the audience is a product leader, founder, or executive stakeholder, it should make:
-- business consequence
-- sequencing
-- resourcing
-- explicit asks
-
-much easier to scan.
+These are useful for testing whether the skill can:
+- make a condition-based recommendation under uncertainty
+- explain what not to do, not just what to do
+- synthesize mixed signals into a real next focus
 
 ## Install and use
 
-## Option 1 — use the source folder directly
+### Option 1 — use the source folder directly
 This is the easiest and most transparent path.
 
 1. Clone or copy this repository.
 2. Place the `pm-workbench` folder under your OpenClaw skills workspace.
-3. Verify the skill is recognized:
+3. Run the local repo validation first:
    ```bash
-   openclaw skills info pm-workbench
+   cd skills/pm-workbench
+   npm run validate
+   ```
+4. If your OpenClaw setup auto-discovers workspace skills, verify recognition with:
+   ```bash
    openclaw skills check
    ```
-4. Start with a real PM prompt.
+5. Start with a real PM prompt.
 
-## Option 2 — use a packaged `.skill` in your own workflow
+Notes:
+- this repo is designed as a **source-first OpenClaw skill**
+- local recognition can depend on your OpenClaw version and skill-path configuration
+- `npm run validate` is the most reliable first check that the repo itself is structurally sound
+
+### Option 2 — use a packaged `.skill`
 If your environment already produces or distributes packaged OpenClaw skills, this repo is structured cleanly enough for that path too.
-But the default recommendation is still: **start from source, verify fast, then customize.**
+But the default recommendation is still: **start from source, validate fast, then customize.**
 
 ## First prompts to try
 - “Help me unpack this request before we jump to solutions.”
@@ -229,6 +238,25 @@ But the default recommendation is still: **start from source, verify fast, then 
 - “Turn this into a one-page exec summary for leadership.”
 - “Help me prioritize this quarter and say what should wait.”
 - “Help me write a lightweight postmortem from this launch result.”
+
+## In scope vs out of scope
+
+### In scope
+- PM judgment
+- product decision framing
+- prioritization and leadership communication
+- reusable PM artifacts
+- founder / product-leader product-business trade-offs
+
+### Out of scope
+- raw data-heavy analytics
+- deep project or program tracking
+- legal or compliance review
+- general business operations tooling
+- tasks where data crunching matters more than product judgment
+
+This boundary is deliberate.
+The repo gets weaker if it tries to become a generic operating system for all business work.
 
 ## Repository structure
 
@@ -240,45 +268,25 @@ pm-workbench/
 ├── CONTRIBUTING.md
 ├── ROADMAP.md
 ├── package.json
-├── benchmark/
-│   ├── README.md
-│   ├── CONTRIBUTING-BENCHMARKS.md
-│   ├── scenarios.md
-│   ├── rubric.md
-│   ├── scorecard.md
-│   ├── worked-example-product-leader.md
-│   ├── worked-example-clarify-request.md
-│   └── worked-example-exec-summary.md
-├── docs/
-│   ├── GETTING-STARTED.md
-│   ├── TRY-3-PROMPTS.md
-│   ├── PRODUCT-LEADER-PLAYBOOK.md
-│   └── images/
-├── examples/
-│   ├── 01-clarify-vague-request.md
-│   ├── 02-feature-evaluation-memo.md
-│   ├── 03-exec-summary.md
-│   ├── 04-prd-lite.md
-│   ├── 05-postmortem-lite.md
-│   ├── 06-decision-brief.md
-│   ├── 07-prioritization-stack.md
-│   ├── 08-roadmap-one-pager.md
-│   ├── 09-metrics-scorecard.md
-│   ├── 10-product-leader-quarterly-priority-call.md
-│   ├── 11-founder-strategy-decision.md
-│   ├── 12-portfolio-review-summary.md
-│   ├── 13-head-of-product-operating-review.md
-│   ├── 14-founder-business-review.md
-│   └── README.md
+├── benchmark/      # scenarios, rubric, scorecard, worked examples
+├── docs/           # onboarding, quick-start, visuals, product-leader guide
+├── examples/       # reusable PM and product-leader examples
 ├── references/
-│   ├── workflows/
-│   └── templates/
+│   ├── workflows/  # workflow behavior specs
+│   └── templates/  # default artifact shapes
 └── scripts/
     └── validate-repo.js
 ```
 
+Current repo snapshot:
+- 9 workflow references
+- 12 templates
+- 21 examples
+- benchmark kit with baseline + higher-pressure evaluation assets
+
 ## What to read next
 
+- **3-minute quick start:** [docs/TRY-IN-3-MINUTES.md](docs/TRY-IN-3-MINUTES.md)
 - **Quick start:** [docs/GETTING-STARTED.md](docs/GETTING-STARTED.md)
 - **Try it fast:** [docs/TRY-3-PROMPTS.md](docs/TRY-3-PROMPTS.md)
 - **Benchmark kit:** [benchmark/README.md](benchmark/README.md)
@@ -288,34 +296,9 @@ pm-workbench/
 - **How to contribute:** [CONTRIBUTING.md](CONTRIBUTING.md)
 - **Where the skill is going:** [ROADMAP.md](ROADMAP.md)
 
-## Best for
-
-`pm-workbench` is especially strong when you need:
-- clearer framing for ambiguous product asks
-- fast but defendable feature / initiative judgment
-- structured option comparison with a recommendation
-- prioritization that reflects real constraints
-- lightweight PM artifacts instead of AI rambling
-- sharper upward communication for product leaders
-- roadmap and resource trade-offs that show explicit non-decisions
-- founder-style decisions around speed, quality, narrative, and trust
-- portfolio review summaries that sharpen above-the-line / below-the-line calls
-- operating reviews that turn mixed signals into leadership decisions
-- founder business reviews that separate narrative momentum from business truth
-- postmortems that create reusable learning, not ceremony
-
-## Less ideal for
-
-It is less ideal for:
-- pure SQL / data analysis heavy work
-- research repository management
-- highly specialized legal / compliance writing
-- deeply operational execution tracking tools
-- tasks where raw data processing matters more than product judgment
-
 ## Validation and quality bar
 
-This repo is being built with a pretty simple quality bar:
+This repo is being built with a simple quality bar:
 - the main `SKILL.md` stays concise and routing-oriented
 - detailed behavior lives in workflow references
 - reusable output shapes live in templates
@@ -324,13 +307,14 @@ This repo is being built with a pretty simple quality bar:
 - benchmark assets should make side-by-side comparison possible
 - local validation should catch obvious structural drift early
 
-Local verification completed in the active workspace:
-- `openclaw skills info pm-workbench` -> **Ready**
-- `openclaw skills check` -> `pm-workbench` recognized as ready to use
+Local verification completed for the repo structure:
+- `npm run validate` -> **passes locally**
+- validation confirms the expected workflow, template, example, and benchmark wiring is present
+- OpenClaw skill recognition may vary by local version and skill-path configuration
 
 ## Contributing
 
-If you want to improve the skill, please do it in a product-minded way:
+If you want to improve the skill, do it in a product-minded way:
 - strengthen judgment quality, not just template volume
 - prefer artifacts that help real PM work move forward
 - add examples when adding new workflows or templates
@@ -342,11 +326,11 @@ Start here: [CONTRIBUTING.md](CONTRIBUTING.md)
 ## Roadmap
 
 Short version:
-- improve onboarding and evaluation assets
-- deepen artifact coverage for more PM workflows
-- strengthen product-leader / strategy use cases
-- add sharper benchmark scenarios and validation loops
-- make the repo easier for contributors to extend without bloating the core skill
+- strengthen trust with harder evidence and fairer benchmark framing
+- sharpen the 3 highest-signal workflows first
+- reduce cold-start friction for new visitors
+- deepen product-leader / founder trade-off support without losing focus
+- expand only after the core judgment layer gets sharper
 
 See the fuller plan in [ROADMAP.md](ROADMAP.md).
 

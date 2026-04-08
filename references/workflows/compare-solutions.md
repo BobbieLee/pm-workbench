@@ -1,157 +1,17 @@
-# compare-solutions
+# compare-solutions\n\n## Purpose\n\nUse this workflow to compare two or more viable solution options and recommend the best path.\n\nThe goal is not to list abstract pros and cons. The goal is to help the user answer:\n- which option best fits the real objective\n- what each option optimizes for or sacrifices\n- what the major trade-offs are\n- which path should be recommended now\n\n## Trigger phrases\n\nPrefer this workflow when the user says things like:\n- Help me compare these two options.\n- Which solution should we choose?\n- A and B both seem possible; how do we decide?\n- Tech, design, and business all want different things.\n- Help me explain the trade-offs.\n- I need a recommendation, not just a list.\n\n## Routing rules\n\nChoose this workflow when one or more of the following is true:\n1. There are already two or more concrete solution options.\n2. The core task is choosing among alternatives, not defining the problem.\n3. The user needs trade-off analysis and a recommendation.\n4. The decision depends on balancing speed, impact, complexity, risk, or extensibility.\n\nDo **not** use this workflow as the primary one when:\n- the request itself is still fuzzy -> use `clarify-request`\n- the question is whether to do the initiative at all -> use `evaluate-feature-value`\n- there is only one option and the user needs it written up -> use a requirements workflow\n\n## Minimum input\n\nTry to gather:\n- the target problem or objective\n- option A / B / C descriptions\n- evaluation criteria already known\n- major constraints\n- timeline pressure\n- resource or dependency constraints\n\nAt minimum, start once you know:\n- the decision objective\n- at least two concrete options\n- one or more meaningful constraints\n\n## Follow-up policy\n\n### Default number of follow-ups\n- Standard mode: 3-5\n- Fast decision mode: 2-3\n\n### Highest-priority follow-ups\n1. What is the primary objective of this decision?\n2. What matters most right now: speed, impact, cost, risk, or long-term scalability?\n3. What are the hard constraints?\n4. What does each option clearly do better or worse?\n5. Is a phased path possible, such as quick win first and scalable version later?\n\n### Secondary follow-ups\n- Which stakeholders prefer which option, and why?\n- Which option is easiest to explain or align around?\n- Which option creates the most downstream flexibility?\n- Which option has the highest implementation risk?\n\n### When to reduce questions\nIf the user already provided a structured comparison context, move quickly to analysis instead of re-interviewing them.\n\n### Critical-premise rule\nIf the recommendation depends heavily on 1-2 missing facts, ask those before recommending a winner.\nTypical examples:\n- the true decision objective\n- the primary constraint (speed, impact, cost, risk, long-term scalability)\n- user maturity or audience profile\n\n### When to produce a provisional recommendation\nDo it when:\n- the user is under time pressure\n- the options are reasonably clear\n- waiting for perfect information would delay the decision more than improve it\n\nIf the recommendation is provisional, label:\n- decision assumptions\n- major unknowns\n- what could change the recommendation\n- what can be decided now versus validated next\n\n## Processing logic\n\nFollow this sequence:\n1. Restate the decision objective.\n2. Identify what scarce resource or strategic advantage the decision should protect.\n3. Define the evaluation criteria.\n4. Summarize each option fairly.\n5. Compare options against the most important criteria.\n6. Highlight explicit trade-offs.\n7. Recommend one path, or recommend a phased combination if appropriate.\n8. State why not the other option now.\n9. Give the next action.\n10. When useful, shape the output as a **Decision Brief**.\n\n## Common failure modes\n\nWeak output usually looks like this:\n- listing symmetrical pros and cons without choosing\n- comparing options before stating the real decision objective\n- using too many criteria and hiding the actual trade-off\n- recommending a winner without explaining why not the others\n- ignoring a staged path when that is clearly the highest-quality answer\n- describing preferences instead of making a defendable decision\n\n## What strong output looks like\n\nStrong output should:\n- define the real decision objective before comparing anything\n- identify what the choice is protecting: trust, speed, focus, market window, or long-term leverage\n- make the decisive trade-off explicit, not buried in a matrix\n- choose a winner or staged path with a clear reason\n- explain why the rejected option is not right now, not just why it is imperfect\n- leave the team knowing what should happen next and what assumption carries the choice\n- use condition-based language if uncertainty remains but a call is still needed\n\n## Output structure\n\nUse this structure when helpful:\n\n1. Task understanding\n2. Decision objective\n3. What this decision is protecting\n4. Evaluation criteria\n5. Option-by-option summary\n6. Comparison and trade-offs\n7. Recommended option\n8. Why not the others now\n9. Decide now vs validate next\n10. Suggested next step\n\nDefault artifact when the user needs something reusable:\n- `references/templates/decision-brief.md`\n\n## Output length control\n\n### Short\nFor fast alignment:\n- recommendation\n- decisive trade-off\n- why not the other option now\n- next step\n\n### Standard\nFor team discussion:\n- full output structure above\n- or a compact **Decision Brief**\n\n### Long\nFor inclusion in a decision memo:\n- standard structure plus assumptions, risks, and implementation implications\n\n## Success criteria\n\nA good result should:\n- compare against decision criteria rather than personal preference\n- make trade-offs explicit\n- give a clear recommendation\n- explain why other options are less suitable now\n- leave the team knowing what to do next\n- produce a reusable decision artifact when needed\n- make the why-now / why-not-now logic visible\n\n## Failure cases\n\nTreat these as failures:\n1. listing pros and cons without a recommendation\n2. comparing options without a decision objective\n3. using too many criteria and obscuring the real decision\n4. favoring a solution without explaining the trade-off\n5. ignoring the possibility of a phased path when that is clearly best\n\n## Notes\n\nDo not force a single winner if the best answer is a staged approach. The real job is decision quality, not artificial neatness.\n
 
-## Purpose
 
-Use this workflow to compare two or more viable solution options and recommend the best path.
+## Forced-choice rule for company-stage calls
 
-The goal is not to list abstract pros and cons. The goal is to help the user answer:
-- which option best fits the real objective
-- what each option optimizes for or sacrifices
-- what the major trade-offs are
-- which path should be recommended now
+When the decision is really about where the company should spend a scarce period-level resource:
+- default to a clear current-period choice
+- do not let a staged path become a disguised non-decision
+- if you recommend sequencing, explicitly state:
+  - what we are choosing first
+  - what we are not choosing first
+  - why the non-chosen path is the wrong use of the current scarce resource now
 
-## Trigger phrases
+A staged answer is only strong if the first-stage choice is unmistakable.
 
-Prefer this workflow when the user says things like:
-- Help me compare these two options.
-- Which solution should we choose?
-- A and B both seem possible; how do we decide?
-- Tech, design, and business all want different things.
-- Help me explain the trade-offs.
-- I need a recommendation, not just a list.
-
-## Routing rules
-
-Choose this workflow when one or more of the following is true:
-1. There are already two or more concrete solution options.
-2. The core task is choosing among alternatives, not defining the problem.
-3. The user needs trade-off analysis and a recommendation.
-4. The decision depends on balancing speed, impact, complexity, risk, or extensibility.
-
-Do **not** use this workflow as the primary one when:
-- the request itself is still fuzzy -> use `clarify-request`
-- the question is whether to do the initiative at all -> use `evaluate-feature-value`
-- there is only one option and the user needs it written up -> use a requirements workflow
-
-## Minimum input
-
-Try to gather:
-- the target problem or objective
-- option A / B / C descriptions
-- evaluation criteria already known
-- major constraints
-- timeline pressure
-- resource or dependency constraints
-
-At minimum, start once you know:
-- the decision objective
-- at least two concrete options
-- one or more meaningful constraints
-
-## Follow-up policy
-
-### Default number of follow-ups
-- Standard mode: 3-5
-- Fast decision mode: 2-3
-
-### Highest-priority follow-ups
-1. What is the primary objective of this decision?
-2. What matters most right now: speed, impact, cost, risk, or long-term scalability?
-3. What are the hard constraints?
-4. What does each option clearly do better or worse?
-5. Is a phased path possible, such as quick win first and scalable version later?
-
-### Secondary follow-ups
-- Which stakeholders prefer which option, and why?
-- Which option is easiest to explain or align around?
-- Which option creates the most downstream flexibility?
-- Which option has the highest implementation risk?
-
-### When to reduce questions
-If the user already provided a structured comparison context, move quickly to analysis instead of re-interviewing them.
-
-### Critical-premise rule
-If the recommendation depends heavily on 1-2 missing facts, ask those before recommending a winner.
-Typical examples:
-- the true decision objective
-- the primary constraint (speed, impact, cost, risk, long-term scalability)
-- user maturity or audience profile
-
-### When to produce a provisional recommendation
-Do it when:
-- the user is under time pressure
-- the options are reasonably clear
-- waiting for perfect information would delay the decision more than improve it
-
-If the recommendation is provisional, label:
-- decision assumptions
-- major unknowns
-- what could change the recommendation
-
-## Processing logic
-
-Follow this sequence:
-1. Restate the decision objective.
-2. Define the evaluation criteria.
-3. Summarize each option fairly.
-4. Compare options against the most important criteria.
-5. Highlight explicit trade-offs.
-6. Recommend one path, or recommend a phased combination if appropriate.
-7. Give the next action.
-8. When useful, shape the output as a **Decision Brief**.
-
-## Output structure
-
-Use this structure when helpful:
-
-1. Task understanding
-2. Decision objective
-3. Evaluation criteria
-4. Option-by-option summary
-5. Comparison and trade-offs
-6. Recommended option
-7. Why not the others
-8. Suggested next step
-
-Default artifact when the user needs something reusable:
-- `references/templates/decision-brief.md`
-
-## Output length control
-
-### Short
-For fast alignment:
-- recommendation
-- top trade-offs
-- next step
-
-### Standard
-For team discussion:
-- full output structure above
-- or a compact **Decision Brief**
-
-### Long
-For inclusion in a decision memo:
-- standard structure plus assumptions, risks, and implementation implications
-
-## Success criteria
-
-A good result should:
-- compare against decision criteria rather than personal preference
-- make trade-offs explicit
-- give a clear recommendation
-- explain why other options are less suitable now
-- leave the team knowing what to do next
-- produce a reusable decision artifact when needed
-
-## Failure cases
-
-Treat these as failures:
-1. listing pros and cons without a recommendation
-2. comparing options without a decision objective
-3. using too many criteria and obscuring the real decision
-4. favoring a solution without explaining the trade-off
-5. ignoring the possibility of a phased path when that is clearly best
-
-## Notes
-
-Do not force a single winner if the best answer is a staged approach. The real job is decision quality, not artificial neatness.
+## Extra success criterion for company-level trade-offs
+- when the trade-off is company-level, make the current-period primary call unmistakable

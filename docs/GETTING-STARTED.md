@@ -2,6 +2,15 @@
 
 This guide is for someone discovering `pm-workbench` cold and wanting to know, fast, whether it is worth adopting.
 
+## Fastest path
+
+If you only have a few minutes:
+1. read [`TRY-IN-3-MINUTES.md`](TRY-IN-3-MINUTES.md)
+2. run the 3 prompts in [`TRY-3-PROMPTS.md`](TRY-3-PROMPTS.md)
+3. compare the outputs against the benchmark rubric in [`../benchmark/rubric.md`](../benchmark/rubric.md)
+
+If the skill feels more decision-grade than generic AI after that, keep going.
+
 ## What success looks like
 
 After 10-15 minutes with this skill, you should know:
@@ -143,6 +152,7 @@ What it checks:
 - example files are indexed in `../examples/README.md`
 - benchmark and leader-playbook files are present
 - important README links are not silently broken
+- new onboarding assets are present
 
 This is not a full test suite.
 It is a lightweight trust check to reduce repo drift.
@@ -186,7 +196,8 @@ For many uses, the best path is:
 - inspect reusable artifact shapes in `references/templates/`
 - use the benchmark pack in `benchmark/`
 - read the product-leader guide in [`PRODUCT-LEADER-PLAYBOOK.md`](PRODUCT-LEADER-PLAYBOOK.md)
-- read [`TRY-3-PROMPTS.md`](TRY-3-PROMPTS.md) for a very fast cold-start test
+- read [`TRY-IN-3-MINUTES.md`](TRY-IN-3-MINUTES.md) for the fastest cold-start test
+- read [`TRY-3-PROMPTS.md`](TRY-3-PROMPTS.md) for a quick comparison set
 - read [`../ROADMAP.md`](../ROADMAP.md) if you want to contribute or extend the repo
 - read [`../CONTRIBUTING.md`](../CONTRIBUTING.md) if you want to improve workflow coverage or quality
 

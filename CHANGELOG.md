@@ -4,6 +4,114 @@ All notable changes to `pm-workbench` will be documented in this file.
 
 ---
 
+## v1.0.4 — Decision-under-uncertainty hardening
+
+### Added
+- new higher-pressure examples:
+  - `examples/20-launch-readiness-call.md`
+  - `examples/21-mixed-signals-operating-review.md`
+- new benchmark worked examples:
+  - `benchmark/worked-example-launch-readiness.md`
+  - `benchmark/worked-example-mixed-signals.md`
+
+### Improved
+- strengthened `SKILL.md` with a cross-workflow **conditional recommendation rule** so the skill is more likely to make a usable call under uncertainty instead of stopping at “needs more information”
+- strengthened `SKILL.md` with a **leader-grade decision rule** focused on period objective, scarce-resource protection, and explicit non-decisions
+- sharpened `compare-solutions` around decisive trade-offs, what the choice is protecting, why-not-the-other-option-now logic, and decide-now vs validate-next framing
+- sharpened `prepare-exec-summary` around launch / readiness recommendation framing, decision-now vs validation-next, and clearer upward decision asks
+- sharpened `build-roadmap` around scarce-resource protection, stronger not-now language, and clearer stage-goal defense
+- sharpened `prioritize-requests` around scarce-resource framing, non-decision language patterns, and more explicit below-the-line logic
+- strengthened the matching templates:
+  - `references/templates/decision-brief.md`
+  - `references/templates/exec-summary.md`
+  - `references/templates/roadmap-one-pager.md`
+  - `references/templates/head-of-product-operating-review.md`
+- updated example and benchmark indexes so the new higher-pressure scenarios are discoverable from the repo surface
+
+### Validated
+- `npm run validate` passes locally after the decision-under-uncertainty upgrade
+
+### Notes
+This version is aimed at making `pm-workbench` feel less like a strong PM analyst and more like a stronger product-leadership workbench under uncertainty, conflict, and pressure.
+
+---
+
+## v1.0.3 — High-pressure acceptance suite
+
+### Added
+- new benchmark pressure-test asset:
+  - `benchmark/high-pressure-acceptance-suite.md`
+
+### Improved
+- extended the benchmark layer from baseline comparison scenarios to harsher real-world acceptance testing
+- added more conflict-heavy, ambiguity-heavy, leadership-heavy scenarios designed to reveal whether `pm-workbench` still holds judgment quality under pressure
+- connected the pressure-test suite back into `benchmark/README.md` and `benchmark/scenarios.md` so it works as part of the repo’s visible evaluation path
+
+### Notes
+This version is about shifting from “looks strong in curated examples” toward “can survive messier real PM conditions.”
+
+---
+
+## v1.0.2 — Core judgment sharpening
+
+### Improved
+- sharpened `prepare-exec-summary` with clearer failure modes, stronger-output standards, and more explicit emphasis on decision ask, business consequence, and why-now logic
+- sharpened `compare-solutions` with stronger standards for decisive trade-off framing, why-not-the-other-option reasoning, and staged-path judgment
+- sharpened `build-roadmap` with clearer standards for sequencing logic, explicit non-focus calls, and resource-constrained stage framing
+- strengthened the matching templates:
+  - `references/templates/exec-summary.md`
+  - `references/templates/decision-brief.md`
+  - `references/templates/roadmap-one-pager.md`
+- updated core examples so the repo’s visible examples better reflect the newer judgment bar:
+  - `examples/03-exec-summary.md`
+  - `examples/06-decision-brief.md`
+  - `examples/08-roadmap-one-pager.md`
+
+### Validated
+- `npm run validate` passes locally after the workflow and template upgrades
+
+### Notes
+This version is focused on making the core workflow layer feel less like “good structure” and more like “stronger PM judgment under real constraints.”
+
+---
+
+## v1.0.1 — Proof and onboarding hardening
+
+### Added
+- new ultra-fast onboarding asset:
+  - `docs/TRY-IN-3-MINUTES.md`
+- new workflow-map visual:
+  - `docs/images/pm-workbench-workflow-map.svg`
+- new high-tension case-study examples:
+  - `examples/15-case-study-boss-wow-factor.md`
+  - `examples/16-case-study-gimmick-feature.md`
+  - `examples/17-case-study-quarterly-priority-conflict.md`
+- new bad-input correction examples:
+  - `examples/18-bad-input-reframed.md`
+  - `examples/19-bad-priority-input-corrected.md`
+
+### Improved
+- tightened README first screen around value proposition, fit, fastest trial path, and differentiation from generic AI
+- added clearer in-scope / out-of-scope boundary so the repo reads like a focused product, not a drifting strategy dump
+- upgraded benchmark README with fairness-control notes and explicit benchmark limitations
+- upgraded benchmark worked examples so they more clearly show original input, representative generic AI pattern, representative `pm-workbench` pattern, judgment-vs-format distinction, and benchmark caveats
+- sharpened the 3 highest-signal workflows:
+  - `clarify-request`
+  - `evaluate-feature-value`
+  - `prioritize-requests`
+- added clearer failure-mode and strong-output standards to the most important workflows
+- strengthened `SKILL.md` with an explicit anti-template rule so artifact quality does not replace judgment quality
+- improved `docs/GETTING-STARTED.md` and `CONTRIBUTING.md` to make adoption and extension paths faster and more coherent
+- rewrote `ROADMAP.md` around product evolution logic: trust -> core judgment -> expansion
+
+### Validated
+- `npm run validate` passes locally after the upgrade
+
+### Notes
+This version is mainly about making `pm-workbench` easier to trust, easier to try quickly, and more obviously differentiated on core PM judgment.
+
+---
+
 ## v1.0.0 — Release-ready PM judgment layer
 
 ### Added
@@ -46,8 +154,8 @@ All notable changes to `pm-workbench` will be documented in this file.
 
 ### Validated
 - `npm run validate` passes locally
-- `openclaw skills info pm-workbench` reports **Ready**
-- `openclaw skills check` recognizes the skill in the local workspace
+- repo structure validated for source-first local use
+- OpenClaw skill recognition may depend on local version and skill-path configuration
 
 ### Notes
 This is the first version that feels like a coherent 1.0 release point: clear product thesis, reusable artifact system, initial proof layer, stronger leadership scenarios, and enough validation to publish with confidence.

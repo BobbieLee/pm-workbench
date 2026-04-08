@@ -9,14 +9,25 @@ Its job is simple:
 
 ---
 
-## Scenario
+## Original input
 
 ### Prompt
 > My CEO keeps saying our AI workspace product needs more of a “wow factor” because competitors feel more exciting in demos. Help me figure out what that actually means before we jump into building random features.
 
+### Why this is a useful test case
+This prompt is intentionally dangerous.
+It contains:
+- executive pressure
+- solution gravity
+- a vague success word
+- competitor anxiety
+
+A weak system will jump straight into feature ideation.
+A stronger PM workflow should notice that the real problem is still framing.
+
 ---
 
-## Representative generic AI pattern
+## Representative generic AI output
 
 ### Typical shape
 - immediately brainstorms “wow” features
@@ -33,7 +44,7 @@ Its job is simple:
 
 ---
 
-## Representative `pm-workbench` target pattern
+## Representative `pm-workbench` output pattern
 
 ### Typical shape
 - names the ambiguity explicitly
@@ -59,6 +70,21 @@ Its job is simple:
 
 ---
 
+## Why this is judgment advantage, not just format advantage
+
+This is not mainly about better formatting.
+The real difference is:
+- generic AI assumes the executive wording already points at the right problem
+- `pm-workbench` treats the wording itself as something to debug
+
+Even in plain text without headings, the stronger answer would still be stronger because it:
+- delays solutioning until the decision target is clearer
+- identifies the real ambiguity
+- asks the smallest number of high-value questions
+- creates a more defensible next move
+
+---
+
 ## Example rubric scoring
 
 | Criterion | Generic AI | pm-workbench target | Why |
@@ -71,6 +97,20 @@ Its job is simple:
 | Product-leader relevance | 1 | 2 | The target helps a leader guide the discussion instead of multiplying noise |
 | Honesty about uncertainty | 1 | 3 | The target labels ambiguity instead of pretending confidence |
 | **Total** | **3** | **18** | Clear gap in upstream PM judgment |
+
+---
+
+## Benchmark notes
+
+### Fairness note
+- same original prompt assumed for both comparison sides
+- this worked example is illustrative, not a claim of statistically stable performance
+- the output snippets are intentionally short enough to inspect quickly, not full transcripts
+
+### Limitation note
+This example proves only one thing well:
+`pm-workbench` is designed to be stronger at **upstream clarification under executive ambiguity**.
+It does not prove universal superiority in every PM task.
 
 ---
 

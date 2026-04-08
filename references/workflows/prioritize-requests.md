@@ -88,18 +88,50 @@ If doing a first pass, explicitly mark:
 - rough judgments
 - unknown effort or dependency areas
 - items that need validation before final sequencing
+- what can be decided now versus what still needs validation
 
 ## Processing logic
 
 Follow this sequence:
 1. Restate the release / period objective.
-2. Group items by must-do, high-value, and deferrable candidates.
-3. Compare items by impact, urgency, effort, dependency, and strategic importance.
-4. Produce a ranked stack or tiered priority group.
-5. Explain the prioritization logic clearly.
-6. Call out what is intentionally not prioritized.
-7. Recommend the next planning step.
-8. When useful, shape the output as a **Prioritization Stack**.
+2. Identify the scarcest resource being spent in this priority call.
+3. Group items by must-do, high-value, and deferrable candidates.
+4. Compare items by impact, urgency, effort, dependency, and strategic importance.
+5. Produce a ranked stack or tiered priority group.
+6. Explain the prioritization logic clearly.
+7. Call out what is intentionally not prioritized.
+8. Recommend the next planning step.
+9. When useful, shape the output as a **Prioritization Stack**.
+
+## Non-decision language patterns
+
+When something is below the line, prefer language like:
+- not worth spending the current scarce resource on
+- valuable, but not under this period objective
+- not a forever no, but a current-strategy no
+- visible, but below the line unless X changes
+- strategically real, but displaced by a sharper bottleneck right now
+
+Avoid turning non-decisions into vague politeness.
+
+## Common failure modes
+
+Weak output usually looks like this:
+- ranking items without first stating the period objective
+- giving a top 4 or top 5 when the real constraint is top 3
+- showing a score table without a defendable portfolio call
+- saying “can revisit later” instead of naming the below-the-line set explicitly
+- ignoring sequencing, commitments, or what the organization can actually absorb
+
+## What strong output looks like
+
+Strong output should:
+- anchor the stack to a clear period objective
+- identify what scarce resource the top choices are consuming
+- produce an explicit above-the-line / below-the-line call
+- explain why lower-ranked items are not being prioritized now
+- show the main trade-off and resource consequence clearly
+- read like something leadership could review with minimal cleanup
 
 ## Output structure
 
@@ -107,12 +139,14 @@ Use this structure when helpful:
 
 1. Task understanding
 2. Current objective and constraints
-3. Prioritization criteria
-4. Ranked or tiered list
-5. Reasoning for top items
-6. Deferred / lower-priority items
-7. Risks or sequencing notes
-8. Suggested next step
+3. Scarcest resource being spent
+4. Prioritization criteria
+5. Ranked or tiered list
+6. Reasoning for top items
+7. Deferred / lower-priority items
+8. Decide now vs validate next
+9. Risks or sequencing notes
+10. Suggested next step
 
 Default artifact when the user needs something reusable:
 - `references/templates/prioritization-stack.md`
@@ -123,6 +157,7 @@ Default artifact when the user needs something reusable:
 For quick team sync:
 - P0 / P1 / P2 list
 - short reason for top items
+- what is clearly below the line
 - next action
 
 ### Standard

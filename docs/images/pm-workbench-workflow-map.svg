@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">pm-workbench workflow map</title>
+  <desc id="desc">Fuzzy ask flows through clarify, evaluate compare prioritize, artifact, and leadership communication planning alignment.</desc>
+  <style>
+    .bg { fill: #f8fafc; }
+    .card { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 20; ry: 20; }
+    .text { font-family: Inter, Arial, sans-serif; fill: #0f172a; font-size: 24px; font-weight: 600; }
+    .sub { font-family: Inter, Arial, sans-serif; fill: #475569; font-size: 15px; }
+    .arrow { stroke: #6366f1; stroke-width: 4; fill: none; marker-end: url(#arrowhead); }
+  </style>
+  <rect class="bg" width="1200" height="280" rx="24" ry="24"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6366f1" />
+    </marker>
+  </defs>
+  <rect class="card" x="24" y="70" width="180" height="120"/>
+  <text class="text" x="114" y="118" text-anchor="middle">Fuzzy ask</text>
+  <text class="sub" x="114" y="148" text-anchor="middle">messy input</text>
+
+  <rect class="card" x="246" y="70" width="180" height="120"/>
+  <text class="text" x="336" y="118" text-anchor="middle">Clarify</text>
+  <text class="sub" x="336" y="148" text-anchor="middle">frame the real problem</text>
+
+  <rect class="card" x="468" y="70" width="240" height="120"/>
+  <text class="text" x="588" y="112" text-anchor="middle">Evaluate / Compare</text>
+  <text class="text" x="588" y="142" text-anchor="middle">/ Prioritize</text>
+  <text class="sub" x="588" y="170" text-anchor="middle">make the trade-off visible</text>
+
+  <rect class="card" x="750" y="70" width="180" height="120"/>
+  <text class="text" x="840" y="118" text-anchor="middle">Artifact</text>
+  <text class="sub" x="840" y="148" text-anchor="middle">decision-ready output</text>
+
+  <rect class="card" x="972" y="70" width="204" height="120"/>
+  <text class="text" x="1074" y="106" text-anchor="middle">Leadership</text>
+  <text class="text" x="1074" y="136" text-anchor="middle">communication</text>
+  <text class="sub" x="1074" y="166" text-anchor="middle">planning / alignment</text>
+
+  <path class="arrow" d="M204 130 H246"/>
+  <path class="arrow" d="M426 130 H468"/>
+  <path class="arrow" d="M708 130 H750"/>
+  <path class="arrow" d="M930 130 H972"/>
+</svg>

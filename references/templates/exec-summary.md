@@ -39,6 +39,7 @@ Produce a concise, decision-ready summary that is easy for an executive reader t
 - What do you recommend?
 - Or: what decision do you need from the reader?
 - Be explicit about the preferred path.
+- Make the ask readable as approve / challenge / modify.
 
 ## 5. Supporting rationale
 - Why is this the right call?
@@ -50,12 +51,20 @@ Produce a concise, decision-ready summary that is easy for an executive reader t
 - What is still uncertain?
 - What should the reader be aware of before deciding?
 
-## 7. Support needed
+## 7. What would change this call
+- Which missing evidence or future condition would change the recommendation?
+- What is still a confidence-sensitive assumption?
+
+## 8. Decide now vs validate next
+- What should be decided immediately?
+- What should be validated before broader commitment?
+
+## 9. Support needed
 - What alignment, resource, escalation, or decision is needed?
 - From whom?
 - By when?
 
-## 8. Next step
+## 10. Next step
 - What happens next if the recommendation is accepted?
 - What is the immediate action plan?
 
@@ -78,3 +87,4 @@ A strong executive summary should:
 - stay brief without becoming vague
 - surface major risks clearly
 - end with a concrete ask or next step
+- make the timing logic visible

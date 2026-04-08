@@ -13,101 +13,68 @@ The ambition is to make `pm-workbench` feel like the **default PM judgment layer
 
 ## Current phase
 
-### Phase 1 — strong local foundation
-Status: largely in place
+### Phase 1 — Trust
+Status: in progress
 
 Focus:
-- core routing across the PM lifecycle
-- artifact-first behavior for key workflows
-- GitHub-readable positioning and examples
-- local validation as an OpenClaw-ready skill
-- first benchmark and product-leader support layer
-
-## Next priorities
-
-### 1. Benchmark-grade evaluation set
-Goal:
-Create a compact but sharp benchmark pack that helps compare `pm-workbench` with generic AI behavior.
-
-Why it matters:
-This project will be more compelling if it can show where it wins, not just claim it.
+- harder benchmark proof
+- clearer quick start and cold-start trial path
+- stronger case studies for first-time visitors
+- more inspectable evidence chain, not just stronger copy
 
 Current state:
 - benchmark pack added under `benchmark/`
-- includes scenarios, rubric, scorecard, and three worked comparison artifacts
-- includes a README-ready visual summary asset
-- includes first contribution guidance for benchmark additions
+- README tightened around value, fit, and first prompts
+- 3-minute onboarding path added
+- first high-tension case studies added
 
-Next upgrade ideas:
-- add lightweight scoring summaries over time
-- add one share-friendly benchmark card for external distribution
-- strengthen validation coverage for benchmark assets
+### Phase 2 — Core judgment
+Status: active next layer
 
-### 2. Stronger product-leader mode
-Goal:
-Improve support for PM leaders, heads of product, and founder-style decision environments.
+Focus:
+- strengthen upstream clarification
+- sharpen go / hold / no-go and why-not-now reasoning
+- make compressed artifacts stay sharp under speed pressure
+- make the top 3 differentiating workflows visibly stronger than generic AI
 
-Why it matters:
-A lot of high-value PM work is not PRD writing. It is resource trade-offs, sequencing, leadership communication, portfolio thinking, and organization-aware judgment.
-
-Current state:
-- stronger leader-oriented guidance in `SKILL.md`
-- product-leader guide added under `docs/PRODUCT-LEADER-PLAYBOOK.md`
-- leader / founder examples added under `examples/`
-- first portfolio review artifact added under `references/templates/portfolio-review-summary.md`
-- first head-of-product operating review artifact added under `references/templates/head-of-product-operating-review.md`
-
-Next upgrade ideas:
-- route head-of-product operating review requests explicitly in `SKILL.md` or a later sub-workflow
-- add a founder / leadership operating review variant
-- deepen org trade-off and business-model decision scenarios
-
-### 3. Better adoption loop for new users
-Goal:
-Make it easier for someone discovering the repo on GitHub to install, test, understand, and extend it quickly.
-
-Why it matters:
-Great skills often underperform publicly because onboarding is weak.
+Priority workflows:
+- `clarify-request`
+- `evaluate-feature-value`
+- `prioritize-requests`
 
 Current state:
-- tighter getting-started flow
-- benchmark pack wired into onboarding
-- clearer leader-oriented reading paths
-- dedicated `docs/TRY-3-PROMPTS.md` cold-start evaluation page
-- visual benchmark summary asset ready for README and social proof use
+- critical-premise rule already added to major workflows
+- artifact-first behavior is in place
+- next improvement is to sharpen failure-mode handling and strong-output standards
 
-Next upgrade ideas:
-- add a single screenshot / visual decision flow for first-time visitors
-- add contributor starter tasks tied to benchmark gaps
-- add a one-minute video or GIF demo path later if distribution matters
+### Phase 3 — Expansion
+Status: only after the core feels sharp
 
-## Later opportunities
+Focus:
+- deepen product leader and founder review shapes
+- enable contributor-safe extension without bloating the repo
+- strengthen comparative validation beyond the first internal benchmark layer
 
-### 4. Extended artifact system
-Possible additions:
-- launch recommendation note
-- stakeholder alignment brief
-- GTM handoff brief
-- experiment review memo
-- portfolio review summary
-- head-of-product operating review
+Possible additions later:
+- more leader-specific review shapes
+- more edge-case comparison scenarios
+- better extension guidance for new artifact types
 
-Bar for adding any of these:
-They must improve reuse and decision quality, not just document count.
+## In scope
+- PM judgment
+- product decision framing
+- prioritization and leadership communication
+- reusable PM artifacts
+- product-leader / founder product-business trade-offs
 
-### 5. Better metric and roadmap depth
-Possible focus:
-- clearer causal-path metric design
-- better stage-gate logic for roadmap decisions
-- better “what not to do now” framing
+## Out of scope
+- raw data-heavy analytics
+- deep project or program tracking
+- legal or compliance review
+- general business operations tooling
 
-### 6. Validation and maintenance ergonomics
-Possible focus:
-- lightweight consistency checks between workflows, templates, examples, and docs
-- contributor-friendly QA checklist
-- small internal tooling to prevent broken references or stale docs
-- optional benchmark integrity checks
-- validation coverage for newer docs and templates
+This boundary is deliberate.
+If the repo keeps expanding without a center, it stops being a PM workbench and becomes a generic strategy dump.
 
 ## Non-goals for now
 
@@ -130,8 +97,8 @@ A future best-in-class version of `pm-workbench` would feel like this:
 ## Current roadmap lens
 
 If there is a trade-off, prefer work that improves one of these:
-1. decision quality
-2. artifact usefulness
-3. onboarding and discoverability
-4. product-leader relevance
-5. proof and credibility
+1. proof and credibility
+2. decision quality
+3. artifact usefulness
+4. onboarding and discoverability
+5. product-leader relevance

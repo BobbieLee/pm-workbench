@@ -13,6 +13,7 @@ A strong `pm-workbench` response should:
 - make the recommendation and ask explicit
 - surface key risks and support needed
 - avoid turning into a long product proposal
+- make it obvious what leadership should approve, challenge, or resource
 
 ## Expected artifact
 **Executive Summary**

@@ -96,6 +96,24 @@ Follow this sequence:
 6. Recommend the next best move.
 7. When useful, shape the output as a **Request Clarification Brief**.
 
+## Common failure modes
+
+Weak output usually looks like this:
+- merely repeating the vague ask in cleaner words
+- jumping straight into solution ideas
+- asking too many questions and stalling momentum
+- treating leadership language as if it were already a product problem statement
+- producing “nice structure” without a sharper reframed question
+
+## What strong output looks like
+
+Strong output should:
+- identify the real decision bottleneck before solving anything
+- separate problem, goal, and embedded solution assumption clearly
+- ask only the 1-2 questions that would change the framing most
+- make ambiguity explicit instead of pretending confidence
+- turn the messy ask into a sharper, reusable product question or clarification brief
+
 ## Output structure
 
 Use this structure when helpful:

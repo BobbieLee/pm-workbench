@@ -8,14 +8,25 @@ It exists to show a practical difference:
 
 ---
 
-## Scenario
+## Original input
 
 ### Prompt
 > Help me write a one-page update for leadership. We tested a premium AI meeting summary workflow and user satisfaction was strong, but activation was low because setup friction is still too high. I want to recommend we do not scale marketing yet, focus on activation fixes for 6 weeks, and ask for one more frontend engineer temporarily.
 
+### Why this is a useful test case
+This prompt is not just “summarize this.”
+It already contains:
+- a decision recommendation
+- a business timing implication
+- a resource ask
+- evidence that must support a leadership call
+
+A weak system will summarize the situation.
+A stronger system will turn it into a decision-grade exec artifact.
+
 ---
 
-## Representative generic AI pattern
+## Representative generic AI output
 
 ### Typical shape
 - restates the situation in polished prose
@@ -34,7 +45,7 @@ It exists to show a practical difference:
 
 ---
 
-## Representative `pm-workbench` target pattern
+## Representative `pm-workbench` output pattern
 
 ### Typical shape
 - leads with the bottom line immediately
@@ -64,6 +75,19 @@ It exists to show a practical difference:
 
 ---
 
+## Why this is judgment advantage, not just format advantage
+
+This is not mainly about better formatting.
+The real difference is that the stronger answer:
+- understands the real job is **decision support**, not recap
+- treats the evidence as support for the recommendation, not as content to summarize evenly
+- translates “we learned X” into “therefore do Y, not Z, and give us W”
+- produces something leadership can act on immediately
+
+Even as plain text with no headings, that would still be the better exec artifact.
+
+---
+
 ## Example rubric scoring
 
 | Criterion | Generic AI | pm-workbench target | Why |
@@ -76,6 +100,19 @@ It exists to show a practical difference:
 | Product-leader relevance | 1 | 3 | The target includes timing, business consequence, and a real ask |
 | Honesty about uncertainty | 2 | 2 | Both can remain honest if assumptions are labeled |
 | **Total** | **10** | **19** | Strong difference in decision-readiness |
+
+---
+
+## Benchmark notes
+
+### Fairness note
+- same original prompt assumed for both sides
+- no prompt rewriting is assumed in the comparison
+- snippets are shortened for readability, but should preserve the logic of the response
+
+### Limitation note
+This example shows strength in **leadership-ready summary writing when a decision and ask already exist in rough form**.
+It does not prove superiority in every writing task or every executive communication style.
 
 ---
 

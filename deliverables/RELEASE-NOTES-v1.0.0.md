@@ -1,4 +1,4 @@
-# pm-workbench v1.0.0 release notes
+# pm-workbench v1.0.4 release notes
 
 ## What this release means
 
