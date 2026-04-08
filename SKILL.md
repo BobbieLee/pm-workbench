@@ -78,7 +78,7 @@ Do not turn the interaction into a questionnaire. If the user already gave enoug
 ## Conditional recommendation rule
 
 When uncertainty remains but the user still needs a recommendation:
-- do not stop at âneeds more informationâ
+- do not stop at “needs more information”
 - produce a **condition-based recommendation**
 - make clear:
   - what the current call is

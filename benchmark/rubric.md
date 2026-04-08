@@ -5,10 +5,10 @@ Use this rubric to compare `pm-workbench` against generic AI outputs.
 ## Scoring scale
 
 Score each criterion from **0 to 3**:
-- **0 â Missed badly**
-- **1 â Weak / partial**
-- **2 â Solid**
-- **3 â Strong / clearly better than average generic AI**
+- **0 — Missed badly**
+- **1 — Weak / partial**
+- **2 — Solid**
+- **3 — Strong / clearly better than average generic AI**
 
 Suggested total range if using all 7 criteria:
 - **0-7** -> weak PM support
@@ -58,7 +58,7 @@ Did the answer make a usable call?
 ### Strong signal
 - gives a clear recommendation, decision, or next move
 - labels confidence and assumptions honestly when needed
-- avoids âit dependsâ as the final state
+- avoids “it depends” as the final state
 
 ### Weak signal
 - only lists considerations
