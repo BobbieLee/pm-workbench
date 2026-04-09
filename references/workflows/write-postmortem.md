@@ -5,6 +5,7 @@
 Use this workflow to turn a launch, project, or experiment outcome into a useful postmortem.
 
 The goal is not to write a ceremonial recap. The goal is to help the user answer:
+
 - what happened
 - how reality differed from expectation
 - why that happened
@@ -14,6 +15,7 @@ The goal is not to write a ceremonial recap. The goal is to help the user answer
 ## Trigger phrases
 
 Prefer this workflow when the user says things like:
+
 - Help me write a postmortem.
 - We need a proper retrospective for this launch.
 - Turn this outcome into a useful review.
@@ -24,12 +26,14 @@ Prefer this workflow when the user says things like:
 ## Routing rules
 
 Choose this workflow when one or more of the following is true:
+
 1. The work has already launched, run, or completed.
 2. The user wants to compare expected versus actual outcome.
 3. The task is to capture lessons and next actions.
 4. The user needs a reusable review artifact, not just a quick opinion.
 
 Do **not** use this workflow as the primary one when:
+
 - the work has not happened yet -> use planning or launch workflows
 - the user mainly needs an executive summary of current status -> use `prepare-exec-summary`
 - the task is deep diagnosis of ongoing growth problems -> use `diagnose-growth-problem`
@@ -37,6 +41,7 @@ Do **not** use this workflow as the primary one when:
 ## Minimum input
 
 Try to gather:
+
 - what was launched or completed
 - original objective
 - expected result
@@ -46,6 +51,7 @@ Try to gather:
 - audience for the postmortem
 
 At minimum, start once you know:
+
 - what happened
 - what was expected
 - what actually occurred
@@ -53,10 +59,12 @@ At minimum, start once you know:
 ## Follow-up policy
 
 ### Default number of follow-ups
+
 - Standard mode: 3-5
 - Fast review mode: 2-3
 
 ### Highest-priority follow-ups
+
 1. What was the original goal?
 2. What did we expect to happen?
 3. What actually happened?
@@ -64,6 +72,7 @@ At minimum, start once you know:
 5. What lesson should change future behavior?
 
 ### Secondary follow-ups
+
 - What went better than expected?
 - What assumptions proved wrong?
 - What process or coordination issues showed up?
@@ -71,15 +80,19 @@ At minimum, start once you know:
 - Who needs this postmortem and for what decision?
 
 ### When to reduce questions
+
 If the user already has a rich record of the project or launch, move into structuring and synthesis instead of replaying the full timeline.
 
 ### When to produce a first-pass postmortem
+
 Do it when:
+
 - the user needs a draft quickly
 - enough facts exist to compare expected vs actual
 - some causes remain uncertain but the review can still be useful
 
 If producing a first pass, explicitly label:
+
 - unresolved causes
 - weak evidence areas
 - lessons that are still provisional
@@ -87,6 +100,7 @@ If producing a first pass, explicitly label:
 ## Processing logic
 
 Follow this sequence:
+
 1. Restate the initiative and its original objective.
 2. Compare expected versus actual outcomes.
 3. Identify major contributors to the result.
@@ -110,22 +124,29 @@ Use this structure when helpful:
 ## Output length control
 
 ### Short
+
 For a fast team review:
+
 - expected vs actual
 - top lessons
 - next actions
 
 ### Standard
+
 For normal PM usage:
+
 - full output structure above
 
 ### Long
+
 For a more complete retrospective:
+
 - standard structure plus assumptions, evidence quality, and ownership notes
 
 ## Success criteria
 
 A good result should:
+
 - compare expectation with reality clearly
 - identify likely causes without fake certainty
 - extract lessons that can change future behavior
@@ -135,6 +156,7 @@ A good result should:
 ## Failure cases
 
 Treat these as failures:
+
 1. writing a timeline with no analysis
 2. blaming people instead of examining decisions, assumptions, and systems
 3. pretending to know root cause without evidence

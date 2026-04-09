@@ -5,6 +5,7 @@
 Use this workflow to define how success will be measured for a product, feature, initiative, or period of work.
 
 The goal is not to generate a random metric list. The goal is to help the user decide:
+
 - what outcome actually matters
 - what leading and lagging signals to watch
 - what guardrail metrics are needed
@@ -13,6 +14,7 @@ The goal is not to generate a random metric list. The goal is to help the user d
 ## Trigger phrases
 
 Prefer this workflow when the user says things like:
+
 - What metrics should we use here?
 - How should we measure success?
 - Help me design the KPI set.
@@ -23,12 +25,14 @@ Prefer this workflow when the user says things like:
 ## Routing rules
 
 Choose this workflow when one or more of the following is true:
+
 1. The user needs a success measurement framework for a defined effort.
 2. The main task is turning a goal into measurable signals.
 3. The user needs result metrics, process metrics, or guardrails.
 4. The question is not "why did growth stall" but "what should we measure and how".
 
 Do **not** use this workflow as the primary one when:
+
 - the underlying problem or goal is still unclear -> use `clarify-request`
 - the user needs diagnosis of poor results -> use `diagnose-growth-problem`
 - the user mainly needs a roadmap or prioritization judgment -> use planning/evaluation workflows
@@ -36,6 +40,7 @@ Do **not** use this workflow as the primary one when:
 ## Minimum input
 
 Try to gather:
+
 - initiative or feature
 - target outcome
 - target user or business area
@@ -45,6 +50,7 @@ Try to gather:
 - known risks or side effects
 
 At minimum, start once you know:
+
 - what is being measured
 - what success is supposed to mean
 - what audience will use the metrics
@@ -52,10 +58,12 @@ At minimum, start once you know:
 ## Follow-up policy
 
 ### Default number of follow-ups
+
 - Standard mode: 3-5
 - Fast setup mode: 2-3
 
 ### Highest-priority follow-ups
+
 1. What is the most important outcome this effort is supposed to drive?
 2. Through what mechanism is that outcome expected to improve?
 3. Who or what segment does this apply to?
@@ -63,21 +71,26 @@ At minimum, start once you know:
 5. What side effects do we need to watch?
 
 ### Secondary follow-ups
+
 - What is the observation window?
 - Which metrics are good for early warning versus final judgment?
 - What metric would be easiest to game or misread?
 - Who will read these metrics: PM, leadership, ops, growth, engineering?
 
 ### When to reduce questions
+
 If the user mainly wants a usable metric set quickly, avoid over-theorizing and move to a practical structure.
 
 ### When to produce a first-pass metric design
+
 Do it when:
+
 - the goal and initiative are reasonably clear
 - baseline data is incomplete but the measurement logic is still designable
 - the user needs a working set for launch or review planning
 
 If producing a first pass, explicitly label:
+
 - missing baseline data
 - provisional thresholds
 - metrics that need final owner confirmation
@@ -85,6 +98,7 @@ If producing a first pass, explicitly label:
 ## Processing logic
 
 Follow this sequence:
+
 1. Restate the business or product goal.
 2. Identify the core outcome metric.
 3. Identify leading / process metrics that connect to the outcome.
@@ -107,29 +121,37 @@ Use this structure when helpful:
 8. Suggested next step
 
 Default artifact when the user needs something reusable:
+
 - `references/templates/metrics-scorecard.md`
 
 ## Output length control
 
 ### Short
+
 For immediate setup:
+
 - 1 core metric
 - 2-4 supporting metrics
 - 1-2 guardrails
 - observation note
 
 ### Standard
+
 For normal PM usage:
+
 - full output structure above
 - or a compact **Metrics Scorecard**
 
 ### Long
+
 For launch docs or leadership review:
+
 - standard structure plus metric definitions, caveats, and ownership notes
 
 ## Success criteria
 
 A good result should:
+
 - tie metrics to a clear goal
 - distinguish outcome from process signals
 - include at least one meaningful guardrail when relevant
@@ -140,6 +162,7 @@ A good result should:
 ## Failure cases
 
 Treat these as failures:
+
 1. listing too many metrics with no hierarchy
 2. using only vanity metrics
 3. ignoring guardrails when side effects are plausible

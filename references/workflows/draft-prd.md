@@ -9,6 +9,7 @@ The goal is not to produce polished filler. The goal is to create a useful worki
 ## Trigger phrases
 
 Prefer this workflow when the user says things like:
+
 - Help me draft a PRD.
 - Turn this into a requirement document.
 - Help me structure the solution.
@@ -19,12 +20,14 @@ Prefer this workflow when the user says things like:
 ## Routing rules
 
 Choose this workflow when one or more of the following is true:
+
 1. The problem and objective are already reasonably understood.
 2. The user now needs a document or structured draft.
 3. The task is to turn thinking into a usable artifact for collaboration.
 4. The request is no longer mainly about whether to do it, but how to describe and structure it.
 
 Do **not** use this workflow as the primary one when:
+
 - the request is still fundamentally unclear -> use `clarify-request`
 - the decision to proceed is still unresolved -> use `evaluate-feature-value`
 - the key task is to choose among multiple solution options -> use `compare-solutions`
@@ -32,6 +35,7 @@ Do **not** use this workflow as the primary one when:
 ## Minimum input
 
 Try to gather:
+
 - background
 - objective
 - target user
@@ -42,6 +46,7 @@ Try to gather:
 - known dependencies
 
 At minimum, start once you know:
+
 - what problem is being solved
 - for whom
 - what direction is currently intended
@@ -49,10 +54,12 @@ At minimum, start once you know:
 ## Follow-up policy
 
 ### Default number of follow-ups
+
 - Standard mode: 3-5
 - Fast draft mode: 2-3
 
 ### Highest-priority follow-ups
+
 1. What core problem is this PRD solving?
 2. Who is the target user or stakeholder?
 3. What is the key user flow or scenario?
@@ -60,28 +67,35 @@ At minimum, start once you know:
 5. What constraints, dependencies, or edge cases must be respected?
 
 ### Secondary follow-ups
+
 - What is in scope versus out of scope?
 - What states, rules, or exceptions matter?
 - What needs clarification before engineering or design review?
 - Are there launch timing or compliance constraints?
 
 ### When to reduce questions
+
 If the user already has a clear direction and mainly needs writing support, move into draft generation quickly.
 
 ### Critical-premise rule
+
 If the document structure depends on 1-2 missing product facts, ask those first before drafting too confidently.
 Typical examples:
+
 - whether core supporting infrastructure already exists
 - the main use case or product mode
 - cross-platform or sync requirements
 
 ### When to produce a v0 draft
+
 Do it when:
+
 - the user wants a discussion draft
 - enough information exists for a first structure
 - unresolved items can be explicitly marked as TBD
 
 When producing v0, clearly mark:
+
 - assumptions
 - TBD items
 - decisions still pending
@@ -89,6 +103,7 @@ When producing v0, clearly mark:
 ## Processing logic
 
 Follow this sequence:
+
 1. Restate the objective of the document.
 2. Define the problem, user, and goal clearly.
 3. Structure the core solution and user flow.
@@ -114,20 +129,27 @@ Use this structure when helpful:
 ## Output length control
 
 ### Short
+
 For quick alignment:
+
 - lightweight PRD skeleton with section headings and brief content
 
 ### Standard
+
 For normal team review:
+
 - full output structure above
 
 ### Long
+
 For a more complete working draft:
+
 - standard structure plus more detailed flows, edge cases, and decision notes
 
 ## Success criteria
 
 A good result should:
+
 - be structurally usable in a real team setting
 - make the problem, user, and goal clear
 - describe the proposed solution coherently
@@ -137,6 +159,7 @@ A good result should:
 ## Failure cases
 
 Treat these as failures:
+
 1. writing generic filler with no real decision content
 2. skipping problem / user / goal and jumping into feature bullets
 3. hiding uncertainty instead of marking TBDs

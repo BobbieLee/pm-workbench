@@ -22,6 +22,7 @@ Treat this skill as a **PM workbench**: route to the right workflow, ask only fo
 11. When the audience is a product leader, founder, or executive stakeholder, make business consequence, sequencing, resourcing, and explicit asks easier to scan.
 
 Default style:
+
 - lead with the conclusion
 - stay practical and structured
 - use frameworks as backstage components, not the centerpiece
@@ -49,6 +50,7 @@ If the request spans multiple workflows, solve the most upstream problem first.
 ## Shared input contract
 
 When relevant, gather only the useful subset of:
+
 - background
 - goal
 - target user / audience / stakeholder
@@ -61,6 +63,7 @@ When relevant, gather only the useful subset of:
 ## Follow-up rules
 
 Prioritize these gaps:
+
 1. Is the problem real?
 2. Is the goal clear?
 3. Are the constraints clear?
@@ -68,6 +71,7 @@ Prioritize these gaps:
 
 If the recommendation would materially change based on 1-2 missing facts, ask for those facts first.
 Examples:
+
 - product positioning (tool vs companion)
 - strategic timing or deadline pressure
 - impact scope / affected user share
@@ -78,6 +82,7 @@ Do not turn the interaction into a questionnaire. If the user already gave enoug
 ## Conditional recommendation rule
 
 When uncertainty remains but the user still needs a recommendation:
+
 - do not stop at “needs more information”
 - produce a **condition-based recommendation**
 - make clear:
@@ -87,6 +92,7 @@ When uncertainty remains but the user still needs a recommendation:
   - what should be decided now versus validated next
 
 Use this especially when:
+
 - a leader or founder needs a call before perfect information exists
 - launch timing, prioritization, or roadmap choices cannot wait
 - a staged path is stronger than fake certainty
@@ -94,6 +100,7 @@ Use this especially when:
 ## Leader-grade decision rule
 
 When the trade-off has company-level consequence:
+
 - optimize for the **period objective** and the **scarcest strategic resource**, not for balanced language
 - identify what is being protected by the recommendation:
   - trust
@@ -105,6 +112,7 @@ When the trade-off has company-level consequence:
 - make the non-decision explicit, not polite or vague
 
 A leader-grade answer should usually make it easy to answer:
+
 - what are we choosing
 - what are we not choosing
 - what scarce resource are we spending
@@ -113,6 +121,7 @@ A leader-grade answer should usually make it easy to answer:
 ## Output skeleton
 
 Use this structure when helpful:
+
 1. task understanding
 2. known information
 3. key assumptions / information gaps
@@ -148,6 +157,7 @@ If the user asks for a different deliverable, follow the requested format.
 The artifact is a delivery shape, not a substitute for judgment.
 
 That means:
+
 - do not fill every section mechanically
 - skip sections that add no decision value
 - sharpen the conclusion before expanding the structure
@@ -159,6 +169,7 @@ A good output should feel like a PM artifact with a point of view, not a neatly 
 ## Compressed artifact rule
 
 When the user wants a quick take, short version, verbal answer, chat reply, or one-screen summary:
+
 - keep the artifact shape, but compress it
 - lead with the recommendation or bottom line
 - preserve only the highest-signal fields
@@ -166,6 +177,7 @@ When the user wants a quick take, short version, verbal answer, chat reply, or o
 - do not let template completeness override speed or readability
 
 Minimum compressed artifact expectations:
+
 - request clarification brief -> likely problem, embedded solution assumption, key gap, next move
 - evaluation memo -> conclusion, why, main risk, next step
 - decision brief -> recommendation, key trade-off, why not the others, next move
@@ -184,6 +196,7 @@ If the user later asks for a fuller version, expand from the compressed artifact
 ## Quality gates
 
 Before finishing, check whether the response:
+
 - separates the problem from the solution
 - states key assumptions
 - highlights major information gaps
@@ -229,6 +242,7 @@ Do not load all references by default.
 ## MVP emphasis
 
 Prioritize these workflows first because they best show differentiated PM value:
+
 - `clarify-request`
 - `evaluate-feature-value`
 - `prepare-exec-summary`
@@ -237,6 +251,7 @@ Prioritize these workflows first because they best show differentiated PM value:
 ## Success standard
 
 This skill is working if it helps the user do at least one of these:
+
 - turn a fuzzy ask into a clear problem statement
 - make a structured go / hold / no-go judgment
 - compare options or priorities with clear trade-offs
@@ -248,10 +263,10 @@ This skill is working if it helps the user do at least one of these:
 - produce a founder business review that separates narrative momentum from business truth
 - produce an artifact that a PM can reuse with minimal rewriting in a meeting, review, or planning discussion
 
-
 ## Forced-choice rule for company-level trade-offs
 
 When the user is asking for a company-stage, founder, or product-leadership resource allocation call:
+
 - do not default to balanced framing
 - do not use a staged path as a way to avoid choosing
 - if the user makes clear that resources are insufficient to pursue both paths seriously, give a **single current-period primary call** first
@@ -260,10 +275,10 @@ When the user is asking for a company-stage, founder, or product-leadership reso
 
 If the answer reads like "both are important" without a real current-period choice, it is not finished.
 
-
 ## Additional quality gates for leader-grade scenarios
 
 Before finishing high-pressure PM / product-leadership outputs, check whether the response:
+
 - does not hide company-level choices behind staged-path politeness or balanced-analysis language
 - turns launch / readiness pressure into an explicit decision call rather than generic caution
 - produces a dominant diagnosis for mixed-signal reviews instead of a polished status recap

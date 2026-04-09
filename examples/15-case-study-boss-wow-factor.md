@@ -6,19 +6,23 @@ This is the kind of PM situation where generic AI often makes things worse.
 The input sounds energetic, but it is still not a usable product question.
 
 ## Scene
+
 A founder or boss says the product needs more “wow factor” because competitors look more exciting in demos.
 The team is now in danger of building flashy nonsense.
 
 ## Raw messy input
+
 > “Our AI product needs more wow factor. Competitors feel more exciting in demos. Help me think through what we should do.”
 
 ## What generic AI often does badly
+
 - jumps straight into feature brainstorming
 - treats “wow factor” like a clear product goal
 - assumes the fix must be new visible features
 - ignores whether the real issue is demo optics, activation, trust, or differentiation
 
 ## What `pm-workbench` should do better
+
 - separate the vague demand from the actual product problem
 - identify the possible meanings behind “wow factor”
 - ask only the 1-2 questions that change the framing most
@@ -26,6 +30,7 @@ The team is now in danger of building flashy nonsense.
 - give a next move that protects the team from random solutioning
 
 ## Example response shape
+
 - bottom line: the request is still too vague for a build decision
 - possible meanings: demo impressiveness, activation, perceived intelligence, differentiated workflow value
 - critical clarifications: where are we losing, and what exactly looks stronger in competitors
@@ -33,8 +38,10 @@ The team is now in danger of building flashy nonsense.
 - next step: run a clarification pass before solution generation
 
 ## Reusable artifact
+
 **Request Clarification Brief**
 
 ## Why this is valuable in real PM work
+
 The real win here is not “better wording.”
 It is stopping the team from treating executive ambiguity as a feature roadmap.

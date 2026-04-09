@@ -5,6 +5,7 @@
 Use this workflow to judge whether a feature, request, or initiative is worth doing and roughly how it should be prioritized.
 
 The core questions are:
+
 - is there real value here
 - who benefits and how much
 - what business or strategic upside exists
@@ -14,6 +15,7 @@ The core questions are:
 ## Trigger phrases
 
 Prefer this workflow when the user says things like:
+
 - Is this requirement worth doing?
 - Should we build this feature?
 - Help me evaluate this request.
@@ -25,12 +27,14 @@ Prefer this workflow when the user says things like:
 ## Routing rules
 
 Choose this workflow when one or more of the following is true:
+
 1. The user’s main question is whether to do something.
 2. The user asks about value, priority, or return on effort.
 3. The user wants a recommendation, not just a framework.
 4. The object being evaluated is already reasonably defined.
 
 Do **not** use this workflow as the primary one when:
+
 - the object itself is still too fuzzy -> use `clarify-request`
 - the decision is already made and the user needs solution design -> use a requirements workflow
 - the main task is comparing multiple mature options -> use `compare-solutions`
@@ -38,6 +42,7 @@ Do **not** use this workflow as the primary one when:
 ## Minimum input
 
 Try to gather these:
+
 - feature or request description
 - source of the request
 - target user
@@ -51,10 +56,12 @@ If you only have the first four, you can still produce an initial evaluation.
 ## Follow-up policy
 
 ### Default number of follow-ups
+
 - Standard mode: 3-5
 - Fast evaluation: 2-3
 
 ### Highest-priority follow-ups
+
 1. Whose problem does this solve?
 2. How painful or frequent is the problem?
 3. What result does it affect: experience, retention, conversion, revenue, strategic position, efficiency?
@@ -62,6 +69,7 @@ If you only have the first four, you can still produce an initial evaluation.
 5. Roughly how much resource does it need?
 
 ### Secondary follow-ups
+
 - Is there a lighter alternative?
 - How large is the beneficiary group?
 - Does this align with the current stage goal?
@@ -69,24 +77,30 @@ If you only have the first four, you can still produce an initial evaluation.
 - Are there obvious dependencies?
 
 ### When to avoid more questions
+
 If the user already gave strong context on user, goal, upside, and constraints, do not ask extra questions just to fill a template.
 
 ### Critical-premise rule
+
 If the recommendation would materially change based on 1-2 missing facts, ask about those facts first before giving a strong go / hold / no-go conclusion.
 Typical examples:
+
 - product positioning or target market
 - current stage goal
 - impact scope
 - rough cost or operational constraint
 
 ### When to give only an initial evaluation
+
 Limit confidence and label assumptions when major gaps remain, especially if:
+
 - target user is unclear
 - evidence of value is unclear
 - cost is largely unknown
 - current stage goal is unclear
 
 In those cases, use language like:
+
 - Based on current information, I lean toward...
 - This currently looks more like...
 - The judgment would be stronger if X were confirmed.
@@ -94,6 +108,7 @@ In those cases, use language like:
 ## Processing logic
 
 Follow this sequence:
+
 1. Confirm the object being evaluated.
 2. Judge the importance of the problem.
 3. Judge user value.
@@ -105,6 +120,7 @@ Follow this sequence:
 ## Common failure modes
 
 Weak output usually looks like this:
+
 - listing pros and cons without making a call
 - mirroring stakeholder enthusiasm instead of judging the request
 - talking only about upside and ignoring opportunity cost
@@ -114,6 +130,7 @@ Weak output usually looks like this:
 ## What strong output looks like
 
 Strong output should:
+
 - define the real value question before scoring anything
 - make a clear go / hold / no-go / experiment call
 - explain why now or why not now in relation to the current stage goal
@@ -136,22 +153,29 @@ Use this structure when helpful:
 ## Output length control
 
 ### Short
+
 For fast decision support:
+
 - conclusion
 - top 3 reasons
 - next step
 
 ### Standard
+
 For team discussion:
+
 - full output structure above
 
 ### Long
+
 For inclusion in a formal document:
+
 - standard structure plus more assumptions, supporting detail, and risk commentary
 
 ## Success criteria
 
 A good result should:
+
 - give a clear recommendation
 - explain where the value comes from
 - consider user value, business value, strategic fit, cost, and risk
@@ -161,6 +185,7 @@ A good result should:
 ## Failure cases
 
 Treat these as failures:
+
 1. talking only about upside and ignoring cost
 2. assuming boss requests are automatically high value
 3. giving vague language without a recommendation

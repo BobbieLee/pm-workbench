@@ -6,6 +6,7 @@ Add better comparisons.
 ## What a useful benchmark contribution looks like
 
 A strong benchmark contribution usually includes:
+
 - one realistic PM scenario
 - the exact prompt used
 - a side-by-side comparison between generic AI and `pm-workbench`
@@ -15,12 +16,14 @@ A strong benchmark contribution usually includes:
 ## Good benchmark scenarios
 
 Prefer scenarios that are:
+
 - realistic
 - slightly incomplete
 - decision-shaped
 - high-stakes enough that trade-offs matter
 
 Great examples:
+
 - vague leadership ask
 - questionable engagement feature
 - quarterly prioritization under pressure
@@ -31,6 +34,7 @@ Great examples:
 ## Weak benchmark scenarios
 
 Avoid scenarios that are:
+
 - too toy-like
 - fully specified to the point that no judgment is needed
 - mostly about formatting instead of decision quality
@@ -39,6 +43,7 @@ Avoid scenarios that are:
 ## Submission pattern
 
 When adding a benchmark artifact, try to include:
+
 1. the scenario prompt
 2. a representative generic AI pattern
 3. a representative `pm-workbench` target pattern
@@ -48,6 +53,7 @@ When adding a benchmark artifact, try to include:
 ## Honesty rule
 
 If `pm-workbench` loses on:
+
 - recommendation clarity
 - trade-off framing
 - artifact reuse

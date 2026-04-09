@@ -25,6 +25,7 @@ This benchmark is only useful if people can see how the comparison was produced.
 So the repo tries to make the comparison chain inspectable.
 
 ### Baseline comparison rules
+
 - the **same original prompt** should be used for both runs
 - prompt rewriting between runs is discouraged unless prompt sensitivity is the thing being tested
 - if a multi-turn comparison is used, the same follow-up opportunity should be given to both sides
@@ -32,7 +33,9 @@ So the repo tries to make the comparison chain inspectable.
 - worked examples should preserve the original shape of the response as much as possible
 
 ### What the worked examples should include
+
 Each worked example should make it easy to inspect:
+
 - original input
 - representative generic AI output
 - representative `pm-workbench` output or target pattern
@@ -40,26 +43,32 @@ Each worked example should make it easy to inspect:
 - why the advantage is about judgment, not only formatting
 
 ### What this does **not** guarantee
+
 This does **not** make the benchmark fully objective.
 It only makes the repo’s evidence layer easier to audit than a README that says “trust me, it’s better.”
 
 ## Recommended evaluation flow
 
 ### 1. Pick 3-5 scenarios
+
 Start with:
+
 - one ambiguous request
 - one feature / initiative evaluation
 - one prioritization or roadmap scenario
 - one executive / product-leader communication scenario
 
 ### 2. Run the same prompt twice
+
 - once with a generic AI setup
 - once with `pm-workbench`
 
 Do not rewrite the prompt between runs unless the goal is explicitly to test prompt sensitivity.
 
 ### 3. Score both outputs with the rubric
+
 Focus on whether the answer:
+
 - solved the right upstream PM problem
 - asked only useful follow-up questions
 - produced a recommendation
@@ -67,6 +76,7 @@ Focus on whether the answer:
 - created something reusable in real PM work
 
 ### 4. Save comparison notes
+
 If you are contributing to the repo, keep short notes about where `pm-workbench` won, tied, or lost.
 That is better than vague claims.
 
@@ -74,6 +84,7 @@ That is better than vague claims.
 
 Generic AI often sounds competent on PM topics.
 But in practice it frequently:
+
 - accepts the request framing too quickly
 - asks either too many or too few questions
 - gives balanced-sounding analysis without a real recommendation
@@ -100,6 +111,7 @@ The point is to create a proof layer that is more inspectable, more honest, and 
 ## Interpretation rule
 
 If `pm-workbench` does **not** consistently beat generic AI on:
+
 - upstream problem framing
 - recommendation quality
 - trade-off clarity
