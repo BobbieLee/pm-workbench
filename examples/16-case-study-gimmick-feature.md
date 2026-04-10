@@ -14,7 +14,7 @@ The PM suspects it is novelty, not durable value.
 
 > “Ops wants a daily AI fortune card feature to improve engagement. I’m worried it’s a gimmick. Help me evaluate it.”
 
-## What generic AI often does badly
+## What a weak default answer often does badly
 
 - mirrors the excitement of the request
 - lists pros and cons without a real conclusion
@@ -36,11 +36,11 @@ The PM suspects it is novelty, not durable value.
 - opportunity cost versus more strategic work
 - suggested path: no-go, hold, or tightly scoped experiment
 
-## Reusable artifact
+## Suggested output shape
 
 **Feature Evaluation Memo**
 
 ## Why this is valuable in real PM work
 
 This is the difference between “feature discussion” and “product judgment.”
-A strong PM response protects the roadmap from energy-driven noise.
+A strong PM response protects the roadmap from short-term excitement that does not hold up.

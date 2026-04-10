@@ -127,7 +127,7 @@ When something is below the line, prefer language like:
 - valuable, but not under this period objective
 - not a forever no, but a current-strategy no
 - visible, but below the line unless X changes
-- strategically real, but displaced by a sharper bottleneck right now
+- strategically real, but displaced by a more urgent bottleneck right now
 
 Avoid turning non-decisions into vague politeness.
 
@@ -167,7 +167,7 @@ Use this structure when helpful:
 9. Risks or sequencing notes
 10. Suggested next step
 
-Default artifact when the user needs something reusable:
+Default template when the user needs something reusable:
 
 - `references/templates/prioritization-stack.md`
 

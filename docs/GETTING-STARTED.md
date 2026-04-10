@@ -6,9 +6,10 @@ This guide is for someone discovering `pm-workbench` cold and wanting to know, f
 
 If you only have a few minutes:
 
-1. read [`TRY-IN-3-MINUTES.md`](TRY-IN-3-MINUTES.md)
-2. run the 3 prompts in [`TRY-3-PROMPTS.md`](TRY-3-PROMPTS.md)
-3. compare the outputs against the benchmark rubric in [`../benchmark/rubric.md`](../benchmark/rubric.md)
+1. use the 3-step install path in [`INSTALL-CHECKLIST.md`](INSTALL-CHECKLIST.md)
+2. read [`TRY-IN-3-MINUTES.md`](TRY-IN-3-MINUTES.md)
+3. run the 3 prompts in [`TRY-3-PROMPTS.md`](TRY-3-PROMPTS.md)
+4. compare the outputs against the benchmark rubric in [`../benchmark/rubric.md`](../benchmark/rubric.md)
 
 If the skill feels more decision-grade than generic AI after that, keep going.
 
@@ -19,19 +20,26 @@ After 10-15 minutes with this skill, you should know:
 - whether it improves the quality of your PM judgment flow
 - whether the outputs feel reusable in real work
 - whether the follow-up behavior is appropriately selective instead of annoying
-- whether the artifact shapes match how you actually work
+- whether the output shapes match how you actually work
 - whether it helps not only IC PM work, but product-leader / founder work too
 
-## Step 1 — verify the skill is recognized
+## Step 1 — copy, validate, and verify recognition
 
-If you are using the source folder in an OpenClaw workspace:
+If you are using the source folder in an OpenClaw workspace, do this in order:
 
 ```bash
+cd skills/pm-workbench
+npm run validate
 openclaw skills info pm-workbench
 openclaw skills check
 ```
 
-You want to see `pm-workbench` recognized as ready.
+You want to see two things:
+
+- the repo validation passes
+- `pm-workbench` is recognized as ready
+
+If you want the short version, use [`INSTALL-CHECKLIST.md`](INSTALL-CHECKLIST.md).
 
 ## Step 2 — start with real prompts, not synthetic demos
 
@@ -108,7 +116,7 @@ Ask:
 - Did it recommend something?
 - Did it say what should wait, or what should happen next?
 
-### 4. Did it produce a usable artifact?
+### 4. Did it produce a usable output?
 
 - Would you reuse this output in a meeting, memo, planning doc, or leadership sync with light editing?
 
@@ -165,7 +173,7 @@ Helpful repo entry points:
 - [Worked product-leader comparison](../benchmark/worked-example-product-leader.md)
 - [Examples index](../examples/README.md)
 
-## Step 6 — run a lightweight local trust check
+## Step 6 — run a lightweight local trust check again before publishing or sharing
 
 This repo now includes a simple validation script for structural consistency:
 
@@ -183,7 +191,7 @@ What it checks:
 - new onboarding assets are present
 
 This is not a full test suite.
-It is a lightweight trust check to reduce repo drift.
+It is a lightweight trust check that helps catch repo drift early.
 
 ## Step 7 — adapt it to your style of PM work
 
@@ -195,7 +203,7 @@ You may prefer different default shapes depending on your role:
 - founder -> more speed-vs-trust decisions, strategic sequencing, explicit “not now” calls
 
 If you customize the skill, keep the core principle intact:
-**judgment + structure + reusable artifacts > framework theater**
+**judgment + structure + reusable outputs > framework theater**
 
 ## Common first-use mistakes
 

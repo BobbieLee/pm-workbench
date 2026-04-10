@@ -17,7 +17,7 @@ A strong `pm-workbench` response should:
 - clearly identify what is above and below the line
 - help the PM explain why some work is intentionally not prioritized now
 
-## Expected artifact
+## Expected output shape
 
 **Prioritization Stack**
 

@@ -1,6 +1,6 @@
 # Worked example — launch readiness under pressure
 
-This is an illustrative comparison artifact for a high-pressure scenario where leadership wants a confident answer before the product is fully ready.
+This example looks at a high-pressure scenario where leadership wants a confident answer before the product is fully ready.
 
 ---
 
@@ -24,7 +24,7 @@ A stronger system should make a condition-based recommendation.
 
 ---
 
-## Representative generic AI output
+## Representative baseline output
 
 ### Typical shape
 

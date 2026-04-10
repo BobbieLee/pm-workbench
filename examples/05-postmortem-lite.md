@@ -16,9 +16,9 @@ A strong `pm-workbench` response should:
 - identify root causes, not just symptoms
 - avoid blame-heavy language
 - extract specific lessons and next actions
-- produce a reusable review artifact
+- produce a review format the team can reuse
 
-## Expected artifact
+## Expected output shape
 
 **Postmortem Lite**
 

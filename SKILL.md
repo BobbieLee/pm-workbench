@@ -1,11 +1,11 @@
 ---
 name: pm-workbench
-description: "Structured workflow skill for product managers and product leaders. Use for scenario-driven PM work: clarify vague requests, evaluate whether a feature or initiative is worth doing, compare options, prioritize requests, draft PRDs or solution docs, build roadmaps, design metrics, prepare executive summaries, write postmortems, produce portfolio review summaries, prepare head-of-product operating reviews, or produce founder business reviews. Best when the user needs judgment, structure, and actionable outputs rather than framework lookup."
+description: "Use when product work needs clearer framing, prioritization, or communication: clarifying a vague request, evaluating whether a feature is worth doing, comparing options, prioritizing requests, drafting a lightweight spec, building a roadmap, defining metrics, preparing an executive summary, or reviewing outcomes. Best when the user needs a practical recommendation or reusable output, not just frameworks."
 ---
 
 # pm-workbench
 
-Treat this skill as a **PM workbench**: route to the right workflow, ask only for missing context, and produce outputs that help real work move forward.
+Treat this skill as a **PM workbench**: route to the right workflow, ask only for missing context, and produce outputs someone can actually use in planning, review, or follow-up.
 
 ## Core rules
 
@@ -18,7 +18,7 @@ Treat this skill as a **PM workbench**: route to the right workflow, ask only fo
 7. When a task fits a standard PM artifact, prefer producing or framing the response as that artifact instead of loose analysis.
 8. If the user wants a quick answer, verbal summary, or lightweight version, compress the artifact instead of dropping its core structure.
 9. Make trade-offs, risks, information gaps, and next steps explicit.
-10. Prefer decision-grade artifacts over open-ended commentary when the output is likely to be reused in review, planning, or leadership communication.
+10. Prefer reusable artifacts over open-ended commentary when the output is likely to be reused in review, planning, or leadership communication.
 11. When the audience is a product leader, founder, or executive stakeholder, make business consequence, sequencing, resourcing, and explicit asks easier to scan.
 
 Default style:
@@ -154,7 +154,7 @@ If the user asks for a different deliverable, follow the requested format.
 
 ## Anti-template rule
 
-The artifact is a delivery shape, not a substitute for judgment.
+The artifact is a delivery shape, not a substitute for thinking.
 
 That means:
 
@@ -205,7 +205,7 @@ Before finishing, check whether the response:
 - explains important trade-offs
 - gives next actions
 - stays proportionate to the user's requested level of detail
-- avoids template-complete but judgment-light output
+- avoids output that is neatly formatted but thin on substance
 - makes decide-now versus validate-next explicit when uncertainty remains
 
 ## Workflow references
@@ -261,7 +261,7 @@ This skill is working if it helps the user do at least one of these:
 - produce a portfolio review summary that clearly shows above-the-line and below-the-line decisions
 - produce a head-of-product operating review that turns mixed signals into leadership decisions
 - produce a founder business review that separates narrative momentum from business truth
-- produce an artifact that a PM can reuse with minimal rewriting in a meeting, review, or planning discussion
+- produce an output that a PM can reuse with minimal rewriting in a meeting, review, or planning discussion
 
 ## Forced-choice rule for company-level trade-offs
 

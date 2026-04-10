@@ -6,7 +6,7 @@ This project is trying to become more than “a pile of PM prompts.”
 The bar is higher:
 
 - sharper PM judgment
-- stronger reusable artifacts
+- stronger reusable outputs
 - cleaner GitHub discovery and adoption
 - better support for real product work under ambiguity and constraints
 
@@ -39,10 +39,10 @@ Please avoid contributions that mainly:
 
 If a request is still unclear, the skill should clarify before pretending evaluation or drafting is the real next step.
 
-### 2. Artifact-first where it matters
+### 2. Output shape matters when it helps
 
 Strong outputs should be reusable with light editing.
-If a new workflow deserves to exist, think about its natural artifact too.
+If a new workflow deserves to exist, think about its natural deliverable too.
 
 ### 3. Ask less, but ask better
 
@@ -93,7 +93,7 @@ Touch:
 
 Questions to ask:
 
-- is this a real PM artifact or just formatted commentary?
+- is this a real PM deliverable or just formatted commentary?
 - does it make the output easier to reuse?
 - does it strengthen judgment, or only structure?
 

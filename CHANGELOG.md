@@ -4,6 +4,32 @@ All notable changes to `pm-workbench` will be documented in this file.
 
 ---
 
+## v1.0.6 — Install and pre-release check polish
+
+### Added
+
+- new short install checklist:
+  - `docs/INSTALL-CHECKLIST.md`
+
+### Improved
+
+- made the source-first install path more explicit in:
+  - `README.md`
+  - `docs/GETTING-STARTED.md`
+  - `docs/TRY-IN-3-MINUTES.md`
+- clarified the default path as **copy → validate → skills check** before first use or release
+- strengthened repo validation coverage so the install-check doc is also guarded by local validation
+
+### Validated
+
+- `npm run validate` passes locally after the install-check polish
+
+### Notes
+
+This version is aimed at making `pm-workbench` easier to try, easier to verify after copying, and easier to sanity-check before source-first distribution.
+
+---
+
 ## v1.0.5 — Decision-under-uncertainty hardening
 
 ### Added

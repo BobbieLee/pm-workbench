@@ -1,12 +1,12 @@
 # Worked example — product leader portfolio trade-off
 
-This is an **illustrative comparison artifact**, not a claimed scientific benchmark result.
+This example is here to make the difference legible to someone seeing the repo for the first time.
 
-Its purpose is to make the repo’s value obvious to a cold reader:
+The point is straightforward:
 
-- what generic AI often does in this scenario
-- what `pm-workbench` is aiming to do better
-- how the benchmark rubric would judge the difference
+- what a baseline answer often does in this scenario
+- what `pm-workbench` should do better
+- how the benchmark rubric would judge the gap
 
 ---
 
@@ -26,11 +26,11 @@ This prompt matters because it compresses several real tensions at once:
 - the need for a leadership-defendable call
 
 A weak system will rank items.
-A stronger system will choose a quarter objective and make a portfolio bet.
+A stronger system will choose a quarter objective and make a clear portfolio bet.
 
 ---
 
-## Representative generic AI output
+## Representative baseline output
 
 ### Typical shape
 
@@ -78,10 +78,10 @@ A stronger system will choose a quarter objective and make a portfolio bet.
 >
 > - **Team workspace sharing** — strategically valuable, but less urgent than fixing first-use friction and core output trust.
 > - **Conversation history search** — useful retention lever, but not as central as activation + answer quality right now.
-> - **Admin billing controls** — important for maturity, but not the current quarter’s sharpest bottleneck.
+> - **Admin billing controls** — important for maturity, but not the current quarter’s most urgent bottleneck.
 > - **Referral growth loop** — growth-focused, but likely to amplify a leaky product before the core experience is stronger.
 >
-> **Leadership framing:** this is a deliberate choice to avoid growth theater. We are not ignoring growth; we are choosing to earn it through better activation and product trust first, while protecting one enterprise-critical lane.
+> **Leadership framing:** this is a deliberate choice not to chase top-of-funnel growth before the product is ready. We are not ignoring growth; we are choosing to earn it through better activation and product trust first, while protecting one enterprise-critical lane.
 
 ### Why this feels stronger
 
@@ -102,14 +102,14 @@ The real difference is that the stronger answer:
 - treats non-decisions as part of the work, not leftovers
 - explains the business logic behind the trade-off
 
-Even without headings, that is a better leadership decision artifact.
+Even without headings, that is a better leadership decision note.
 
 ---
 
 ## Example rubric scoring
 
-| Criterion                          | Generic AI | pm-workbench target | Why                                                                                                                                 |
-| ---------------------------------- | ---------: | ------------------: | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Criterion                          | Baseline answer | pm-workbench target | Why                                                                                                                                 |
+| ---------------------------------- | --------------: | ------------------: | ----------------------------------------------------------------------------------------------------------------------------------- |
 | Upstream problem framing           |          1 |                   3 | One lists items; the other defines the portfolio objective first                                                                    |
 | Follow-up question quality         |          1 |                   2 | Generic AI often asks little or asks generic questions; `pm-workbench` should ask only if objective or hard constraints are missing |
 | Recommendation quality             |          1 |                   3 | One hedges; the other makes a constrained top-3 call                                                                                |

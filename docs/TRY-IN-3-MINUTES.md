@@ -3,18 +3,22 @@
 If you are a cold GitHub visitor, do **not** start by reading the whole repo.
 Do this instead.
 
-## 1. Put the skill in your skills directory
+## 1. Copy the skill into your skills directory
 
 Place `pm-workbench/` under your OpenClaw skills workspace.
 
-## 2. Check that OpenClaw recognizes it
+## 2. Run the quick install check
 
 ```bash
+cd skills/pm-workbench
+npm run validate
 openclaw skills info pm-workbench
 openclaw skills check
 ```
 
-You want to see that `pm-workbench` is recognized and ready to use.
+You want to see that the repo validation passes and `pm-workbench` is recognized and ready to use.
+
+If you want the short checklist, use [`INSTALL-CHECKLIST.md`](INSTALL-CHECKLIST.md).
 
 ## 3. Run these 3 prompts
 
@@ -51,5 +55,5 @@ Be skeptical if the output:
 
 ## Bottom line
 
-If these 3 prompts already feel more decision-grade than generic AI, the skill is doing its job.
+If these 3 prompts already feel more useful than generic AI for making a PM call, the skill is doing its job.
 If not, the benchmark kit will show you where it is still weak.

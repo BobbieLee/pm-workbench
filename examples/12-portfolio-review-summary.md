@@ -41,7 +41,7 @@
   - **What would change that decision:** core friction drops and cross-team usage emerges as the next binding constraint.
 
 - **Analytics instrumentation expansion**
-  - **Why it is not top priority now:** useful, but not the quarter’s sharpest bottleneck relative to direct user-facing issues.
+  - **Why it is not top priority now:** useful, but not the quarter’s most urgent bottleneck relative to direct user-facing issues.
   - **What would change that decision:** current signal quality becomes too weak to guide the next decision cycle.
 
 ## 4. Trade-off view

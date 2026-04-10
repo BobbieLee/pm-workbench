@@ -18,7 +18,7 @@ A strong `pm-workbench` response should:
 - define when judgment should happen
 - note where interpretation could be noisy or misleading
 
-## Expected artifact
+## Expected output shape
 
 **Metrics Scorecard**
 

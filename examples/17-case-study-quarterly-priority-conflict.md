@@ -14,7 +14,7 @@ CEO wants growth, sales wants enterprise readiness, and support keeps escalating
 
 > “We only have room for 3 of these 8 requests next quarter. Help me prioritize them and explain what should wait.”
 
-## What generic AI often does badly
+## What a weak default answer often does badly
 
 - starts with a framework instead of a quarter objective
 - gives a soft top 4 or top 5
@@ -37,7 +37,7 @@ CEO wants growth, sales wants enterprise readiness, and support keeps escalating
 - main trade-off being made
 - how to explain the call to leadership and stakeholders
 
-## Reusable artifact
+## Suggested output shape
 
 **Prioritization Stack**
 

@@ -4,13 +4,14 @@
 
 Use this workflow to compress a complex topic into an executive-ready summary for a boss, leadership, or another decision-maker.
 
-This is not a generic summary. It is an upward-facing decision brief focused on:
+This is not just a summary. It is a short note meant to help a boss or leader make a decision.
+It should quickly cover:
 
 - the conclusion
 - why it matters
-- key evidence
-- major risk
-- what support or decision is needed
+- the few facts that support it
+- the main risk
+- the support or decision needed
 
 ## Trigger phrases
 
@@ -133,7 +134,7 @@ Weak output usually looks like this:
 
 Strong output should:
 
-- lead with the bottom line in the first screen
+- lead with the recommendation in the first screen
 - tie the recommendation to business consequence, timing, or resource logic
 - make the main risk legible without turning the note into a risk register
 - state the ask in approve / challenge / modify terms

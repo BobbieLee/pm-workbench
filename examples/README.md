@@ -4,7 +4,7 @@ These examples are not meant to be perfect final outputs.
 They are meant to help a new reader understand:
 
 - what kinds of PM situations `pm-workbench` handles well
-- what artifact shape each workflow tends to produce
+- what output shape each workflow tends to produce
 - what “good behavior” looks like from the skill
 
 ## Example index
@@ -73,7 +73,7 @@ If you want to test the skill quickly in your own workspace, reuse the input exa
 
 ### 3. Contribution alignment
 
-If you add or materially change a workflow or artifact, update or add examples so the repo stays easy to understand from the outside.
+If you add or materially change a workflow or template, update or add examples so the repo stays easy to understand from the outside.
 
 ## What these examples intentionally do not try to be
 

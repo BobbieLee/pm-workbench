@@ -19,7 +19,7 @@ If 1-2 critical premises would materially change the recommendation, clarify tho
 
 ## Output goal
 
-Produce a concise comparison artifact that makes the decision objective, trade-offs, recommendation, and next step easy to review.
+Produce a concise comparison output that makes the decision objective, trade-offs, recommendation, and next step easy to review.
 
 ---
 
@@ -35,9 +35,9 @@ Produce a concise comparison artifact that makes the decision objective, trade-o
 - What result are we optimizing for?
 - What matters most in this decision: speed, impact, cost, quality, risk, leverage, or long-term flexibility?
 
-## 3. What this decision is protecting
+## 3. What this decision is really trying to protect
 
-- What scarce resource or strategic advantage is being protected?
+- What scarce resource or strategic advantage are we trying to protect?
 - Trust, focus, market timing, engineering bandwidth, support capacity, or long-term leverage?
 
 ## 4. Options under consideration

@@ -1,11 +1,11 @@
 # Worked example — executive summary with a real ask
 
-This is an **illustrative comparison artifact**, not a scientific benchmark result.
+This example shows how the same PM situation can land very differently.
 
-It exists to show a practical difference:
+Here the contrast is simple:
 
-- generic AI often summarizes information
-- `pm-workbench` should help shape a leadership-ready decision artifact
+- a default answer often just summarizes the situation
+- `pm-workbench` should turn it into a memo a leader can actually react to
 
 ---
 
@@ -26,18 +26,18 @@ It already contains:
 - evidence that must support a leadership call
 
 A weak system will summarize the situation.
-A stronger system will turn it into a decision-grade exec artifact.
+A stronger system will turn it into an executive summary that supports an actual decision.
 
 ---
 
-## Representative generic AI output
+## Representative baseline output
 
 ### Typical shape
 
 - restates the situation in polished prose
 - mentions the positive and negative findings
 - sounds balanced
-- does not make the recommendation and ask sharp enough
+- does not make the recommendation and ask explicit enough
 
 ### Example excerpt
 
@@ -56,14 +56,14 @@ A stronger system will turn it into a decision-grade exec artifact.
 
 ### Typical shape
 
-- leads with the bottom line immediately
+- leads with the recommendation immediately
 - keeps only the evidence needed to support the recommendation
 - states the ask in a way leadership can approve or reject
 - reads like a one-page executive summary, not meeting notes
 
 ### Example excerpt
 
-> **Bottom line:** do **not** scale marketing for the premium AI meeting summary workflow yet. For the next **6 weeks**, we should focus on reducing setup friction because current user feedback suggests the product experience is strong **after activation**, but too many users fail to reach that point.
+> **Recommendation:** do **not** scale marketing for the premium AI meeting summary workflow yet. For the next **6 weeks**, we should focus on reducing setup friction because current user feedback suggests the product experience is strong **after activation**, but too many users fail to reach that point.
 >
 > **Why this matters now:** increasing acquisition before fixing activation would amplify waste. We would spend more to bring users into a flow that is currently under-converting for fixable UX reasons.
 >
@@ -96,14 +96,14 @@ The real difference is that the stronger answer:
 - translates “we learned X” into “therefore do Y, not Z, and give us W”
 - produces something leadership can act on immediately
 
-Even as plain text with no headings, that would still be the better exec artifact.
+Even as plain text with no headings, that would still be the more decision-ready executive summary.
 
 ---
 
 ## Example rubric scoring
 
-| Criterion                          | Generic AI | pm-workbench target | Why                                                                                |
-| ---------------------------------- | ---------: | ------------------: | ---------------------------------------------------------------------------------- |
+| Criterion                          | Baseline answer | pm-workbench target | Why                                                                                |
+| ---------------------------------- | --------------: | ------------------: | ---------------------------------------------------------------------------------- |
 | Upstream problem framing           |          2 |                   3 | Both understand the situation, but the target frames it as a scale-timing decision |
 | Follow-up question quality         |          2 |                   2 | Both may be acceptable without follow-ups in this scenario                         |
 | Recommendation quality             |          1 |                   3 | The target makes a clear no-scale-yet and 6-week recommendation                    |

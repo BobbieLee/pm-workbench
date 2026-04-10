@@ -17,7 +17,7 @@ A strong `pm-workbench` response should:
 - make scope boundaries explicit
 - identify risks, dependencies, and open questions
 
-## Expected artifact
+## Expected output shape
 
 **PRD Lite**
 

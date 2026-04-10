@@ -1,6 +1,6 @@
 # Product leader playbook
 
-`pm-workbench` is not only for IC PM artifact drafting.
+`pm-workbench` is not only for IC PM deliverable drafting.
 It is especially useful when the job is closer to:
 
 - head of product portfolio trade-offs
@@ -208,7 +208,7 @@ If you are evaluating `pm-workbench` mainly for product-leader work, start here:
 The leader-grade value of `pm-workbench` is not that it can talk about PM frameworks.
 It is that it can help turn messy cross-functional pressure into:
 
-- a sharper recommendation
+- a clearer recommendation
 - a cleaner portfolio call
 - a roadmap with actual focus
 - an executive summary with a real ask

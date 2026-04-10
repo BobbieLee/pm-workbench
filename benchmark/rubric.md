@@ -1,6 +1,6 @@
 # Benchmark rubric
 
-Use this rubric to compare `pm-workbench` against generic AI outputs.
+Use this rubric to compare `pm-workbench` against general-purpose model outputs.
 
 ## Scoring scale
 
@@ -9,7 +9,7 @@ Score each criterion from **0 to 3**:
 - **0 — Missed badly**
 - **1 — Weak / partial**
 - **2 — Solid**
-- **3 — Strong / clearly better than average generic AI**
+- **3 — Strong / clearly better than an average general-purpose model**
 
 Suggested total range if using all 7 criteria:
 
@@ -30,7 +30,7 @@ Did the answer solve the right PM problem first?
 
 - clarifies before evaluating when needed
 - identifies embedded solution assumptions
-- reframes vague asks into a decision-ready problem
+- reframes vague asks into a problem the team can actually decide on
 
 ### Weak signal
 
@@ -96,7 +96,7 @@ Did the answer show what is gained, lost, delayed, or displaced?
 
 ---
 
-## 5. Artifact reuse quality
+## 5. Reuse quality
 
 ### What to judge
 
@@ -111,7 +111,7 @@ Would a PM or product leader reuse this output with light editing?
 ### Weak signal
 
 - sounds smart but is hard to reuse
-- lacks structure or a reusable artifact shape
+- lacks structure or a shape people can readily reuse
 
 ---
 
@@ -155,14 +155,14 @@ Did the answer distinguish facts, assumptions, and missing evidence?
 
 ## Practical comparison rule
 
-A generic AI answer can still score well on writing style.
+A general-purpose model can still score well on writing style.
 Ignore that as a primary criterion.
 
 This rubric is designed to reward:
 
 - PM judgment
 - decisiveness
-- artifact usefulness
+- output usefulness
 - leader-grade framing
 - honest handling of uncertainty
 

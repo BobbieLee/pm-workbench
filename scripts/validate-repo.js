@@ -55,6 +55,8 @@ const docsToCheck = [
   'README.md',
   'docs/GETTING-STARTED.md',
   'docs/TRY-3-PROMPTS.md',
+  'docs/TRY-IN-3-MINUTES.md',
+  'docs/INSTALL-CHECKLIST.md',
   'examples/README.md',
   'ROADMAP.md',
   'CONTRIBUTING.md',
@@ -67,7 +69,9 @@ const docsToCheck = [
   'benchmark/scorecard.md',
   'benchmark/worked-example-product-leader.md',
   'benchmark/worked-example-clarify-request.md',
-  'benchmark/worked-example-exec-summary.md'
+  'benchmark/worked-example-exec-summary.md',
+  'benchmark/worked-example-launch-readiness.md',
+  'benchmark/worked-example-mixed-signals.md'
 ];
 
 const docContents = Object.fromEntries(docsToCheck.map((rel) => [rel, read(path.join(root, rel))]));
@@ -119,6 +123,8 @@ const benchmarkFiles = [
   'benchmark/worked-example-product-leader.md',
   'benchmark/worked-example-clarify-request.md',
   'benchmark/worked-example-exec-summary.md',
+  'benchmark/worked-example-launch-readiness.md',
+  'benchmark/worked-example-mixed-signals.md',
   'docs/PRODUCT-LEADER-PLAYBOOK.md',
   'docs/images/pm-workbench-benchmark-summary.svg',
   'docs/images/pm-workbench-benchmark-card.svg'
@@ -131,6 +137,7 @@ for (const file of benchmarkFiles) {
 const expectedReadmeLinks = [
   'docs/GETTING-STARTED.md',
   'docs/TRY-3-PROMPTS.md',
+  'docs/INSTALL-CHECKLIST.md',
   'examples/README.md',
   'benchmark/README.md',
   'benchmark/CONTRIBUTING-BENCHMARKS.md',

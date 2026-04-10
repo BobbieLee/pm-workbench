@@ -1,6 +1,6 @@
 # Worked example — mixed signals operating review
 
-This is an illustrative comparison artifact for a leadership-grade operating review where multiple signals point in different directions.
+This example looks at a leadership-grade operating review where multiple signals point in different directions.
 
 ---
 
@@ -16,7 +16,7 @@ This prompt matters because many AI systems can summarize metrics, but far fewer
 
 ---
 
-## Representative generic AI output
+## Representative baseline output
 
 ### Typical shape
 

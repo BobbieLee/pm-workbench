@@ -1,12 +1,12 @@
 # Worked example — vague leadership ask clarification
 
-This is an **illustrative comparison artifact**, not a scientific benchmark claim.
+This example is here to make the contrast easy to see.
 
-Its job is simple:
+The point is simple:
 
-- show how a generic AI answer often fails on upstream PM framing
+- show how a general-purpose model often misses the real PM framing problem
 - show what `pm-workbench` should do better
-- make the difference legible to a cold GitHub visitor in under 2 minutes
+- make the difference obvious to a first-time GitHub visitor in under 2 minutes
 
 ---
 
@@ -31,7 +31,7 @@ A stronger PM workflow should notice that the real problem is still framing.
 
 ---
 
-## Representative generic AI output
+## Representative general-purpose model output
 
 ### Typical shape
 
@@ -76,7 +76,7 @@ A stronger PM workflow should notice that the real problem is still framing.
 
 - it solves the framing problem before the feature problem
 - it asks very little, but the right little
-- it protects the team from solution theater
+- it protects the team from premature solutioning
 - it produces a reusable clarification brief, not just PM-sounding advice
 
 ---
@@ -100,16 +100,16 @@ Even in plain text without headings, the stronger answer would still be stronger
 
 ## Example rubric scoring
 
-| Criterion                          | Generic AI | pm-workbench target | Why                                                                                  |
-| ---------------------------------- | ---------: | ------------------: | ------------------------------------------------------------------------------------ |
-| Upstream problem framing           |          0 |                   3 | One brainstorms features; the other reframes the ask into a decision-ready question  |
-| Follow-up question quality         |          0 |                   3 | One asks none; the other asks only the two questions that matter most                |
-| Recommendation quality             |          1 |                   2 | Generic AI recommends “more wow”; the target recommends how to frame before deciding |
-| Trade-off and non-decision clarity |          0 |                   2 | The target makes it clear why not to jump straight into visible features             |
-| Artifact reuse quality             |          0 |                   3 | The target can be reused as a request clarification brief                            |
-| Product-leader relevance           |          1 |                   2 | The target helps a leader guide the discussion instead of multiplying noise          |
-| Honesty about uncertainty          |          1 |                   3 | The target labels ambiguity instead of pretending confidence                         |
-| **Total**                          |      **3** |              **18** | Clear gap in upstream PM judgment                                                    |
+| Criterion                          | General-purpose model | pm-workbench target | Why                                                                                           |
+| ---------------------------------- | --------------------: | ------------------: | --------------------------------------------------------------------------------------------- |
+| Upstream problem framing           |                     0 |                   3 | One brainstorms features; the other reframes the ask into a problem the team can decide on    |
+| Follow-up question quality         |                     0 |                   3 | One asks none; the other asks only the two questions that matter most                         |
+| Recommendation quality             |                     1 |                   2 | The weaker answer pushes for “more wow”; the target says how to frame the decision first      |
+| Trade-off and non-decision clarity |                     0 |                   2 | The target makes it clear why not to jump straight into visible features                      |
+| Reuse quality                      |                     0 |                   3 | The target can be reused as a request clarification brief                                     |
+| Product-leader relevance           |                     1 |                   2 | The target helps a leader guide the discussion instead of multiplying noise                   |
+| Honesty about uncertainty          |                     1 |                   3 | The target labels ambiguity instead of pretending confidence                                  |
+| **Total**                          |                 **3** |              **18** | Clear gap in upstream PM judgment                                                             |
 
 ---
 
@@ -131,7 +131,7 @@ It does not prove universal superiority in every PM task.
 
 ## Takeaway
 
-A lot of generic AI answers fail before they even start: they solve the imagined feature problem instead of the real framing problem.
+A lot of general-purpose model answers fail before they even start: they solve the imagined feature problem instead of the real framing problem.
 
 This example shows one of the most important jobs of `pm-workbench`:
 **stop random solutioning before it starts.**

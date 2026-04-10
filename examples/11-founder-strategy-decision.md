@@ -18,7 +18,7 @@ A strong `pm-workbench` response should:
 - recommend one path or a staged path with clear conditions
 - make the next founder-level decision and communication move obvious
 
-## Expected artifact
+## Expected output shape
 
 **Decision Brief**
 

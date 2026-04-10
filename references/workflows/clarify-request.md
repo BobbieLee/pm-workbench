@@ -117,7 +117,7 @@ Weak output usually looks like this:
 - jumping straight into solution ideas
 - asking too many questions and stalling momentum
 - treating leadership language as if it were already a product problem statement
-- producing “nice structure” without a sharper reframed question
+- producing “nice structure” without a clearer reframed question
 
 ## What strong output looks like
 
@@ -127,7 +127,7 @@ Strong output should:
 - separate problem, goal, and embedded solution assumption clearly
 - ask only the 1-2 questions that would change the framing most
 - make ambiguity explicit instead of pretending confidence
-- turn the messy ask into a sharper, reusable product question or clarification brief
+- turn the messy ask into a clearer, reusable product question or clarification brief
 
 ## Output structure
 
@@ -142,7 +142,7 @@ Use this structure when helpful:
 7. Initial judgment
 8. Suggested next step
 
-Default artifact when the user needs something reusable:
+Default template when the user needs something reusable:
 
 - `references/templates/request-clarification-brief.md`
 

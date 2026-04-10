@@ -1,17 +1,17 @@
 # pm-workbench
 
-> **Turn vague product asks into decision-ready PM artifacts.**
+> **Turn vague product asks into clear PM outputs people can actually use.**
 
-`pm-workbench` is an OpenClaw skill for PMs, product leaders, and founders who need sharper product judgment under messy real-world constraints.
-It is built for the work between **“someone asked for something”** and **“we need a recommendation, artifact, or next move that can survive review.”**
+`pm-workbench` is an OpenClaw skill for PMs, product leaders, and founders who need clearer product judgment under messy real-world constraints.
+It is built for the work between **“someone asked for something”** and **“we need a recommendation, reusable output, or next move we can stand behind.”**
 
-**Current release target:** `v1.0.5`
+**Current release target:** `v1.0.6`
 
 ## Start here if you only have 3 minutes
 
 ### What this is
 
-A workflow skill for turning ambiguity into **decisions, artifacts, and explicit trade-offs**.
+A workflow skill for turning ambiguity into **decisions, reusable outputs, and explicit trade-offs**.
 
 ### Best fit
 
@@ -35,7 +35,7 @@ A workflow skill for turning ambiguity into **decisions, artifacts, and explicit
 - clarify the upstream problem first
 - ask only the missing questions that change the decision
 - force explicit trade-offs and “not now” calls
-- shape outputs into reusable PM artifacts instead of polished rambling
+- shape outputs into reusable PM deliverables instead of polished rambling
 
 If you want the shortest path, go here:
 
@@ -47,9 +47,9 @@ If you want the shortest path, go here:
 ## Why this feels different
 
 Most AI tools can talk about product work.
-`pm-workbench` is designed to **move product work forward**.
+`pm-workbench` is designed to help you get to a usable next step.
 
-It is opinionated in a few useful ways:
+It has a few deliberate habits:
 
 - it routes by the **actual PM job to be done**, not by abstract framework recital
 - it asks for **only the missing context that would materially change the recommendation**
@@ -119,12 +119,12 @@ This matters because a lot of PM work fails at the upstream handoff:
 | Prepare upward communication       | `prepare-exec-summary`   | Executive Summary           |
 | Learn from a launch / initiative   | `write-postmortem`       | Postmortem Lite             |
 
-### Artifact-first outputs
+### Reusable output shapes
 
 This repo does not stop at “analysis.”
-It includes reusable PM artifact templates under `references/templates/` so the skill naturally shapes outputs into things a PM can actually use.
+It includes reusable PM templates under `references/templates/` so the skill naturally shapes outputs into things a PM can actually use.
 
-Current built-in artifact library:
+Current built-in template library:
 
 - Request Clarification Brief
 - Feature Evaluation Memo
@@ -141,7 +141,7 @@ Current built-in artifact library:
 
 ### Anti-template by design
 
-Artifact-first is a delivery choice, **not** a substitute for judgment.
+A template is a delivery choice, **not** a substitute for judgment.
 
 This repo explicitly tries to avoid template theater:
 
@@ -151,7 +151,7 @@ This repo explicitly tries to avoid template theater:
 - when speed matters, prefer a sharp compressed artifact over a bloated “complete” one
 
 The goal is not to output something that merely **looks like a PM doc**.
-The goal is to output something that can actually **move a decision, alignment, or review forward**.
+The goal is to output something that can actually **help a decision, alignment, or review move forward**.
 
 ### Benchmark and trust layer
 
@@ -230,28 +230,42 @@ These are useful for testing whether the skill can:
 
 This is the easiest and most transparent path.
 
-1. Clone or copy this repository.
-2. Place the `pm-workbench` folder under your OpenClaw skills workspace.
-3. Run the local repo validation first:
+#### 3-step install path
+
+1. **Copy**
+   - Clone or copy this repository.
+   - Place the `pm-workbench` folder under your OpenClaw skills workspace.
+2. **Validate**
 
    ```bash
    cd skills/pm-workbench
    npm run validate
    ```
 
-4. If your OpenClaw setup auto-discovers workspace skills, verify recognition with:
+3. **Confirm recognition**
 
    ```bash
    openclaw skills check
    ```
 
-5. Start with a real PM prompt.
+Then start with a real PM prompt.
+
+If you prefer, you can also send a one-line install request to your Agent and let it adapt the steps to your setup.
+That Agent can be OpenClaw or any other AI assistant you already use.
+
+Example:
+
+> Please install this skill: <project link>, and adapt the installation method to my current environment.
+
+If you want the short install checklist, use:
+
+- [Install checklist](docs/INSTALL-CHECKLIST.md)
 
 Notes:
 
 - this repo is designed as a **source-first OpenClaw skill**
 - local recognition can depend on your OpenClaw version and skill-path configuration
-- `npm run validate` is the most reliable first check that the repo itself is structurally sound
+- `npm run validate` is the most reliable first check that the repo itself is structurally sound before debugging local discovery
 
 ### Option 2 — use a packaged `.skill`
 
@@ -274,7 +288,7 @@ But the default recommendation is still: **start from source, validate fast, the
 - PM judgment
 - product decision framing
 - prioritization and leadership communication
-- reusable PM artifacts
+- reusable PM outputs
 - founder / product-leader product-business trade-offs
 
 ### Out of scope
@@ -318,6 +332,7 @@ Current repo snapshot:
 ## What to read next
 
 - **3-minute quick start:** [docs/TRY-IN-3-MINUTES.md](docs/TRY-IN-3-MINUTES.md)
+- **Install checklist:** [docs/INSTALL-CHECKLIST.md](docs/INSTALL-CHECKLIST.md)
 - **Quick start:** [docs/GETTING-STARTED.md](docs/GETTING-STARTED.md)
 - **Try it fast:** [docs/TRY-3-PROMPTS.md](docs/TRY-3-PROMPTS.md)
 - **Benchmark kit:** [benchmark/README.md](benchmark/README.md)
@@ -338,6 +353,7 @@ This repo is being built with a simple quality bar:
 - docs should reduce adoption friction for someone discovering the repo cold
 - benchmark assets should make side-by-side comparison possible
 - local validation should catch obvious structural drift early
+- install and pre-release checks should be easy to follow for source-first use
 
 Local verification completed for the repo structure:
 
@@ -350,7 +366,7 @@ Local verification completed for the repo structure:
 If you want to improve the skill, do it in a product-minded way:
 
 - strengthen judgment quality, not just template volume
-- prefer artifacts that help real PM work move forward
+- prefer outputs that help real PM work move forward
 - add examples when adding new workflows or templates
 - keep claims in docs honest and easy to verify
 - use benchmark scenarios to challenge the repo, not just flatter it
@@ -376,5 +392,5 @@ They need help turning ambiguity into:
 
 - a clearer problem
 - a stronger recommendation
-- a reusable artifact
+- a reusable output
 - a better decision

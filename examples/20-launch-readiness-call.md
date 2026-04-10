@@ -18,13 +18,13 @@ A strong `pm-workbench` response should:
 - separate what should be decided now from what still needs validation
 - frame the ask in a way leadership can approve, challenge, or narrow
 
-## Expected artifact
+## Expected output shape
 
 **Executive Summary** or a compressed launch-decision brief
 
 ## Example response shape
 
-- bottom line
+- recommendation
 - readiness gap
 - consequence of launching anyway
 - current recommendation

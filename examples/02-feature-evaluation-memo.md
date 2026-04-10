@@ -17,7 +17,7 @@ A strong `pm-workbench` response should:
 - avoid jumping straight from enthusiasm to shipping
 - produce a decision-ready memo
 
-## Expected artifact
+## Expected output shape
 
 **Feature Evaluation Memo**
 

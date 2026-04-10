@@ -20,7 +20,7 @@ They are chosen to reveal whether the skill is actually better than generic AI a
 
 ### Red flag
 
-If the answer immediately brainstorms flashy AI features, the model is doing solution theater.
+If the answer immediately brainstorms flashy AI features, the model is solving the wrong problem too early.
 
 ---
 

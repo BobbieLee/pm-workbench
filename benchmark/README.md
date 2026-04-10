@@ -2,7 +2,7 @@
 
 This benchmark kit exists to answer a practical question:
 
-**Does `pm-workbench` produce better PM judgment than generic AI in realistic product scenarios?**
+**Does `pm-workbench` produce better PM judgment than a general-purpose model in realistic product scenarios?**
 
 It is not pretending to be a scientific benchmark.
 It is a repo-native evaluation pack for side-by-side testing that a PM, contributor, or curious GitHub visitor can actually inspect and run.
@@ -13,7 +13,7 @@ It is a repo-native evaluation pack for side-by-side testing that a PM, contribu
 - [High-pressure acceptance suite](high-pressure-acceptance-suite.md) — harder, more leadership-realistic scenarios for testing judgment under ambiguity and pressure
 - [Rubric](rubric.md) — a scoring frame focused on PM judgment quality, not writing polish
 - [Scorecard](scorecard.md) — a copyable worksheet for comparing outputs across models or prompts
-- [Worked example — product leader](worked-example-product-leader.md) — illustrative generic-AI-vs-`pm-workbench` comparison for quarterly prioritization
+- [Worked example — product leader](worked-example-product-leader.md) — illustrative side-by-side comparison for quarterly prioritization
 - [Worked example — clarify request](worked-example-clarify-request.md) — illustrative comparison for upstream framing quality
 - [Worked example — executive summary](worked-example-exec-summary.md) — illustrative comparison for leadership-ready communication
 - [Worked example — launch readiness](worked-example-launch-readiness.md) — illustrative comparison for high-pressure launch recommendation quality
@@ -82,7 +82,7 @@ That is better than vague claims.
 
 ## What this benchmark is designed to reveal
 
-Generic AI often sounds competent on PM topics.
+A general-purpose model often sounds competent on PM topics.
 But in practice it frequently:
 
 - accepts the request framing too quickly
@@ -91,7 +91,7 @@ But in practice it frequently:
 - ignores resource trade-offs or below-the-line decisions
 - produces text that sounds polished but is hard to reuse in review or leadership communication
 
-`pm-workbench` should outperform generic AI on those exact failure modes.
+`pm-workbench` should do better on those exact failure modes.
 
 ## Known benchmark limitations
 
@@ -110,12 +110,12 @@ The point is to create a proof layer that is more inspectable, more honest, and 
 
 ## Interpretation rule
 
-If `pm-workbench` does **not** consistently beat generic AI on:
+If `pm-workbench` does **not** consistently beat a general-purpose model on:
 
 - upstream problem framing
 - recommendation quality
 - trade-off clarity
-- artifact reuse
+- reuse in real PM outputs
 
 then the skill still has work to do.
 

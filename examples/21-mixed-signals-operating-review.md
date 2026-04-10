@@ -18,13 +18,13 @@ A strong `pm-workbench` response should:
 - make above-the-line and below-the-line focus explicit
 - avoid neutral status-report tone
 
-## Expected artifact
+## Expected output shape
 
 **Head of Product Operating Review**
 
 ## Example response shape
 
-- bottom line
+- recommendation
 - signal pattern
 - core diagnosis
 - what not to overreact to

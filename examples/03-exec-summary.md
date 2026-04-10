@@ -12,20 +12,20 @@ A PM or product lead needs to explain a new initiative to leadership in a concis
 
 A strong `pm-workbench` response should:
 
-- lead with the bottom line
+- lead with the recommendation
 - explain why the initiative matters now
 - make the recommendation and ask explicit
 - surface key risks and support needed
 - avoid turning into a long product proposal
 - make it obvious what leadership should approve, challenge, or resource
 
-## Expected artifact
+## Expected output shape
 
 **Executive Summary**
 
 ## Example response shape
 
-- bottom line
+- recommendation
 - why this matters now
 - current status
 - key recommendation or decision ask
@@ -36,4 +36,4 @@ A strong `pm-workbench` response should:
 
 ## Why this is useful
 
-Leadership communication often fails because the conclusion is buried. This workflow makes the summary easier to scan and easier to respond to.
+Leadership communication often fails because the conclusion is buried. This workflow makes the summary easier to scan and easier to answer.

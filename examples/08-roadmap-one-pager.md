@@ -19,7 +19,7 @@ A strong `pm-workbench` response should:
 - surface risks and capacity constraints honestly
 - make the roadmap feel like a real portfolio choice, not a backlog dump with dates
 
-## Expected artifact
+## Expected output shape
 
 **Roadmap One-Pager**
 

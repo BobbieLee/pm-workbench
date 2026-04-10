@@ -18,7 +18,7 @@ A strong `pm-workbench` response should:
 - recommend one path, or a phased path, with clear reasoning
 - explain why not the other option **now**, not just why it is imperfect
 
-## Expected artifact
+## Expected output shape
 
 **Decision Brief**
 

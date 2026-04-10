@@ -2,7 +2,7 @@
 
 ## Why this case matters
 
-This is the kind of PM situation where generic AI often makes things worse.
+This is the kind of PM situation where a general-purpose model often makes things worse.
 The input sounds energetic, but it is still not a usable product question.
 
 ## Scene
@@ -14,7 +14,7 @@ The team is now in danger of building flashy nonsense.
 
 > “Our AI product needs more wow factor. Competitors feel more exciting in demos. Help me think through what we should do.”
 
-## What generic AI often does badly
+## What a weak default answer often does badly
 
 - jumps straight into feature brainstorming
 - treats “wow factor” like a clear product goal
@@ -31,17 +31,17 @@ The team is now in danger of building flashy nonsense.
 
 ## Example response shape
 
-- bottom line: the request is still too vague for a build decision
+- recommendation: the request is still too vague for a build decision
 - possible meanings: demo impressiveness, activation, perceived intelligence, differentiated workflow value
 - critical clarifications: where are we losing, and what exactly looks stronger in competitors
 - reframed question: what product gap is making us feel less compelling in the moments that matter most
 - next step: run a clarification pass before solution generation
 
-## Reusable artifact
+## Suggested output shape
 
 **Request Clarification Brief**
 
 ## Why this is valuable in real PM work
 
 The real win here is not “better wording.”
-It is stopping the team from treating executive ambiguity as a feature roadmap.
+It is stopping the team from turning executive ambiguity into a feature roadmap too early.

@@ -10,7 +10,7 @@ The ambition is to make `pm-workbench` feel like the **default PM judgment layer
 - research can gather evidence
 - analytics can surface signals
 - document / slide tools can polish outputs
-- `pm-workbench` turns ambiguity into recommendations, artifacts, and next moves
+- `pm-workbench` turns ambiguity into recommendations, reusable outputs, and next moves
 
 ## Current phase
 
@@ -115,6 +115,6 @@ If there is a trade-off, prefer work that improves one of these:
 
 1. proof and credibility
 2. decision quality
-3. artifact usefulness
+3. output usefulness
 4. onboarding and discoverability
 5. product-leader relevance

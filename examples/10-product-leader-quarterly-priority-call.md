@@ -18,7 +18,7 @@ A strong `pm-workbench` response should:
 - explain opportunity cost and sequencing logic clearly
 - produce something a product leader could reuse in quarter planning or leadership review
 
-## Expected artifact
+## Expected output shape
 
 **Prioritization Stack** or a compressed roadmap-style priority brief
 
