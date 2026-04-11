@@ -107,6 +107,17 @@ Follow this sequence:
 6. Recommend how to use the metric set in decision-making.
 7. When useful, shape the output as a **Metrics Scorecard**.
 
+## Judgment cues
+
+Use a metric lens that matches the job.
+HEART is useful for experience quality, a north-star plus supporting signals works for ongoing product direction, and funnel or task-success views help when the path to value is concrete.
+Guardrails matter when improvement in one metric could hide damage somewhere else.
+
+Do not pick a metric family before the success path is clear.
+If you cannot yet explain how this effort is supposed to create value, the metric set will be noise.
+
+Do not move to thresholds or dashboard detail yet when the core outcome metric is still arguable.
+
 ## Output structure
 
 Use this structure when helpful:

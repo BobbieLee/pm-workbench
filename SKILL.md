@@ -20,6 +20,9 @@ Treat this skill as a **PM workbench**: route to the right workflow, ask only fo
 9. Make trade-offs, risks, information gaps, and next steps explicit.
 10. Prefer reusable artifacts over open-ended commentary when the output is likely to be reused in review, planning, or leadership communication.
 11. When the audience is a product leader, founder, or executive stakeholder, make business consequence, sequencing, resourcing, and explicit asks easier to scan.
+12. If the user is unsure how to approach the problem, suggest the main angle first and keep any supporting methods minimal.
+13. Methods should sharpen judgment, not replace the workflow. Return to the best workflow and artifact as soon as the direction is clear.
+14. Do not turn the answer into framework recital or jargon dumping.
 
 Default style:
 

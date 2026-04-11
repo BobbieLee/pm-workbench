@@ -4,6 +4,34 @@ All notable changes to `pm-workbench` will be documented in this file.
 
 ---
 
+## v1.1.0 — Workflow judgment sharpening
+
+### Improved
+
+- sharpened the 4 highest-signal core workflows with lighter framing / judgment cues:
+  - `references/workflows/clarify-request.md`
+  - `references/workflows/prioritize-requests.md`
+  - `references/workflows/design-metrics.md`
+  - `references/workflows/evaluate-feature-value.md`
+- strengthened `SKILL.md` so the skill can briefly suggest the right angle when the ask is still fuzzy, while staying workflow-first and artifact-first
+- tightened `README.md` language so the added judgment behavior is clearer without turning the repo into a framework library
+
+### Guardrails
+
+- kept the repo structure unchanged for this release
+- did not add new workflow paths, templates, examples, benchmark layers, or navigation surfaces
+- kept the upgrade focused on sharper early judgment rather than broader framework coverage
+
+### Validated
+
+- `npm run validate` passes locally after the workflow judgment upgrade
+
+### Notes
+
+This version is about making `pm-workbench` less likely to jump into the wrong next step when the ask is still fuzzy, while keeping the repo tight, workflow-led, and reusable in real PM work.
+
+---
+
 ## v1.0.6 — Install and pre-release check polish
 
 ### Added

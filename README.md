@@ -5,7 +5,7 @@
 `pm-workbench` is an OpenClaw skill for PMs, product leaders, and founders who need clearer product judgment under messy real-world constraints.
 It is built for the work between **“someone asked for something”** and **“we need a recommendation, reusable output, or next move we can stand behind.”**
 
-**Current release target:** `v1.0.6`
+**Current release target:** `v1.1.0`
 
 ## Start here if you only have 3 minutes
 
@@ -52,6 +52,7 @@ Most AI tools can talk about product work.
 It has a few deliberate habits:
 
 - it routes by the **actual PM job to be done**, not by abstract framework recital
+- when the ask is still fuzzy, it helps get the problem frame right before moving into the right workflow
 - it asks for **only the missing context that would materially change the recommendation**
 - it prefers **artifacts you can reuse in meetings, reviews, and leadership syncs**
 - it makes **trade-offs, assumptions, risks, and “not now” calls** explicit
@@ -104,6 +105,8 @@ This matters because a lot of PM work fails at the upstream handoff:
 `pm-workbench` is designed to reduce those failure modes.
 
 ## What you get
+
+If the user is still figuring out what kind of product problem this is, the skill can help frame it first, then move into the right workflow and output.
 
 ### 9 workflow paths
 

@@ -117,6 +117,17 @@ Follow this sequence:
 6. Produce a go / hold / no-go recommendation.
 7. Add a rough priority and next step.
 
+## Judgment cues
+
+Use a JTBD lens when the feature claim sounds valuable but the underlying job is still fuzzy.
+Kano is helpful when the real question is delight versus expectation, and a hypothesis-first angle helps when demand looks plausible but unproven.
+Sometimes the right split is simply desirability versus actual business value.
+
+Do not reach for method language too early if the basic ask is still not concrete enough to evaluate.
+And do not confuse user excitement with priority if the stage goal or opportunity cost says otherwise.
+
+Do not move to a firm go / hold / no-go yet when one missing premise would change the call.
+
 ## Common failure modes
 
 Weak output usually looks like this:

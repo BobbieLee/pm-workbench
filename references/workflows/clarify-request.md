@@ -109,6 +109,16 @@ Follow this sequence:
 6. Recommend the next best move.
 7. When useful, shape the output as a **Request Clarification Brief**.
 
+## Framing cues
+
+Use a problem-framing angle when the ask is still a blur.
+A first-diamond pass, JTBD lens, or a few 5 whys can help if the request arrived as a slogan, a feature idea, or stakeholder shorthand.
+
+Do not force a method too early when the basic facts are still missing.
+If you still do not know who is affected, what changed, or why this matters now, stay with plain clarification first.
+
+Do not jump to evaluation or solutioning yet when the core problem statement is still unstable.
+
 ## Common failure modes
 
 Weak output usually looks like this:

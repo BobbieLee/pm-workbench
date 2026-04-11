@@ -119,6 +119,17 @@ Follow this sequence:
 8. Recommend the next planning step.
 9. When useful, shape the output as a **Prioritization Stack**.
 
+## Judgment cues
+
+Use a light scoring angle when the stack needs structure, not ceremony.
+RICE or simple impact-effort works when the period objective is clear and the main need is a defendable ranking.
+MoSCoW is fine when capacity or commitments make the line obvious.
+
+Do not start with scoring if the period objective, hard commitments, or dependency shape is still fuzzy.
+And do not let a score override an explicit strategic call when one item clearly protects the current objective.
+
+Do not jump into final sequencing yet if one missing premise would reorder the top of the stack.
+
 ## Non-decision language patterns
 
 When something is below the line, prefer language like:
