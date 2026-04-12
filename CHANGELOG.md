@@ -4,6 +4,30 @@ All notable changes to `pm-workbench` will be documented in this file.
 
 ---
 
+## v1.1.2 — Bilingual README and visual system planning
+
+### Added
+
+- new Chinese README:
+  - `README.zh-CN.md`
+- planned bilingual README visual asset directories:
+  - `assets/readme/en/`
+  - `assets/readme/zh-CN/`
+- placeholder notes inside the new README asset directories so future image production has a stable home
+
+### Improved
+
+- upgraded the local package version to `1.1.2` in `package.json`
+- added a prominent language switch to `README.md` so GitHub visitors can jump to Chinese immediately
+- documented the bilingual README structure so English and Chinese repo visitors can navigate with less friction
+- clarified that README image production should follow a bilingual asset model instead of mixing all future visuals into the old path structure
+
+### Notes
+
+This version is focused on lowering GitHub discovery friction for Chinese-speaking visitors while preparing a cleaner bilingual README visual system for future image production.
+
+---
+
 ## v1.1.0 — Workflow judgment sharpening
 
 ### Improved

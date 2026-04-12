@@ -5,7 +5,8 @@
 `pm-workbench` is an OpenClaw skill for PMs, product leaders, and founders who need clearer product judgment under messy real-world constraints.
 It is built for the work between **“someone asked for something”** and **“we need a recommendation, reusable output, or next move we can stand behind.”**
 
-**Current release target:** `v1.1.0`
+**Current release target:** `v1.1.2`  
+**Language:** [English](./README.md) | [简体中文](./README.zh-CN.md)
 
 ## Start here if you only have 3 minutes
 
@@ -42,7 +43,7 @@ If you want the shortest path, go here:
 - [3-minute quick start](docs/TRY-IN-3-MINUTES.md)
 - [Try 3 prompts in 10 minutes](docs/TRY-3-PROMPTS.md)
 
-![pm-workbench hero](docs/images/pm-workbench-hero.svg)
+![pm-workbench hero](assets/readme/en/hero-overview.png)
 
 ## Why this feels different
 
@@ -59,13 +60,13 @@ It has a few deliberate habits:
 - it works for both **single-feature PM work** and **product-leader / founder decision work**
 - it includes a **benchmark layer** so visitors can inspect side-by-side differences versus generic AI
 
-![Generic AI vs pm-workbench](docs/images/pm-workbench-vs-generic-ai.svg)
+![Generic AI vs pm-workbench](assets/readme/en/generic-ai-vs-pm-workbench.png)
 
 ## Benchmark snapshot
 
 This repo includes a visible proof layer, not just positioning copy.
 
-![pm-workbench benchmark summary](docs/images/pm-workbench-benchmark-summary.svg)
+![pm-workbench benchmark summary](assets/readme/en/benchmark-snapshot.png)
 
 Illustrative worked-example totals using the repo rubric:
 
@@ -91,7 +92,7 @@ Start here:
 
 **Fuzzy ask → Clarify → Evaluate / Compare / Prioritize → Artifact → Leadership communication / planning / alignment**
 
-![pm-workbench workflow map](docs/images/pm-workbench-workflow-map.svg)
+![pm-workbench workflow map](assets/readme/en/workflow-map.png)
 
 This matters because a lot of PM work fails at the upstream handoff:
 

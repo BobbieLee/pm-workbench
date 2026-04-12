@@ -1,0 +1,693 @@
+<!-- 这是给微博配图用的单页长图 HTML -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PM-WORKBENCH 微博介绍长图</title>
+  <style>
+    :root {
+      --bg: #eef3fb;
+      --paper: rgba(255, 255, 255, 0.88);
+      --paper-strong: #ffffff;
+      --ink: #132033;
+      --sub: #536277;
+      --muted: #8391a7;
+      --line: rgba(96, 120, 160, 0.16);
+      --soft: #edf3fb;
+      --accent: #4f46e5;
+      --accent-2: #06b6d4;
+      --accent-3: #8b5cf6;
+      --accent-soft: rgba(92, 103, 255, 0.10);
+      --dark: #0f172a;
+      --good: #1d7a5d;
+      --good-soft: #ecfbf5;
+      --warn: #9a5a21;
+      --warn-soft: #fff3e8;
+      --radius-lg: 30px;
+      --radius-md: 22px;
+      --radius-sm: 14px;
+      --shadow: 0 24px 80px rgba(28, 37, 64, 0.10);
+      --shadow-strong: 0 30px 100px rgba(57, 72, 122, 0.16);
+      --gradient-main: linear-gradient(135deg, #4f46e5 0%, #7c3aed 48%, #06b6d4 100%);
+      --gradient-soft: linear-gradient(135deg, rgba(79, 70, 229, 0.12) 0%, rgba(6, 182, 212, 0.10) 100%);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(79, 70, 229, 0.10) 0%, rgba(79, 70, 229, 0) 30%),
+        radial-gradient(circle at top right, rgba(6, 182, 212, 0.10) 0%, rgba(6, 182, 212, 0) 28%),
+        linear-gradient(180deg, #eef3fb 0%, #e7edf7 100%);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .poster {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 42px;
+      background: transparent;
+    }
+
+    .hero,
+    .section,
+    .footer {
+      background: var(--paper);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.66);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 58px 56px 48px;
+      position: relative;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.92) 0%, rgba(248,250,255,0.90) 100%),
+        var(--paper);
+      box-shadow: var(--shadow-strong);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 15% 12%, rgba(79,70,229,0.14) 0%, rgba(79,70,229,0) 28%),
+                  radial-gradient(circle at 88% 12%, rgba(6,182,212,0.14) 0%, rgba(6,182,212,0) 26%);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -120px;
+      top: -120px;
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(99,102,241,0.12) 0%, rgba(99,102,241,0) 72%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #4338ca;
+      background: rgba(79, 70, 229, 0.10);
+      border: 1px solid rgba(79, 70, 229, 0.12);
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 88px;
+      line-height: 1;
+      letter-spacing: -2.6px;
+      max-width: 100%;
+      white-space: nowrap;
+      position: relative;
+      z-index: 1;
+    }
+
+    .lead {
+      margin-top: 24px;
+      max-width: 960px;
+      font-size: 29px;
+      line-height: 1.7;
+      color: #2b3950;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-grid {
+      margin-top: 34px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 22px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mini-card {
+      border: 1px solid rgba(103, 118, 167, 0.16);
+      border-radius: var(--radius-md);
+      padding: 24px 26px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.96) 0%, rgba(248,250,255,0.94) 100%);
+      box-shadow: 0 16px 48px rgba(65, 79, 129, 0.08);
+    }
+
+    .mini-card h3 {
+      margin: 0 0 12px;
+      font-size: 24px;
+    }
+
+    .mini-card p,
+    .mini-card li {
+      font-size: 20px;
+      line-height: 1.7;
+      color: var(--sub);
+      margin: 0;
+    }
+
+    .mini-card ul {
+      margin: 0;
+      padding-left: 24px;
+    }
+
+    .section {
+      margin-top: 26px;
+      padding: 42px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.90) 0%, rgba(250,252,255,0.88) 100%);
+    }
+
+    .section-title {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 26px;
+    }
+
+    .section-num {
+      font-size: 20px;
+      color: var(--muted);
+      letter-spacing: 1px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: 42px;
+      line-height: 1.2;
+    }
+
+    .intro {
+      font-size: 24px;
+      line-height: 1.8;
+      color: var(--sub);
+      margin-bottom: 28px;
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+      display: grid;
+      gap: 20px;
+    }
+
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    .card {
+      padding: 24px;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(103, 118, 167, 0.15);
+      background: linear-gradient(180deg, rgba(255,255,255,0.97) 0%, rgba(248,250,255,0.95) 100%);
+      box-shadow: 0 14px 40px rgba(56, 70, 108, 0.06);
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      font-size: 26px;
+      line-height: 1.35;
+    }
+
+    .card p,
+    .card li {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.75;
+      color: var(--sub);
+    }
+
+    .card ul {
+      margin: 0;
+      padding-left: 24px;
+    }
+
+    .emphasis {
+      padding: 28px 30px;
+      border-radius: var(--radius-md);
+      background: var(--gradient-soft);
+      border: 1px solid rgba(79, 70, 229, 0.14);
+      margin-bottom: 24px;
+      box-shadow: 0 18px 50px rgba(79, 70, 229, 0.08);
+    }
+
+    .emphasis strong {
+      display: block;
+      font-size: 28px;
+      line-height: 1.45;
+      margin-bottom: 10px;
+      color: var(--dark);
+    }
+
+    .emphasis p {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.8;
+      color: #38506a;
+    }
+
+    .compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .compare .side {
+      border-radius: var(--radius-md);
+      padding: 28px;
+      border: 1px solid rgba(103, 118, 167, 0.14);
+      background: linear-gradient(180deg, rgba(255,255,255,0.97) 0%, rgba(248,250,255,0.95) 100%);
+      box-shadow: 0 14px 36px rgba(56, 70, 108, 0.06);
+    }
+
+    .compare .side.good {
+      background: var(--good-soft);
+      border-color: rgba(46, 95, 77, 0.18);
+    }
+
+    .compare .side.warn {
+      background: var(--warn-soft);
+      border-color: rgba(122, 80, 48, 0.18);
+    }
+
+    .side h3 {
+      margin: 0 0 16px;
+      font-size: 28px;
+    }
+
+    .side ul {
+      margin: 0;
+      padding-left: 24px;
+    }
+
+    .side li {
+      font-size: 20px;
+      line-height: 1.8;
+      color: #344150;
+      margin-bottom: 8px;
+    }
+
+    .steps {
+      display: grid;
+      gap: 16px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 82px 1fr;
+      gap: 20px;
+      padding: 24px;
+      border: 1px solid rgba(103, 118, 167, 0.15);
+      border-radius: var(--radius-md);
+      background: linear-gradient(180deg, rgba(255,255,255,0.97) 0%, rgba(248,250,255,0.95) 100%);
+      box-shadow: 0 14px 36px rgba(56, 70, 108, 0.06);
+    }
+
+    .step-index {
+      width: 82px;
+      height: 82px;
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffffff;
+      background: var(--gradient-main);
+      box-shadow: 0 16px 30px rgba(79, 70, 229, 0.24);
+    }
+
+    .step h3 {
+      margin: 0 0 10px;
+      font-size: 26px;
+    }
+
+    .step p {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.8;
+      color: var(--sub);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(79, 70, 229, 0.08);
+      color: #405168;
+      font-size: 18px;
+      border: 1px solid rgba(79, 70, 229, 0.08);
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 8px;
+    }
+
+    .metric {
+      padding: 24px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, rgba(79,70,229,0.10) 0%, rgba(6,182,212,0.08) 100%);
+      border: 1px solid rgba(79, 70, 229, 0.10);
+      box-shadow: 0 14px 36px rgba(56, 70, 108, 0.06);
+    }
+
+    .metric .num {
+      font-size: 48px;
+      font-weight: 800;
+      color: #3f35d8;
+      margin-bottom: 8px;
+    }
+
+    .metric .label {
+      font-size: 20px;
+      color: var(--sub);
+      line-height: 1.6;
+    }
+
+    .footer {
+      margin-top: 26px;
+      padding: 40px 42px 46px;
+      background: linear-gradient(135deg, #111827 0%, #1e1b4b 52%, #0f766e 100%);
+      color: #f5f7fa;
+      box-shadow: var(--shadow-strong);
+    }
+
+    .footer h2 {
+      margin: 0 0 16px;
+      font-size: 40px;
+      line-height: 1.25;
+    }
+
+    .footer p {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.8;
+      color: rgba(245, 247, 250, 0.82);
+      max-width: 980px;
+    }
+
+    .footer .tags .tag {
+      background: rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.9);
+    }
+  </style>
+</head>
+<body>
+  <main class="poster">
+    <section class="hero">
+      <div class="eyebrow">给做产品的人，一张能看懂也能拿去发的介绍图</div>
+      <h1>PM-WORKBENCH</h1>
+      <p class="lead">它不是产品理论包，也不是提示词堆砌，而是一个把模糊问题变成可用判断的工作台。很多人用 AI 做产品，最后拿到的是一段看起来完整、实际没法拿去开会、拍板、推进的回答。PM-WORKBENCH 盯的不是“会不会说”，而是“能不能把问题理清、把取舍说透、把输出做成可复用的产物”。</p>
+      <div class="hero-grid">
+        <div class="mini-card">
+          <h3>✦ 一句话理解它是什么</h3>
+          <p>这是一个面向产品经理、产品负责人和创业者的 skill。它擅长处理那些上游很乱、信息不全、利益相关方很多、又必须尽快给出判断的产品问题。</p>
+        </div>
+        <div class="mini-card">
+          <h3>✦ 它最适合处理的事</h3>
+          <ul>
+            <li>老板一句模糊要求丢下来，不知道真正问题是什么</li>
+            <li>一堆需求冲进来，必须排优先级，还要说明为什么</li>
+            <li>两种方案都像能做，但资源只够选一个</li>
+            <li>需要把分析整理成领导能快速看懂的一页内容</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <span class="section-num">01</span>
+        <h2>它到底在解决什么问题</h2>
+      </div>
+      <div class="emphasis">
+        <strong>现实里的产品工作，难点通常不在“不会套框架”，而在“问题太糊、信息太碎、决策太赶”。</strong>
+        <p>PM-WORKBENCH 的设计重点，就是把这些最容易失真的环节接住：先厘清真实问题，再补关键缺口，再给出有取舍的判断，最后整理成团队能直接使用的输出。</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <h3>它不帮你堆概念</h3>
+          <p>不会一上来甩框架名词，也不会把你带进一份看起来很完整、实际空心的模板里。</p>
+        </div>
+        <div class="card">
+          <h3>它先抓上游卡点</h3>
+          <p>如果问题还没问对，就先处理问题定义；如果判断缺关键前提，就先补那几个真正会改变结论的信息。</p>
+        </div>
+        <div class="card">
+          <h3>它强调可复用结果</h3>
+          <p>目标不是聊明白，而是产出能拿去评审、同步、规划、复盘的内容，而不是一段漂亮废话。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <span class="section-num">02</span>
+        <h2>适合哪些人用</h2>
+      </div>
+      <div class="grid-4">
+        <div class="card">
+          <h3>产品经理</h3>
+          <p>经常接模糊需求、被拉着做判断、需要快速整理结论的人。</p>
+        </div>
+        <div class="card">
+          <h3>产品负责人</h3>
+          <p>要做资源取舍、阶段重点、上行沟通，不能只给分析，必须给结论的人。</p>
+        </div>
+        <div class="card">
+          <h3>创业者</h3>
+          <p>一边看市场，一边看用户和资源，很多选择都要在信息不完整时做决定的人。</p>
+        </div>
+        <div class="card">
+          <h3>跨职能负责人</h3>
+          <p>需要把产品、增长、交付、商业回报放在一起看，不想被单点视角带偏的人。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <span class="section-num">03</span>
+        <h2>它比通用 AI 更实用，差别到底在哪</h2>
+      </div>
+      <div class="compare">
+        <div class="side warn">
+          <h3>通用 AI 常见表现</h3>
+          <ul>
+            <li>上来就开始回答，默认你提的问题本身就是对的</li>
+            <li>分析很顺，但关键取舍说不狠，像在绕开责任</li>
+            <li>容易给你一份格式完整、判断偏弱的内容</li>
+            <li>碰到高压决策时，习惯说“两边都重要”</li>
+            <li>写得像懂产品，其实不太适合直接拿去沟通和推进</li>
+          </ul>
+        </div>
+        <div class="side good">
+          <h3>PM-WORKBENCH 的处理方式</h3>
+          <ul>
+            <li>先判断你当前最上游的卡点是什么，再决定走哪条工作流</li>
+            <li>只追问真正会改变结论的少数关键信息，不把对话拖成长问卷</li>
+            <li>明确写出取舍、风险、假设，以及现在不做什么</li>
+            <li>在信息不完整时，也会给出带条件的当前建议，而不是停在“需要更多信息”</li>
+            <li>输出默认朝可复用产物去收，不停留在泛泛讨论</li>
+          </ul>
+        </div>
+      </div>
+      <div class="metric-row">
+        <div class="metric">
+          <div class="num">9</div>
+          <div class="label">核心工作流，覆盖从需求澄清到复盘的主线产品工作</div>
+        </div>
+        <div class="metric">
+          <div class="num">12</div>
+          <div class="label">可直接复用的产物模板，不是为了好看，而是为了能拿去用</div>
+        </div>
+        <div class="metric">
+          <div class="num">21</div>
+          <div class="label">真实示例与压力场景，专门用来证明它不是只会写漂亮答案</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <span class="section-num">04</span>
+        <h2>它的核心能力，不是多，而是准</h2>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>先澄清，再判断</h3>
+          <p>面对模糊需求、老板口头指令、团队意见不一的情况，它会先把“真正要解决的问题”拎出来，而不是直接跳方案。</p>
+        </div>
+        <div class="card">
+          <h3>只问有价值的问题</h3>
+          <p>它强调最少必要上下文。不是追着你补一堆背景，而是抓住那几个会改变判断方向的前提。</p>
+        </div>
+        <div class="card">
+          <h3>逼出取舍，而不是抹平差异</h3>
+          <p>做优先级、做路线选择、做阶段规划时，它会把“为什么现在做这个，不做那个”讲清楚。</p>
+        </div>
+        <div class="card">
+          <h3>把结果收成产物</h3>
+          <p>最后输出不是散的，而是偏向需求澄清简报、功能评估备忘、决策简报、优先级栈、路线图一页纸、管理层摘要这类可直接复用的形态。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <span class="section-num">05</span>
+        <h2>它最适合什么场景</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <h3>上游需求很乱</h3>
+          <p>一句“产品得更有惊喜感”，一句“竞品都有了我们也要有”，这类话最容易把团队带偏。</p>
+          <div class="tags">
+            <span class="tag">模糊需求</span>
+            <span class="tag">老板要求</span>
+            <span class="tag">问题重定义</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>资源不够，必须排轻重</h3>
+          <p>需求一堆都看起来有道理，但季度只够做三件事，这时候靠“大家都觉得重要”是没法交代的。</p>
+          <div class="tags">
+            <span class="tag">优先级</span>
+            <span class="tag">资源取舍</span>
+            <span class="tag">阶段重点</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>需要给上面讲清楚</h3>
+          <p>很多问题不是不会分析，而是不会把结论收成领导能在一分钟内看懂、愿意拍板的表达。</p>
+          <div class="tags">
+            <span class="tag">管理层摘要</span>
+            <span class="tag">上行沟通</span>
+            <span class="tag">决策请求</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>两条路只能选一条</h3>
+          <p>是追求短期市场声量，还是先补长期信任底座；是做看起来更亮眼的功能，还是守住更核心的问题。</p>
+          <div class="tags">
+            <span class="tag">方案比较</span>
+            <span class="tag">路线选择</span>
+            <span class="tag">条件判断</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>要做轻量规格或路线图</h3>
+          <p>不是每次都需要一份厚 PRD，很多时候更需要一份短、准、边界清楚的工作文档。</p>
+          <div class="tags">
+            <span class="tag">轻量方案</span>
+            <span class="tag">阶段规划</span>
+            <span class="tag">边界定义</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>项目做完要复盘</h3>
+          <p>复盘最怕写成流水账。它更强调结果、原因、关键教训，以及接下来要改什么。</p>
+          <div class="tags">
+            <span class="tag">复盘</span>
+            <span class="tag">复用经验</span>
+            <span class="tag">下一步</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <span class="section-num">06</span>
+        <h2>核心工作流，怎么把模糊问题收成可用结果</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-index">01</div>
+          <div>
+            <h3>先识别真正任务，不急着开答</h3>
+            <p>先判断当前问题属于需求澄清、功能价值评估、方案比较、优先级排序、轻量方案、路线图、指标设计、管理层摘要还是复盘。先走对路，比说得快更重要。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-index">02</div>
+          <div>
+            <h3>只补关键上下文</h3>
+            <p>围绕目标、受众、限制、风险、证据去补最少必要信息。它刻意避免把你拖进一长串机械提问里。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-index">03</div>
+          <div>
+            <h3>给出有立场的判断</h3>
+            <p>不是罗列可能性，而是给出当前建议、成立前提、主要取舍、关键风险，以及什么情况会改变这个建议。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-index">04</div>
+          <div>
+            <h3>收成团队能用的产物</h3>
+            <p>把结果整理成能复用的格式，例如需求澄清简报、决策简报、优先级栈、路线图一页纸、管理层摘要、复盘简报，而不是停在一段聊天记录。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <span class="section-num">07</span>
+        <h2>为什么说它更像一个真正能用的产品工作台</h2>
+      </div>
+      <div class="emphasis">
+        <strong>因为它不是把“产品经理常用框架”打包给你，而是把高频、真实、带压力的产品工作拆成了可执行路径。</strong>
+        <p>它把技能重点放在三件事上：先找准问题、再做清楚取舍、最后交付一份能被复用的结果。这也是它跟很多泛 AI 工具最本质的差别。</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>有证据层，不只靠自夸</h3>
+          <p>仓库里专门做了基准测试、示例对比和高压案例，目的不是秀分数，而是让人能看见它到底强在哪、弱在哪。</p>
+        </div>
+        <div class="card">
+          <h3>兼顾单点任务和更高层判断</h3>
+          <p>既能处理单个需求、单次决策，也能处理产品负责人、产品领导者、创业者视角下的阶段资源配置与经营判断。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h2>如果你做产品，最不缺的是理论，最缺的是把混乱局面收成清晰结论的能力。</h2>
+      <p>PM-WORKBENCH 更适合那种真实工作环境：信息不全、时间很紧、还得说服别人。它不是替你表演专业感，而是尽量帮你把真实判断做扎实，把输出做成能落地的东西。</p>
+      <div class="tags">
+        <span class="tag">适合直接截图发微博</span>
+        <span class="tag">适合做产品工具介绍配图</span>
+        <span class="tag">适合配合正文讲核心价值</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -154,7 +154,10 @@ assert(changelog.includes('## v1.0.0'), 'CHANGELOG.md missing v1.0.0 section');
 
 warn(readme.includes('product leader') || readme.includes('Product leader'), 'README.md may under-emphasize product-leader positioning');
 warn(readme.includes('benchmark') || readme.includes('Benchmark'), 'README.md may under-emphasize benchmark layer');
-warn(readme.includes('pm-workbench-benchmark-summary.svg'), 'README.md may not surface the benchmark summary visual yet');
+warn(
+  readme.includes('pm-workbench-benchmark-summary.svg') || readme.includes('assets/readme/en/benchmark-snapshot.png'),
+  'README.md may not surface the benchmark summary visual yet'
+);
 warn(readme.includes('pm-workbench-benchmark-card.svg'), 'README.md may not surface the share-friendly benchmark card yet');
 warn(readme.includes('v1.0.0') || changelog.includes('v1.0.0'), 'Release version may not be surfaced clearly enough');
 
