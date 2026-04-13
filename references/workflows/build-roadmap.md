@@ -1,3 +1,18 @@
+---
+workflow: build-roadmap
+category: planning
+when_to_use: "turn priorities into a staged plan"
+ask_intensity: medium
+default_output: "Roadmap One-Pager"
+trigger_signals:
+  - build roadmap
+  - next quarter
+  - stage goal
+misuse_guard:
+  - do not use when a more upstream problem is still unresolved
+  - do not force this workflow if the user mainly needs a different artifact
+---
+
 # build-roadmap
 
 ## Purpose
@@ -11,6 +26,37 @@ The goal is not to create a decorative timeline. The goal is to help the user de
 - what sequence makes sense
 - what should explicitly wait
 - what milestones, dependencies, and risks matter most
+
+## Why this workflow exists
+
+Roadmaps become fake strategy very easily.
+They look decisive while quietly preserving too many priorities and too little focus.
+
+This workflow exists to make roadmap work earn its keep:
+
+- define the controlling thesis for the period
+- sequence work against dependencies and scarce resources
+- make not-now decisions visible instead of hiding them in the margins
+
+## What good looks like
+
+Good output should:
+
+- make the stage goal obvious immediately
+- show a believable sequence rather than a backlog with dates
+- state what this period is protecting: focus, trust, bandwidth, market timing, or readiness
+- make explicit what is not the focus right now
+- help leadership understand the bet, not just the schedule
+
+## Common bad pattern
+
+Common failure looks like this:
+
+- turning the roadmap into a backlog dump with dates
+- naming too many themes so no real thesis survives
+- sequencing without dependency logic
+- describing what is included without saying what is excluded
+- sounding strategic while dodging the real resource constraint
 
 ## Trigger phrases
 
@@ -119,28 +165,6 @@ When work is out of scope, explain it in one of these forms when relevant:
 - not worth spending the current scarce resource on
 - valuable later, but current-strategy no
 - visible but below the line unless X changes
-
-## Common failure modes
-
-Weak output usually looks like this:
-
-- turning the roadmap into a backlog dump with dates
-- listing too many themes so the stage goal disappears
-- sequencing work without showing dependency logic
-- describing what is included without stating what is explicitly not the focus
-- sounding strategic while dodging the real resource constraint
-- giving a timeline with no real portfolio decision inside it
-
-## What strong output looks like
-
-Strong output should:
-
-- make the stage goal obvious in the first screen
-- show a believable sequence rather than a wish list
-- make above-the-line focus and not-now decisions explicit
-- connect the roadmap to resource reality, dependencies, and stage logic
-- help leadership and teams understand what this period is actually for
-- explain why this roadmap, and why not the alternatives, under current constraints
 
 ## Output structure
 

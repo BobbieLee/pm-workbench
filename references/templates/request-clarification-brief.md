@@ -90,6 +90,11 @@ Choose the most useful next move:
 
 ---
 
+## Misuse guard
+
+Do not treat this as a form to fill.
+If the brief still cannot answer what problem is being clarified, who is affected, and what the next move should be, the structure is not helping.
+
 ## Notes for use
 
 A strong clarification brief should:

@@ -1,3 +1,18 @@
+---
+workflow: prioritize-requests
+category: prioritization
+when_to_use: "rank competing work under real constraints"
+ask_intensity: medium
+default_output: "Prioritization Stack"
+trigger_signals:
+  - prioritize requests
+  - top 3
+  - quarter planning
+misuse_guard:
+  - do not use when a more upstream problem is still unresolved
+  - do not force this workflow if the user mainly needs a different artifact
+---
+
 # prioritize-requests
 
 ## Purpose
@@ -10,6 +25,37 @@ The point is not to generate a decorative score table. The point is to help the 
 - what can wait
 - what should not be done now
 - how to explain the prioritization logic clearly
+
+## Why this workflow exists
+
+Prioritization often fails because teams pretend ranking is the same thing as decision-making.
+They produce a neat stack but never make the real above-the-line / below-the-line call.
+
+This workflow exists to force a portfolio choice under constraint:
+
+- anchor on the period objective
+- spend scarce resource deliberately
+- say what is not getting done now and why
+
+## What good looks like
+
+Good output should:
+
+- make the current objective explicit before ranking anything
+- produce a real top set, not a diplomatic long list
+- show what scarce resource the top choices are consuming
+- identify the below-the-line set clearly
+- explain the trade-off in language leadership can react to quickly
+
+## Common bad pattern
+
+Common failure looks like this:
+
+- scoring everything without making a real portfolio call
+- giving top 5 when the real capacity is top 3
+- saying “can revisit later” instead of naming the not-now set
+- ignoring dependencies, commitments, or organizational absorbability
+- turning prioritization into table theater
 
 ## Trigger phrases
 
@@ -141,27 +187,6 @@ When something is below the line, prefer language like:
 - strategically real, but displaced by a more urgent bottleneck right now
 
 Avoid turning non-decisions into vague politeness.
-
-## Common failure modes
-
-Weak output usually looks like this:
-
-- ranking items without first stating the period objective
-- giving a top 4 or top 5 when the real constraint is top 3
-- showing a score table without a defendable portfolio call
-- saying “can revisit later” instead of naming the below-the-line set explicitly
-- ignoring sequencing, commitments, or what the organization can actually absorb
-
-## What strong output looks like
-
-Strong output should:
-
-- anchor the stack to a clear period objective
-- identify what scarce resource the top choices are consuming
-- produce an explicit above-the-line / below-the-line call
-- explain why lower-ranked items are not being prioritized now
-- show the main trade-off and resource consequence clearly
-- read like something leadership could review with minimal cleanup
 
 ## Output structure
 

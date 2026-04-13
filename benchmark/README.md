@@ -18,6 +18,8 @@ It is a repo-native evaluation pack for side-by-side testing that a PM, contribu
 - [Worked example — executive summary](worked-example-exec-summary.md) — illustrative comparison for leadership-ready communication
 - [Worked example — launch readiness](worked-example-launch-readiness.md) — illustrative comparison for high-pressure launch recommendation quality
 - [Worked example — mixed signals](worked-example-mixed-signals.md) — illustrative comparison for leadership-grade operating diagnosis
+- [Command benchmark guide](command-benchmark-guide.md) — how to benchmark cross-workflow PM chains instead of isolated answers
+- [Worked example — command mini proof](worked-example-command-mini.md) — a lightweight proof that command paths preserve PM logic across steps
 
 ## How fairness is controlled
 
@@ -92,6 +94,16 @@ But in practice it frequently:
 - produces text that sounds polished but is hard to reuse in review or leadership communication
 
 `pm-workbench` should do better on those exact failure modes.
+
+It should also do better when the work is not one step deep.
+That is why this repo now includes a lightweight [Command benchmark guide](command-benchmark-guide.md): to test whether `pm-workbench` preserves PM decision logic across multi-step chains such as:
+
+- clarify -> evaluate
+- clarify -> compare
+- prioritize -> roadmap -> exec summary
+
+That proof layer matters because a PM workbench should not only win on single answers.
+It should hold up across the short work sequences that real PM work actually uses.
 
 ## Known benchmark limitations
 

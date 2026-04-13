@@ -1,3 +1,18 @@
+---
+workflow: clarify-request
+category: clarification
+when_to_use: "clarify a vague ask before solutioning"
+ask_intensity: low
+default_output: "Request Clarification Brief"
+trigger_signals:
+  - fuzzy ask
+  - unclear problem
+  - leadership slogan
+misuse_guard:
+  - do not use when a more upstream problem is still unresolved
+  - do not force this workflow if the user mainly needs a different artifact
+---
+
 # clarify-request
 
 ## Purpose
@@ -11,6 +26,37 @@ The goal is not to jump straight into solution design. The goal is to clarify:
 - who is affected
 - why it matters now
 - what information is still missing
+
+## Why this workflow exists
+
+A surprising amount of bad PM work starts one step too late.
+Teams begin evaluating, prioritizing, or drafting before the ask is stable enough to judge.
+
+This workflow exists to protect decision integrity upstream:
+
+- separate problem from embedded solution
+- expose the one or two missing premises that actually matter
+- turn stakeholder shorthand into a usable PM question
+
+## What good looks like
+
+Good output should:
+
+- restate the ask in clearer language without laundering it into false certainty
+- separate problem, goal, and proposed solution cleanly
+- identify the real decision bottleneck
+- ask only the few questions that would materially change the framing
+- point clearly to the next best workflow or next move
+
+## Common bad pattern
+
+Common failure looks like this:
+
+- repeating the vague ask in cleaner words and pretending that helped
+- jumping straight into solution ideas
+- interrogating the user with too many follow-ups
+- treating a boss slogan like it is already a product problem statement
+- producing a tidy brief that still does not clarify the real question
 
 ## Trigger phrases
 
@@ -118,26 +164,6 @@ Do not force a method too early when the basic facts are still missing.
 If you still do not know who is affected, what changed, or why this matters now, stay with plain clarification first.
 
 Do not jump to evaluation or solutioning yet when the core problem statement is still unstable.
-
-## Common failure modes
-
-Weak output usually looks like this:
-
-- merely repeating the vague ask in cleaner words
-- jumping straight into solution ideas
-- asking too many questions and stalling momentum
-- treating leadership language as if it were already a product problem statement
-- producing “nice structure” without a clearer reframed question
-
-## What strong output looks like
-
-Strong output should:
-
-- identify the real decision bottleneck before solving anything
-- separate problem, goal, and embedded solution assumption clearly
-- ask only the 1-2 questions that would change the framing most
-- make ambiguity explicit instead of pretending confidence
-- turn the messy ask into a clearer, reusable product question or clarification brief
 
 ## Output structure
 

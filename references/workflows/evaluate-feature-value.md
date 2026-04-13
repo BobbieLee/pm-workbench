@@ -1,3 +1,18 @@
+---
+workflow: evaluate-feature-value
+category: evaluation
+when_to_use: "decide whether something is worth doing now"
+ask_intensity: low
+default_output: "Feature Evaluation Memo"
+trigger_signals:
+  - worth doing
+  - go-no-go
+  - feature value
+misuse_guard:
+  - do not use when a more upstream problem is still unresolved
+  - do not force this workflow if the user mainly needs a different artifact
+---
+
 # evaluate-feature-value
 
 ## Purpose
@@ -11,6 +26,37 @@ The core questions are:
 - what business or strategic upside exists
 - what it costs to do
 - whether the recommendation is go / hold / no-go
+
+## Why this workflow exists
+
+A lot of PM evaluation goes soft in exactly the wrong place.
+People discuss upside, list risks, and still never answer whether the thing deserves current resources.
+
+This workflow exists to force a real call:
+
+- define the object being judged
+- weigh value against effort, risk, and opportunity cost
+- say why now, why not now, or why not at all
+
+## What good looks like
+
+Good output should:
+
+- evaluate a reasonably stable object, not a slogan
+- make a clear go / hold / no-go / experiment call
+- connect the call to current stage goal and scarce-resource logic
+- surface downside and what gets displaced
+- produce something a PM can defend in review without a second rewrite
+
+## Common bad pattern
+
+Common failure looks like this:
+
+- listing pros and cons without making a call
+- mirroring stakeholder enthusiasm
+- talking about user delight while ignoring business or resource consequence
+- sounding thoughtful but ducking the why-now / why-not-now question
+- filling a memo shell with weak judgment inside
 
 ## Trigger phrases
 
@@ -127,26 +173,6 @@ Do not reach for method language too early if the basic ask is still not concret
 And do not confuse user excitement with priority if the stage goal or opportunity cost says otherwise.
 
 Do not move to a firm go / hold / no-go yet when one missing premise would change the call.
-
-## Common failure modes
-
-Weak output usually looks like this:
-
-- listing pros and cons without making a call
-- mirroring stakeholder enthusiasm instead of judging the request
-- talking only about upside and ignoring opportunity cost
-- sounding careful but never answering why now or why not now
-- outputting a neat memo shape with soft judgment inside
-
-## What strong output looks like
-
-Strong output should:
-
-- define the real value question before scoring anything
-- make a clear go / hold / no-go / experiment call
-- explain why now or why not now in relation to the current stage goal
-- surface opportunity cost, resource consequence, and downside risk
-- produce something a PM or leader can defend in review with light editing
 
 ## Output structure
 

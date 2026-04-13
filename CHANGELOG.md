@@ -4,6 +4,49 @@ All notable changes to `pm-workbench` will be documented in this file.
 
 ---
 
+## v1.1.3 — PM workbench onboarding, command paths, and proof-chain tightening
+
+### Added
+
+- new cold-start entry asset:
+  - `START_HERE.md`
+- new routing and entry assets:
+  - `docs/SCENARIO-ROUTER.md`
+  - `docs/10-REAL-ENTRY-PROMPTS.md`
+- new command-path docs:
+  - `docs/COMMANDS.md`
+  - `docs/COMMANDS.zh-CN.md`
+- new command references:
+  - `references/commands/clarify-then-evaluate.md`
+  - `references/commands/clarify-then-compare.md`
+  - `references/commands/prioritize-roadmap-exec.md`
+  - `references/commands/prd-metrics-exec.md`
+  - `references/commands/exec-then-postmortem.md`
+- new command-path examples:
+  - `examples/22-command-clarify-then-evaluate.md`
+  - `examples/23-command-prioritize-roadmap-exec.md`
+- new benchmark support assets:
+  - `benchmark/command-benchmark-guide.md`
+  - `benchmark/worked-example-command-mini.md`
+
+### Improved
+
+- tightened README and Chinese README onboarding so first-time visitors can enter through start-here, scenario, prompt, or command paths without turning the repo into a large skill library
+- made command-style combinations visible in the main README narrative while keeping workflows as the core unit
+- added standardized workflow metadata across the 9 workflow references to improve routing clarity and reduce misuse
+- strengthened proof positioning so the benchmark layer now tests not only isolated workflow outputs, but also short multi-step PM chains
+- extended validation coverage to the new onboarding docs, command docs, command references, proof assets, and release-version alignment
+
+### Validated
+
+- `npm run validate` passes locally after the onboarding / commands / benchmark tightening
+
+### Notes
+
+This version is about making `pm-workbench` feel more like a coherent OpenClaw-native PM workbench: easier to enter, easier to route, and easier to trust through visible multi-step proof.
+
+---
+
 ## v1.1.2 — Bilingual README and visual system planning
 
 ### Added

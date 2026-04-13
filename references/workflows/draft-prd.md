@@ -1,3 +1,18 @@
+---
+workflow: draft-prd
+category: artifact
+when_to_use: "turn a clarified direction into a working PRD draft"
+ask_intensity: medium
+default_output: "PRD Lite"
+trigger_signals:
+  - draft PRD
+  - write requirement
+  - lightweight spec
+misuse_guard:
+  - do not use when a more upstream problem is still unresolved
+  - do not force this workflow if the user mainly needs a different artifact
+---
+
 # draft-prd
 
 ## Purpose
@@ -5,6 +20,37 @@
 Use this workflow to turn a reasonably clarified problem and proposed direction into a structured PRD or solution draft.
 
 The goal is not to produce polished filler. The goal is to create a useful working draft that helps discussion, review, implementation, or iteration.
+
+## Why this workflow exists
+
+A PRD is where weak product thinking often hides behind structure.
+Teams start writing because writing feels like progress, even when the problem, scope, or success logic is still soft.
+
+This workflow exists to keep the document operational:
+
+- define the problem before the feature bullets
+- keep scope and non-goals explicit
+- use the draft to reduce ambiguity, not to perform completeness
+
+## What good looks like
+
+Good output should:
+
+- make problem, user, and goal legible in the first screen
+- describe the simplest workable solution, not every imaginable feature
+- state scope boundaries and open questions honestly
+- be ready for review and execution discussion
+- feel like a working draft, not a bloated pseudo-spec
+
+## Common bad pattern
+
+Common failure looks like this:
+
+- jumping into requirements before stating the problem
+- filling every section regardless of usefulness
+- hiding uncertainty instead of marking TBDs
+- writing a polished document that is not operationally usable
+- expanding scope because the template made space for it
 
 ## Trigger phrases
 

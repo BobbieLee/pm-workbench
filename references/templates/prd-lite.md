@@ -117,6 +117,11 @@ Produce a short, execution-ready PRD that is clear enough for review, design, en
 
 ---
 
+## Misuse guard
+
+Do not treat this as permission to write a smaller bloated PRD.
+If the draft still hides the real problem, keeps scope fuzzy, or uses completeness to cover weak judgment, shorten it and sharpen the decisions instead.
+
 ## Notes for use
 
 A strong PRD Lite should:

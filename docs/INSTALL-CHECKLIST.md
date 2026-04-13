@@ -4,6 +4,9 @@ Use this checklist when you want the fastest path from "copied the folder" to "r
 
 ## 3-step install check
 
+If you are copying this repo to a fresh machine — including Windows — keep the first verification pass minimal.
+The goal is not to prove every path. The goal is to confirm the skill is discoverable and basically healthy.
+
 ### 1. Copy the source folder
 
 Place `pm-workbench/` under your OpenClaw skills workspace.
@@ -36,7 +39,8 @@ Expected result:
 
 - validation passes
 - no broken internal doc links
-- workflow / template / example wiring is present
+- workflow / template / command / example wiring is present
+- release-facing version markers are aligned
 
 ### 3. Confirm OpenClaw can see the skill
 
@@ -81,3 +85,18 @@ Recommended smoke-test prompts:
 - executive summary
 
 If all three are fine, the repo is in good shape for source-first distribution.
+
+## Fastest Windows copy-and-check path
+
+If you just copied the repo to a Windows machine and want the shortest sanity check, do only this:
+
+1. put `pm-workbench/` under your OpenClaw `skills` folder
+2. run `npm run validate`
+3. run `openclaw skills check`
+4. try one real PM prompt
+
+If those four steps pass, you have enough confidence to keep tuning locally or prepare release packaging later.
+
+If you are the maintainer rather than a first-time user, also keep this nearby:
+
+- [Maintenance checklist](MAINTENANCE-CHECKLIST.md)

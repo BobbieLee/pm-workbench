@@ -78,6 +78,11 @@ Produce a prioritization artifact that shows what goes first, what waits, why, a
 
 ---
 
+## Misuse guard
+
+Do not let this become scorecard theater.
+If the stack still avoids the above-the-line / below-the-line call, or keeps every stakeholder half-happy by naming too many priorities, it has missed the point.
+
 ## Notes for use
 
 A strong prioritization stack should:

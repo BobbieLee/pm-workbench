@@ -5,10 +5,20 @@
 `pm-workbench` is an OpenClaw skill for PMs, product leaders, and founders who need clearer product judgment under messy real-world constraints.
 It is built for the work between **“someone asked for something”** and **“we need a recommendation, reusable output, or next move we can stand behind.”**
 
-**Current release target:** `v1.1.2`  
+**Current release target:** `v1.1.3`  
 **Language:** [English](./README.md) | [简体中文](./README.zh-CN.md)
 
 ## Start here if you only have 3 minutes
+
+If you are about to copy this to another machine — including a fresh Windows setup — do not overthink the first run.
+The shortest path is still:
+
+1. copy `pm-workbench/` into your OpenClaw `skills` directory
+2. run `npm run validate`
+3. run `openclaw skills check`
+4. try one real PM prompt
+
+Then decide whether you want to keep tuning or publish.
 
 ### What this is
 
@@ -31,16 +41,20 @@ A workflow skill for turning ambiguity into **decisions, reusable outputs, and e
 
 ### Why install this instead of asking a generic model directly?
 
-`pm-workbench` is **not** a PM theory pack or prompt pile. It is a workflow skill designed to:
+`pm-workbench` is **not** a PM theory pack or prompt pile. It is an OpenClaw-native PM workbench designed to:
 
 - clarify the upstream problem first
 - ask only the missing questions that change the decision
 - force explicit trade-offs and “not now” calls
-- shape outputs into reusable PM deliverables instead of polished rambling
+- shape outputs into reusable PM artifacts instead of polished rambling
 
 If you want the shortest path, go here:
 
+- [START_HERE](START_HERE.md)
 - [3-minute quick start](docs/TRY-IN-3-MINUTES.md)
+- [Scenario Router](docs/SCENARIO-ROUTER.md)
+- [10 real entry prompts](docs/10-REAL-ENTRY-PROMPTS.md)
+- [Command-style combinations](docs/COMMANDS.md)
 - [Try 3 prompts in 10 minutes](docs/TRY-3-PROMPTS.md)
 
 ![pm-workbench hero](assets/readme/en/hero-overview.png)
@@ -83,6 +97,7 @@ Why this matters:
 Start here:
 
 - [Benchmark kit](benchmark/README.md)
+- [Command benchmark guide](benchmark/command-benchmark-guide.md)
 - [Benchmark contribution guide](benchmark/CONTRIBUTING-BENCHMARKS.md)
 - [Share-friendly benchmark card](docs/images/pm-workbench-benchmark-card.svg)
 
@@ -108,6 +123,23 @@ This matters because a lot of PM work fails at the upstream handoff:
 ## What you get
 
 If the user is still figuring out what kind of product problem this is, the skill can help frame it first, then move into the right workflow and output.
+
+### Not only single workflows
+
+`pm-workbench` is not limited to one workflow at a time.
+For recurring PM jobs that naturally span multiple steps, it also supports **command-style combinations** — compact cross-workflow paths such as:
+
+- clarify -> evaluate
+- clarify -> compare
+- prioritize -> roadmap -> exec summary
+- PRD -> metrics -> exec summary
+
+That matters because a lot of real PM work is not one prompt deep.
+It is a short sequence: frame the problem, make the call, then turn it into something reusable.
+
+Start here:
+
+- [Command-style combinations](docs/COMMANDS.md)
 
 ### 9 workflow paths
 
@@ -181,11 +213,12 @@ npm run validate
 What the validate script actually checks:
 
 - required repo structure exists
-- workflow and template references are not broken
-- important docs link to the right files
-- benchmark assets are present
+- workflow / template / command wiring is not broken
+- command workflow chains point to real workflows
+- important docs and onboarding paths still link to real files
+- benchmark assets and proof-entry docs are present
 - example coverage is still wired correctly
-- newer onboarding assets are not missing from the repo
+- README / Chinese README / changelog / package version are still aligned
 
 That is not glamorous, but it matters. Repos feel more trustworthy when they can verify more than prose.
 
@@ -330,16 +363,22 @@ Current repo snapshot:
 
 - 9 workflow references
 - 12 templates
-- 21 examples
-- benchmark kit with baseline + higher-pressure evaluation assets
+- 5 command-style combinations
+- 23 examples
+- benchmark kit with baseline, higher-pressure scenarios, and command proof assets
 
 ## What to read next
 
+- **Start here:** [START_HERE.md](START_HERE.md)
 - **3-minute quick start:** [docs/TRY-IN-3-MINUTES.md](docs/TRY-IN-3-MINUTES.md)
 - **Install checklist:** [docs/INSTALL-CHECKLIST.md](docs/INSTALL-CHECKLIST.md)
 - **Quick start:** [docs/GETTING-STARTED.md](docs/GETTING-STARTED.md)
+- **Scenario router:** [docs/SCENARIO-ROUTER.md](docs/SCENARIO-ROUTER.md)
+- **10 real entry prompts:** [docs/10-REAL-ENTRY-PROMPTS.md](docs/10-REAL-ENTRY-PROMPTS.md)
+- **Command-style combinations:** [docs/COMMANDS.md](docs/COMMANDS.md)
 - **Try it fast:** [docs/TRY-3-PROMPTS.md](docs/TRY-3-PROMPTS.md)
 - **Benchmark kit:** [benchmark/README.md](benchmark/README.md)
+- **Command benchmark guide:** [benchmark/command-benchmark-guide.md](benchmark/command-benchmark-guide.md)
 - **Benchmark contribution guide:** [benchmark/CONTRIBUTING-BENCHMARKS.md](benchmark/CONTRIBUTING-BENCHMARKS.md)
 - **Product leader guide:** [docs/PRODUCT-LEADER-PLAYBOOK.md](docs/PRODUCT-LEADER-PLAYBOOK.md)
 - **Examples:** [examples/README.md](examples/README.md)

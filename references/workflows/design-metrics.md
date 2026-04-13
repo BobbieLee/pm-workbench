@@ -1,3 +1,18 @@
+---
+workflow: design-metrics
+category: measurement
+when_to_use: "define how success should be measured"
+ask_intensity: medium
+default_output: "Metrics Scorecard"
+trigger_signals:
+  - metrics
+  - KPI
+  - north star
+misuse_guard:
+  - do not use when a more upstream problem is still unresolved
+  - do not force this workflow if the user mainly needs a different artifact
+---
+
 # design-metrics
 
 ## Purpose
@@ -10,6 +25,37 @@ The goal is not to generate a random metric list. The goal is to help the user d
 - what leading and lagging signals to watch
 - what guardrail metrics are needed
 - how and when success should be judged
+
+## Why this workflow exists
+
+Metric work gets bad fast when teams treat dashboards as strategy.
+They list numbers before agreeing on the outcome, and end up watching activity instead of value.
+
+This workflow exists to keep measurement decision-useful:
+
+- tie metrics to the causal path of the effort
+- separate outcome, leading signal, and guardrail
+- design metrics for future judgment, not for reporting theater
+
+## What good looks like
+
+Good output should:
+
+- define success in plain language before naming metrics
+- identify one core outcome metric and a small supporting set
+- include guardrails when side effects are plausible
+- explain when judgment should happen
+- make the metric set usable in launch, review, or leadership conversations
+
+## Common bad pattern
+
+Common failure looks like this:
+
+- listing too many metrics with no hierarchy
+- using vanity or easy-to-measure signals as the main call
+- ignoring guardrails
+- talking dashboard structure before clarifying success path
+- producing a scorecard that does not help any later decision
 
 ## Trigger phrases
 

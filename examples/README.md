@@ -48,6 +48,11 @@ They are meant to help a new reader understand:
 
 - [05 — Postmortem Lite](05-postmortem-lite.md)
 
+### Command-path examples
+
+- [22 — Command path: clarify -> evaluate](22-command-clarify-then-evaluate.md)
+- [23 — Command path: prioritize -> roadmap -> exec summary](23-command-prioritize-roadmap-exec.md)
+
 ## How to use these examples
 
 Use them in three ways:
@@ -64,6 +69,8 @@ If you are deciding whether this project is worth trying, skim:
 - 17
 - 20
 - 21
+- 22
+- 23
 
 That is usually enough to understand both the core PM style and the higher-pressure product-leader angle.
 
@@ -111,3 +118,4 @@ Start with:
 - 14
 - 20
 - 21
+- 23

@@ -186,6 +186,15 @@ Turn competing demands into a focused roadmap.
 
 ---
 
+## Command-path benchmark tip
+
+If you want to test whether `pm-workbench` behaves more like a true PM workbench than a strong single-shot assistant, do not stop at isolated scenarios.
+Also run one short command path from:
+
+- [command-benchmark-guide.md](command-benchmark-guide.md)
+
+That gives you a better read on whether the system preserves PM logic across steps instead of producing one-off polished answers.
+
 ## Scenario selection tip
 
 If you only test three scenarios, use:

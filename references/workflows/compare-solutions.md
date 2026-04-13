@@ -1,3 +1,18 @@
+---
+workflow: compare-solutions
+category: decision
+when_to_use: "choose among two or more viable options"
+ask_intensity: medium
+default_output: "Decision Brief"
+trigger_signals:
+  - compare options
+  - choose direction
+  - trade-off
+misuse_guard:
+  - do not use when a more upstream problem is still unresolved
+  - do not force this workflow if the user mainly needs a different artifact
+---
+
 # compare-solutions
 
 ## Purpose
@@ -10,6 +25,37 @@ The goal is not to list abstract pros and cons. The goal is to help the user ans
 - what each option optimizes for or sacrifices
 - what the major trade-offs are
 - which path should be recommended now
+
+## Why this workflow exists
+
+Teams often do fake decision work.
+They compare options before agreeing on the real objective, then hide behind symmetry instead of choosing.
+
+This workflow exists to keep comparison decision-grade:
+
+- make the decision objective explicit first
+- force the decisive trade-off into the open
+- recommend one path or one staged path with clear why-not-the-other-path-now logic
+
+## What good looks like
+
+Good output should:
+
+- state the real decision objective before the comparison starts
+- show what scarce resource or advantage the choice is protecting
+- make the core trade-off legible in plain language
+- choose a winner or a real staged path
+- explain why the rejected path is not right now, not just imperfect in theory
+
+## Common bad pattern
+
+Common failure looks like this:
+
+- generating balanced pros-and-cons theater
+- comparing on too many criteria and obscuring the real call
+- recommending a winner without explaining what is being protected
+- hiding a non-decision inside a staged answer
+- sounding strategic while leaving the team unable to act
 
 ## Trigger phrases
 
@@ -118,29 +164,6 @@ Follow this sequence:
 8. State why not the other option now.
 9. Give the next action.
 10. When useful, shape the output as a **Decision Brief**.
-
-## Common failure modes
-
-Weak output usually looks like this:
-
-- listing symmetrical pros and cons without choosing
-- comparing options before stating the real decision objective
-- using too many criteria and hiding the actual trade-off
-- recommending a winner without explaining why not the others
-- ignoring a staged path when that is clearly the highest-quality answer
-- describing preferences instead of making a defendable decision
-
-## What strong output looks like
-
-Strong output should:
-
-- define the real decision objective before comparing anything
-- identify what the choice is protecting: trust, speed, focus, market window, or long-term leverage
-- make the decisive trade-off explicit, not buried in a matrix
-- choose a winner or staged path with a clear reason
-- explain why the rejected option is not right now, not just why it is imperfect
-- leave the team knowing what should happen next and what assumption carries the choice
-- use condition-based language if uncertainty remains but a call is still needed
 
 ## Output structure
 

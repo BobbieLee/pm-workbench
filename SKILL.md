@@ -23,6 +23,7 @@ Treat this skill as a **PM workbench**: route to the right workflow, ask only fo
 12. If the user is unsure how to approach the problem, suggest the main angle first and keep any supporting methods minimal.
 13. Methods should sharpen judgment, not replace the workflow. Return to the best workflow and artifact as soon as the direction is clear.
 14. Do not turn the answer into framework recital or jargon dumping.
+15. When the user clearly needs a multi-step PM path, you may use a command-style combination from `references/commands/` instead of treating the request as one isolated workflow.
 
 Default style:
 
@@ -210,6 +211,19 @@ Before finishing, check whether the response:
 - stays proportionate to the user's requested level of detail
 - avoids output that is neatly formatted but thin on substance
 - makes decide-now versus validate-next explicit when uncertainty remains
+
+## Command-style combinations
+
+When the user's real job is bigger than one workflow, you may use these command-style combinations:
+
+- `references/commands/clarify-then-evaluate.md`
+- `references/commands/clarify-then-compare.md`
+- `references/commands/prioritize-roadmap-exec.md`
+- `references/commands/prd-metrics-exec.md`
+- `references/commands/exec-then-postmortem.md`
+
+Use them as compact route patterns for recurring PM work.
+Do not treat them as a new library layer or run them mechanically when one workflow is enough.
 
 ## Workflow references
 

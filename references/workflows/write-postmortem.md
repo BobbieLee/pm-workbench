@@ -1,3 +1,18 @@
+---
+workflow: write-postmortem
+category: learning
+when_to_use: "review what happened and extract reusable lessons"
+ask_intensity: low
+default_output: "Postmortem Lite"
+trigger_signals:
+  - postmortem
+  - retrospective
+  - post-launch review
+misuse_guard:
+  - do not use when a more upstream problem is still unresolved
+  - do not force this workflow if the user mainly needs a different artifact
+---
+
 # write-postmortem
 
 ## Purpose
@@ -11,6 +26,37 @@ The goal is not to write a ceremonial recap. The goal is to help the user answer
 - why that happened
 - what should be repeated, changed, or avoided next time
 - what concrete next actions follow from the review
+
+## Why this workflow exists
+
+Postmortems often fail in two opposite ways: blame theater or timeline theater.
+They either point fingers, or they narrate events without extracting a better future decision.
+
+This workflow exists to keep learning operational:
+
+- compare expected versus actual clearly
+- separate evidence from hindsight confidence
+- turn lessons into concrete follow-through
+
+## What good looks like
+
+Good output should:
+
+- make expected vs actual visible immediately
+- identify likely contributors without fake certainty
+- extract lessons that can actually change future behavior
+- end with concrete next actions
+- feel useful to future planning, not ceremonial for the archive
+
+## Common bad pattern
+
+Common failure looks like this:
+
+- writing a timeline with no analysis
+- blaming people instead of examining decisions and systems
+- pretending to know root cause without evidence
+- giving vague “lessons learned” that will not change anything
+- ending without clear follow-through
 
 ## Trigger phrases
 

@@ -96,6 +96,11 @@ Produce a concise comparison output that makes the decision objective, trade-off
 
 ---
 
+## Misuse guard
+
+Do not use this template to preserve fake balance.
+If the brief still cannot show the real decision objective, decisive trade-off, and why-not-the-other-path-now logic, it is still avoiding the job.
+
 ## Notes for use
 
 A strong decision brief should:

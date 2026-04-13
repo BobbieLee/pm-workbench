@@ -9,9 +9,20 @@
 它解决的是这段最容易失真的工作链路：
 **“有人提了个需求” → “我们需要一个能站得住的建议、输出物或下一步行动”**。
 
-**当前发布目标：** `v1.1.2`
+**当前发布目标：** `v1.1.3`
 
 ## 如果你只有 3 分钟，先看这里
+
+如果你准备把它复制到另一台机器——包括一台新的 Windows 环境——第一轮不要想复杂。
+最短路径就是这 4 步：
+
+1. 把 `pm-workbench/` 放进 OpenClaw 的 `skills` 目录
+2. 运行 `npm run validate`
+3. 运行 `openclaw skills check`
+4. 用一个真实 PM 问题试一下
+
+先确认它正常工作，再决定要不要继续调整或准备发布。
+
 
 ### 这是什么
 
@@ -34,7 +45,7 @@
 
 ### 为什么不直接问通用模型？
 
-`pm-workbench` **不是** PM 理论手册，也不是提示词合集。它是一个工作流 skill，重点在于：
+`pm-workbench` **不是** PM 理论手册，也不是提示词合集。它更像一个 OpenClaw 原生的 PM 工作台，重点在于：
 
 - 先澄清上游问题，而不是直接跳方案
 - 只追问真正会改变判断的缺失信息
@@ -43,7 +54,11 @@
 
 如果你想最快上手，先看：
 
+- [START_HERE](START_HERE.md)
 - [3 分钟快速体验](docs/TRY-IN-3-MINUTES.md)
+- [场景选路器](docs/SCENARIO-ROUTER.md)
+- [10 个真实入口提示词](docs/10-REAL-ENTRY-PROMPTS.md)
+- [组合流程命令](docs/COMMANDS.md)
 - [10 分钟试 3 个提示词](docs/TRY-3-PROMPTS.md)
 
 ![pm-workbench 主视觉图](assets/readme/zh-CN/hero-overview.png)
@@ -82,6 +97,7 @@
 从这里开始：
 
 - [Benchmark 套件](benchmark/README.md)
+- [command benchmark 指南](benchmark/command-benchmark-guide.md)
 - [Benchmark 贡献指南](benchmark/CONTRIBUTING-BENCHMARKS.md)
 - [适合分享的 benchmark 卡片](docs/images/pm-workbench-benchmark-card.svg)
 
@@ -111,6 +127,24 @@
 ## 你能得到什么
 
 如果用户还不确定自己面对的是哪类产品问题，这个 skill 会先帮他框问题，再进入合适的 workflow 与输出形式。
+
+### 不只是单条 workflow
+
+`pm-workbench` 不只支持“一次走一条 workflow”。
+对于那些天然跨多个步骤的真实 PM 任务，它也支持 **command-style 的组合路径**，比如：
+
+- clarify -> evaluate
+- clarify -> compare
+- prioritize -> roadmap -> exec summary
+- PRD -> metrics -> exec summary
+
+这点很重要，因为很多真实 PM 工作并不是“一句 prompt 就结束”。
+它更像一小段链路：先把问题框清楚，再做判断，最后整理成能复用的输出。
+
+从这里开始：
+
+- [组合流程命令（英文）](docs/COMMANDS.md)
+- [组合流程命令（中文）](docs/COMMANDS.zh-CN.md)
 
 ### 9 条 workflow 路径
 
@@ -266,16 +300,23 @@ pm-workbench/
 
 - 9 条 workflow reference
 - 12 个 template
-- 21 个 example
-- 一套包含基础对比与高压场景的 benchmark 资产
+- 5 条组合流程命令
+- 23 个 example
+- 一套包含基础对比、高压场景与 command proof 的 benchmark 资产
 
 ## 接下来读什么
 
+- **先从这里开始：** [START_HERE.md](START_HERE.md)
 - **3 分钟快速体验：** [docs/TRY-IN-3-MINUTES.md](docs/TRY-IN-3-MINUTES.md)
 - **安装检查清单：** [docs/INSTALL-CHECKLIST.md](docs/INSTALL-CHECKLIST.md)
 - **快速入门：** [docs/GETTING-STARTED.md](docs/GETTING-STARTED.md)
+- **场景选路器：** [docs/SCENARIO-ROUTER.md](docs/SCENARIO-ROUTER.md)
+- **10 个真实入口提示词：** [docs/10-REAL-ENTRY-PROMPTS.md](docs/10-REAL-ENTRY-PROMPTS.md)
+- **组合流程命令：** [docs/COMMANDS.md](docs/COMMANDS.md)
+- **组合流程命令（中文）：** [docs/COMMANDS.zh-CN.md](docs/COMMANDS.zh-CN.md)
 - **快速试用：** [docs/TRY-3-PROMPTS.md](docs/TRY-3-PROMPTS.md)
 - **Benchmark 套件：** [benchmark/README.md](benchmark/README.md)
+- **command benchmark 指南：** [benchmark/command-benchmark-guide.md](benchmark/command-benchmark-guide.md)
 - **Benchmark 贡献指南：** [benchmark/CONTRIBUTING-BENCHMARKS.md](benchmark/CONTRIBUTING-BENCHMARKS.md)
 - **产品负责人指南：** [docs/PRODUCT-LEADER-PLAYBOOK.md](docs/PRODUCT-LEADER-PLAYBOOK.md)
 - **案例索引：** [examples/README.md](examples/README.md)

@@ -1,4 +1,4 @@
-# README Image Prompts for pm-workbench v1.1.2
+# README Image Prompts for pm-workbench v1.1.3
 
 This document defines the recommended README visual system for `pm-workbench`.
 

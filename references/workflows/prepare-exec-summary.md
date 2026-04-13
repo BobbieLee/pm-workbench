@@ -1,3 +1,18 @@
+---
+workflow: prepare-exec-summary
+category: communication
+when_to_use: "compress analysis into a leadership-ready recommendation"
+ask_intensity: low
+default_output: "Executive Summary"
+trigger_signals:
+  - exec summary
+  - leadership update
+  - one-page
+misuse_guard:
+  - do not use when a more upstream problem is still unresolved
+  - do not force this workflow if the user mainly needs a different artifact
+---
+
 # prepare-exec-summary
 
 ## Purpose
@@ -12,6 +27,37 @@ It should quickly cover:
 - the few facts that support it
 - the main risk
 - the support or decision needed
+
+## Why this workflow exists
+
+A lot of “exec summaries” are just cleaned-up working notes.
+They preserve too much process, bury the conclusion, and avoid the explicit ask.
+
+This workflow exists to make upward communication actually decision-ready:
+
+- lead with the call
+- keep only the evidence needed to support it
+- make the ask and the why-now logic unmissable
+
+## What good looks like
+
+Good output should:
+
+- land the conclusion in the first screen
+- tie the call to business consequence, timing, or resource logic
+- state the ask explicitly
+- distinguish decide-now from validate-next
+- sound like something leadership can respond to immediately
+
+## Common bad pattern
+
+Common failure looks like this:
+
+- leading with background instead of conclusion
+- writing polished status notes instead of a decision memo
+- mentioning risk without saying what should happen because of it
+- implying the ask instead of stating it
+- drowning the note in detail and draining out decision signal
 
 ## Trigger phrases
 
@@ -118,28 +164,6 @@ When the real issue is launch timing, rollout confidence, or readiness under pre
   - what support or decision is needed now
 
 Avoid fake confidence, but do not retreat into generic caution language.
-
-## Common failure modes
-
-Weak output usually looks like this:
-
-- writing polished status notes instead of a decision-ready summary
-- leading with background or process before the conclusion
-- sounding balanced but leaving the actual recommendation fuzzy
-- mentioning risks without saying what should happen because of them
-- implying an ask instead of stating it explicitly
-- including too much detail and too little decision signal
-
-## What strong output looks like
-
-Strong output should:
-
-- lead with the recommendation in the first screen
-- tie the recommendation to business consequence, timing, or resource logic
-- make the main risk legible without turning the note into a risk register
-- state the ask in approve / challenge / modify terms
-- make decide-now versus validate-next explicit if uncertainty remains
-- read like something leadership can respond to immediately, not just admire
 
 ## Output structure
 
