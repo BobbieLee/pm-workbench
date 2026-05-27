@@ -4,6 +4,54 @@ All notable changes to `pm-workbench` will be documented in this file.
 
 ---
 
+## v1.2.0 — Product-leadership workflows, stronger examples, and release governance
+
+### Added
+
+- formal product-leadership workflows:
+  - `references/workflows/portfolio-review.md`
+  - `references/workflows/head-of-product-operating-review.md`
+  - `references/workflows/founder-business-review.md`
+- benchmark run-record documentation:
+  - `benchmark/runs/README.md`
+  - `benchmark/runs/run-template.md`
+- failure regression checks:
+  - `benchmark/failure-regression.md`
+- Chinese core workflow example set:
+  - `examples.zh-CN/README.md`
+  - `examples.zh-CN/01-clarify-vague-request.md`
+  - `examples.zh-CN/02-feature-evaluation-memo.md`
+  - `examples.zh-CN/03-prioritization-stack.md`
+  - `examples.zh-CN/04-exec-summary.md`
+  - `examples.zh-CN/05-decision-brief.md`
+  - `examples.zh-CN/06-prd-lite.md`
+  - `examples.zh-CN/07-roadmap-one-pager.md`
+  - `examples.zh-CN/08-metrics-scorecard.md`
+  - `examples.zh-CN/09-postmortem-lite.md`
+
+### Improved
+
+- upgraded all 9 core workflow examples with more complete target outputs, plus the launch-readiness example
+- expanded the visible workflow set from 9 to 12 and wired leader/founder workflows into routing, README tables, and the scenario router
+- expanded Chinese example coverage from 4 common cases to all 9 core workflow entries
+- standardized all templates with required-core and optional-expansion guidance so templates behave more like output contracts than forms
+- tightened `SKILL.md` trigger boundaries with explicit out-of-scope categories
+- changed the default follow-up posture from 3-5 questions to 0-2 questions unless the task is high-risk or materially under-specified
+- clarified install verification so repo validation is not mistaken for local OpenClaw skill discovery
+- added failure regression checks for common polished-but-useless PM answer patterns
+- tightened `SKILL.md` reference-loading discipline so agents are less likely to load the whole library by default
+- clarified `clarify-request` misuse guidance so clarification does not continue after the problem is already stable
+- strengthened validation to catch more structural drift, including asset links, unknown workflow-like code tokens, template guidance, example expectations, and benchmark run-record docs
+
+### Fixed
+
+- removed stale references to a non-existent diagnose-growth-problem workflow from workflow routing guidance
+- added missing guidance headers to leader-grade templates:
+  - `references/templates/portfolio-review-summary.md`
+  - `references/templates/founder-business-review.md`
+
+---
+
 ## v1.1.3 — PM workbench onboarding, command paths, and proof-chain tightening
 
 ### Added

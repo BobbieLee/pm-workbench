@@ -21,6 +21,22 @@ If 1-2 critical premises would materially change the solution, ask about those f
 
 Produce a short, execution-ready PRD that is clear enough for review, design, engineering discussion, and scope alignment.
 
+## Required core
+
+For a fast or standard PRD Lite output, preserve these fields before adding detail:
+
+- problem statement
+- target user / scenario
+- goal and success criteria
+- proposed solution
+- in scope / out of scope
+- open questions or risks
+- next step
+
+## Optional expansion
+
+Add detailed requirements, edge cases, rollout plans, and validation notes only when they are known enough to reduce execution ambiguity. Mark unknowns as TBD instead of inventing completeness.
+
 ---
 
 # PRD Lite

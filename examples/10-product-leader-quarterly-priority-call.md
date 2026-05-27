@@ -22,15 +22,36 @@ A strong `pm-workbench` response should:
 
 **Prioritization Stack** or a compressed roadmap-style priority brief
 
-## Example response shape
+## Example target output
 
-- quarter objective
-- main constraints and stakeholder tensions
-- recommended top priorities
-- below-the-line items and why they wait
-- resource and sequencing implications
-- suggested leadership framing
-- next planning step
+**Bottom line:** next quarter should focus on activation and core product trust, while preserving one narrow enterprise-readiness lane. The recommended top 3 are **onboarding simplification**, **AI answer quality tuning**, and **enterprise audit logs**.
+
+## Priority call
+
+### Quarter objective
+
+Improve growth quality by reducing first-use friction and strengthening the product's core AI reliability. Do not chase top-of-funnel growth before the product can convert and retain more reliably.
+
+### Recommended top 3
+
+1. **Onboarding simplification** - addresses current support pressure and activation leakage.
+2. **AI answer quality tuning** - protects the product's core promise and user trust.
+3. **Enterprise audit logs** - keeps active enterprise conversations credible without turning the quarter into a full enterprise expansion.
+
+### Below the line
+
+- **Referral growth loop:** not now, because growth amplification on a leaky product is inefficient.
+- **Team workspace sharing:** valuable later, but less urgent than activation and answer quality.
+- **Admin billing controls:** enterprise maturity work, but not the current minimum blocker.
+- **Conversation history search:** useful retention work, but displaced by higher-pressure activation and trust issues.
+
+### Leadership framing
+
+This is a deliberate choice to earn growth before amplifying it. We are not ignoring growth or enterprise; we are choosing the minimum enterprise lane needed for near-term credibility while spending the main quarter capacity on activation and trust.
+
+### Next planning step
+
+Ask leadership to approve the top 3 and explicitly protect the below-the-line list from incremental scope pressure.
 
 ## Why this is useful
 

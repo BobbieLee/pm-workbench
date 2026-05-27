@@ -21,6 +21,21 @@ If the summary depends on 1-2 critical premises, confirm those before making a s
 
 Produce a concise, decision-ready summary that is easy for an executive reader to scan and respond to.
 
+## Required core
+
+For a fast or standard executive summary, preserve these fields before adding detail:
+
+- bottom line
+- why this matters now
+- recommendation or decision ask
+- strongest supporting rationale
+- main risk
+- support needed or next step
+
+## Optional expansion
+
+Add status detail, assumptions, or decide-now / validate-next framing when the audience needs it to approve, challenge, or resource the recommendation.
+
 ---
 
 # Executive Summary

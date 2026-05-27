@@ -5,7 +5,7 @@
 `pm-workbench` is an OpenClaw skill for PMs, product leaders, and founders who need clearer product judgment under messy real-world constraints.
 It is built for the work between **“someone asked for something”** and **“we need a recommendation, reusable output, or next move we can stand behind.”**
 
-**Current release target:** `v1.1.3`  
+**Current release target:** `v1.2.0`
 **Language:** [English](./README.md) | [简体中文](./README.zh-CN.md)
 
 ## Start here if you only have 3 minutes
@@ -98,6 +98,8 @@ Start here:
 
 - [Benchmark kit](benchmark/README.md)
 - [Command benchmark guide](benchmark/command-benchmark-guide.md)
+- [Benchmark run records](benchmark/runs/README.md)
+- [Failure regression checks](benchmark/failure-regression.md)
 - [Benchmark contribution guide](benchmark/CONTRIBUTING-BENCHMARKS.md)
 - [Share-friendly benchmark card](docs/images/pm-workbench-benchmark-card.svg)
 
@@ -141,19 +143,22 @@ Start here:
 
 - [Command-style combinations](docs/COMMANDS.md)
 
-### 9 workflow paths
+### 12 workflow paths
 
-| PM job                             | Workflow                 | Default output shape        |
-| ---------------------------------- | ------------------------ | --------------------------- |
-| Clarify a fuzzy ask                | `clarify-request`        | Request Clarification Brief |
-| Judge whether to do something      | `evaluate-feature-value` | Feature Evaluation Memo     |
-| Choose between options             | `compare-solutions`      | Decision Brief              |
-| Rank competing work                | `prioritize-requests`    | Prioritization Stack        |
-| Draft a lightweight spec           | `draft-prd`              | PRD Lite                    |
-| Turn priorities into a staged plan | `build-roadmap`          | Roadmap One-Pager           |
-| Define success measurement         | `design-metrics`         | Metrics Scorecard           |
-| Prepare upward communication       | `prepare-exec-summary`   | Executive Summary           |
-| Learn from a launch / initiative   | `write-postmortem`       | Postmortem Lite             |
+| PM job                                        | Workflow                           | Default output shape              |
+| --------------------------------------------- | ---------------------------------- | --------------------------------- |
+| Clarify a fuzzy ask                           | `clarify-request`                  | Request Clarification Brief       |
+| Judge whether to do something                 | `evaluate-feature-value`           | Feature Evaluation Memo           |
+| Choose between options                        | `compare-solutions`                | Decision Brief                    |
+| Rank competing work                           | `prioritize-requests`              | Prioritization Stack              |
+| Draft a lightweight spec                      | `draft-prd`                        | PRD Lite                          |
+| Turn priorities into a staged plan            | `build-roadmap`                    | Roadmap One-Pager                 |
+| Define success measurement                    | `design-metrics`                   | Metrics Scorecard                 |
+| Prepare upward communication                  | `prepare-exec-summary`             | Executive Summary                 |
+| Learn from a launch / initiative              | `write-postmortem`                 | Postmortem Lite                   |
+| Make an above-the-line portfolio call         | `portfolio-review`                 | Portfolio Review Summary          |
+| Diagnose mixed product operating signals      | `head-of-product-operating-review` | Head of Product Operating Review  |
+| Separate founder narrative from business truth | `founder-business-review`          | Founder Business Review           |
 
 ### Reusable output shapes
 
@@ -196,6 +201,7 @@ This repo includes a concrete proof layer under [`benchmark/`](benchmark/README.
 - realistic PM scenarios
 - a comparison rubric
 - a reusable scorecard
+- a run-record template for preserving actual side-by-side outputs
 - worked comparison artifacts with fuller evidence chains
 - higher-pressure worked examples for launch readiness and mixed-signal diagnosis
 - fairness-control notes
@@ -361,11 +367,12 @@ pm-workbench/
 
 Current repo snapshot:
 
-- 9 workflow references
+- 12 workflow references
 - 12 templates
 - 5 command-style combinations
 - 23 examples
-- benchmark kit with baseline, higher-pressure scenarios, and command proof assets
+- benchmark kit with baseline, higher-pressure scenarios, command proof assets, and run-record templates
+- failure regression checks for common PM-answer failure modes
 
 ## What to read next
 
@@ -379,6 +386,7 @@ Current repo snapshot:
 - **Try it fast:** [docs/TRY-3-PROMPTS.md](docs/TRY-3-PROMPTS.md)
 - **Benchmark kit:** [benchmark/README.md](benchmark/README.md)
 - **Command benchmark guide:** [benchmark/command-benchmark-guide.md](benchmark/command-benchmark-guide.md)
+- **Failure regression checks:** [benchmark/failure-regression.md](benchmark/failure-regression.md)
 - **Benchmark contribution guide:** [benchmark/CONTRIBUTING-BENCHMARKS.md](benchmark/CONTRIBUTING-BENCHMARKS.md)
 - **Product leader guide:** [docs/PRODUCT-LEADER-PLAYBOOK.md](docs/PRODUCT-LEADER-PLAYBOOK.md)
 - **Examples:** [examples/README.md](examples/README.md)
@@ -395,6 +403,7 @@ This repo is being built with a simple quality bar:
 - examples should show realistic PM usage, not just abstract format descriptions
 - docs should reduce adoption friction for someone discovering the repo cold
 - benchmark assets should make side-by-side comparison possible
+- benchmark run records should preserve actual prompts, outputs, scoring, and limitations when claims need to be audited
 - local validation should catch obvious structural drift early
 - install and pre-release checks should be easy to follow for source-first use
 
@@ -402,7 +411,7 @@ Local verification completed for the repo structure:
 
 - `npm run validate` -> **passes locally**
 - validation confirms the expected workflow, template, example, and benchmark wiring is present
-- OpenClaw skill recognition may vary by local version and skill-path configuration
+- OpenClaw skill recognition still depends on local version and skill-path configuration; verify it separately with `openclaw skills check` in the target environment
 
 ## Contributing
 

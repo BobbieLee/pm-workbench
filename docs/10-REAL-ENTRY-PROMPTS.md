@@ -82,7 +82,7 @@ They are written to show `pm-workbench` as an **OpenClaw-native PM workbench** f
 
 > I need help making sense of a messy product review. Revenue is up, retention is flat, support load is rising, and the team is split on whether we should keep pushing growth or slow down to fix quality. Help me turn this into a leadership-ready product judgment with the main diagnosis, the current-period focus, and the explicit ask.
 
-**Best fit:** `prepare-exec-summary` or `prioritize-requests`
+**Best fit:** `head-of-product-operating-review`
 
 ## How to use these prompts well
 

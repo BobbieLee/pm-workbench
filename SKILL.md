@@ -1,6 +1,6 @@
 ---
 name: pm-workbench
-description: "Use when product work needs clearer framing, prioritization, or communication: clarifying a vague request, evaluating whether a feature is worth doing, comparing options, prioritizing requests, drafting a lightweight spec, building a roadmap, defining metrics, preparing an executive summary, or reviewing outcomes. Best when the user needs a practical recommendation or reusable output, not just frameworks."
+description: "Use when product work needs clearer framing, prioritization, or communication: clarifying a vague request, evaluating whether a feature is worth doing, comparing options, prioritizing requests, drafting a lightweight spec, building a roadmap, defining metrics, preparing an executive summary, reviewing outcomes, or making product-leadership/founder trade-offs. Best when the user needs a practical recommendation or reusable output, not just frameworks. Do not use for raw data crunching, deep project tracking, legal/compliance review, generic marketing copy, or pure UI copy."
 ---
 
 # pm-workbench
@@ -11,7 +11,7 @@ Treat this skill as a **PM workbench**: route to the right workflow, ask only fo
 
 1. Solve the most upstream bottleneck first.
 2. Gather only the minimum missing context.
-3. Ask 3-5 high-value follow-up questions when needed.
+3. Ask 0-2 high-value follow-up questions by default; use 3-5 only when the task is high-risk, ambiguous, or blocked by missing premises.
 4. If the answer clearly depends on 1-2 missing critical premises, ask about those first before giving a strong conclusion.
 5. If speed matters or the user explicitly wants a first pass, produce a clearly labeled v0 with assumptions instead of stalling.
 6. Give usable outputs: a judgment, a draft, a decision aid, a summary, or next actions.
@@ -32,6 +32,21 @@ Default style:
 - use frameworks as backstage components, not the centerpiece
 - give a recommendation when the task calls for one
 
+## Use boundaries
+
+Use this skill for PM judgment, product decision framing, prioritization, leadership communication, lightweight product artifacts, and product-business trade-offs.
+
+Do not use it as the primary skill for:
+
+- raw data-heavy analysis or dashboard crunching
+- deep project / program tracking
+- legal, compliance, or policy review
+- generic marketing copy or brand writing
+- pure UI microcopy / UX writing without a product decision
+- implementation planning where engineering design is the main job
+
+If the request is out of scope but contains a PM decision inside it, isolate the PM decision and answer only that part.
+
 ## Workflow routing
 
 Route by intent unless the user names a workflow directly:
@@ -45,9 +60,9 @@ Route by intent unless the user names a workflow directly:
 - define success metrics -> `design-metrics`
 - prepare boss / leadership communication -> `prepare-exec-summary`
 - review launch or project outcome -> `write-postmortem`
-- portfolio review / above-the-line vs below-the-line call -> use `prioritize-requests` or `build-roadmap`, then shape the output as `portfolio-review-summary`
-- head-of-product operating review / monthly operating view / leadership product review -> synthesize diagnosis across product, growth, delivery, and cross-functional constraints, then shape the output as `head-of-product-operating-review`
-- founder business review / growth-quality review / business reality check -> synthesize growth, retention, monetization, and strategic pressure, then shape the output as `founder-business-review`
+- portfolio review / above-the-line vs below-the-line call -> `portfolio-review`
+- head-of-product operating review / monthly operating view / leadership product review -> `head-of-product-operating-review`
+- founder business review / growth-quality review / business reality check -> `founder-business-review`
 
 If the request spans multiple workflows, solve the most upstream problem first.
 
@@ -149,9 +164,9 @@ When the task naturally calls for a reusable PM artifact, default to these outpu
 - `design-metrics` -> `references/templates/metrics-scorecard.md`
 - `prepare-exec-summary` -> `references/templates/exec-summary.md`
 - `write-postmortem` -> `references/templates/postmortem-lite.md`
-- portfolio review / head-of-product allocation summary -> `references/templates/portfolio-review-summary.md`
-- head-of-product monthly / period review -> `references/templates/head-of-product-operating-review.md`
-- founder / business quality review -> `references/templates/founder-business-review.md`
+- `portfolio-review` -> `references/templates/portfolio-review-summary.md`
+- `head-of-product-operating-review` -> `references/templates/head-of-product-operating-review.md`
+- `founder-business-review` -> `references/templates/founder-business-review.md`
 
 If the user asks for a lighter answer, compress the artifact instead of abandoning the structure entirely.
 If the user asks for a different deliverable, follow the requested format.
@@ -238,6 +253,9 @@ Read only the workflow file(s) that match the task:
 - `references/workflows/design-metrics.md`
 - `references/workflows/prepare-exec-summary.md`
 - `references/workflows/write-postmortem.md`
+- `references/workflows/portfolio-review.md`
+- `references/workflows/head-of-product-operating-review.md`
+- `references/workflows/founder-business-review.md`
 
 Use template references when the output should be shaped like a standard artifact:
 
@@ -255,6 +273,13 @@ Use template references when the output should be shaped like a standard artifac
 - `references/templates/founder-business-review.md`
 
 Do not load all references by default.
+
+Reference loading discipline:
+
+- one normal task -> load the matching workflow, plus the matching template only if an artifact shape is useful
+- one command-style task -> load the command reference first, then only the workflow/template files in that chain
+- uncertain routing -> use the routing rules in this file first, then load the single most likely workflow
+- example calibration -> consult examples only when you need a concrete output pattern, not for every run
 
 ## MVP emphasis
 

@@ -13,6 +13,10 @@ A strong benchmark contribution usually includes:
 - short scoring notes using the repo rubric
 - one honest takeaway about where `pm-workbench` won, tied, or still felt weak
 
+If you captured actual side-by-side outputs, add a run record under [`runs/`](runs/README.md) using [`runs/run-template.md`](runs/run-template.md).
+
+If your change affects workflow behavior, also run the relevant failure checks in [`failure-regression.md`](failure-regression.md).
+
 ## Good benchmark scenarios
 
 Prefer scenarios that are:
@@ -49,6 +53,14 @@ When adding a benchmark artifact, try to include:
 3. a representative `pm-workbench` target pattern
 4. a short rubric score table
 5. a takeaway in plain language
+
+When adding a run record, preserve:
+
+1. exact prompt
+2. model / assistant setup for both sides
+3. raw output or faithful excerpt
+4. rubric scoring rationale
+5. what `pm-workbench` should improve next
 
 ## Honesty rule
 

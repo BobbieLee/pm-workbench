@@ -4,6 +4,16 @@
 
 > Help me prepare a founder business review for this month. Our top-of-funnel traffic improved after a partnership push, but trial-to-paid conversion is still weak and retention is uneven. Investors are asking for a stronger growth story, the team wants to add more visible AI features, and sales says enterprise interest is promising but not yet repeatable. I need a founder-grade read, not a motivational summary.
 
+## What good output looks like
+
+A strong `pm-workbench` response should:
+
+- separate narrative momentum from business truth
+- state the main business call for the next period
+- connect growth, retention, monetization, and operating constraints
+- identify what to double down on and what to avoid
+- end with a founder-level decision ask
+
 ## Output
 
 # Founder Business Review

@@ -4,6 +4,15 @@
 
 > We need a portfolio review summary for next quarter. We cannot do everything. The main candidate themes are activation cleanup, AI answer quality, enterprise admin basics, growth loop experiments, collaboration depth, and analytics instrumentation. The CEO wants a stronger growth story, sales wants more enterprise credibility, and support is still overwhelmed by new-user confusion. Help me produce a recommendation leadership can align on.
 
+## What good output looks like
+
+A strong `pm-workbench` response should:
+
+- make the period objective explicit before listing bets
+- separate above-the-line work from below-the-line decisions
+- explain the opportunity cost in leadership-readable language
+- include a concrete leadership ask
+
 ## Output
 
 # Portfolio Review Summary

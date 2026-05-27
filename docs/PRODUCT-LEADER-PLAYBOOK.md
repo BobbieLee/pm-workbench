@@ -73,6 +73,7 @@ If it does not do those things, it may still be a decent PM answer, but it is pr
 
 - `evaluate-feature-value`
 - `prioritize-requests`
+- `portfolio-review`
 
 ### What good looks like
 
@@ -92,6 +93,7 @@ If it does not do those things, it may still be a decent PM answer, but it is pr
 
 - `prioritize-requests`
 - `build-roadmap`
+- `portfolio-review`
 
 ### What good looks like
 
@@ -130,6 +132,45 @@ If it does not do those things, it may still be a decent PM answer, but it is pr
 ### Best workflow
 
 - `write-postmortem`
+
+---
+
+## 6. Diagnose mixed operating signals
+
+### Typical input
+
+> Activation is up, retention is flat, support tickets are still high, and sales wants more enterprise work.
+
+### Best workflow
+
+- `head-of-product-operating-review`
+
+### What good looks like
+
+- a dominant operating diagnosis
+- a clear next-period focus
+- what not to overreact to
+- above-the-line and below-the-line work
+- leadership decisions needed
+
+---
+
+## 7. Separate founder narrative from business truth
+
+### Typical input
+
+> Traffic is up, but conversion is weak and retention is uneven. Investors want a stronger story.
+
+### Best workflow
+
+- `founder-business-review`
+
+### What good looks like
+
+- separates momentum from business quality
+- connects growth, retention, monetization, and operating constraints
+- states what to double down on and what to avoid
+- ends with a founder-level decision
 
 ### What good looks like
 

@@ -11,6 +11,8 @@ Also check:
 - `references/templates/` mapping still makes sense
 - `README.md` workflow table if the visible set changed
 - `README.zh-CN.md` workflow table if the visible set changed
+- `SCENARIO-ROUTER.md` if routing changed
+- `PRODUCT-LEADER-PLAYBOOK.md` if the workflow affects leader/founder work
 - at least one example still demonstrates the workflow well
 - any command that references the workflow still reads correctly
 

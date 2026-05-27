@@ -28,13 +28,31 @@ The PM suspects it is novelty, not durable value.
 - produce a clear go / hold / no-go / experiment recommendation
 - explain why now or why not now
 
-## Example response shape
+## Example target output
 
-- bottom line recommendation
-- what problem this feature is actually trying to solve
-- likely upside and why it may be shallow
-- opportunity cost versus more strategic work
-- suggested path: no-go, hold, or tightly scoped experiment
+**Bottom line:** hold this as a roadmap feature. If Ops wants proof, test it as a tightly scoped experiment rather than a full build.
+
+The real problem is likely not "users need fortune cards." It is that the team wants more engagement, shareability, or daily return behavior.
+
+Likely upside:
+
+- short-term novelty
+- possible social sharing
+- lightweight reason to open the product
+
+Why the upside may be shallow:
+
+- novelty can decay quickly
+- opening the product is not the same as using the core workflow
+- the feature may weaken product seriousness if the product is work-oriented
+
+Opportunity cost:
+
+This work would compete with more durable retention or activation improvements. Unless the current bottleneck is lack of delight, this is probably not the best use of product capacity.
+
+Suggested path:
+
+Run a low-cost experiment with clear success criteria: repeat usage, downstream core action, and sentiment. If it only creates clicks, stop.
 
 ## Suggested output shape
 

@@ -80,7 +80,7 @@ Choose this workflow when one or more of the following is true:
 Do **not** use this workflow as the primary one when:
 
 - the underlying problem or goal is still unclear -> use `clarify-request`
-- the user needs diagnosis of poor results -> use `diagnose-growth-problem`
+- the user needs diagnosis of poor results -> use `write-postmortem` for completed work, or first clarify whether the issue is a measurement design problem or an outcome diagnosis problem
 - the user mainly needs a roadmap or prioritization judgment -> use planning/evaluation workflows
 
 ## Minimum input
@@ -105,8 +105,8 @@ At minimum, start once you know:
 
 ### Default number of follow-ups
 
-- Standard mode: 3-5
-- Fast setup mode: 2-3
+- Standard mode: 1-2
+- High-uncertainty setup mode: 3-4
 
 ### Highest-priority follow-ups
 
@@ -179,7 +179,7 @@ Use this structure when helpful:
 
 Default artifact when the user needs something reusable:
 
-- `references/templates/metrics-scorecard.md`
+- `../templates/metrics-scorecard.md`
 
 ## Output length control
 

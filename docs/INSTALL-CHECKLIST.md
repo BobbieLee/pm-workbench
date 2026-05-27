@@ -61,6 +61,17 @@ Expected result:
 - `pm-workbench` appears in the skill scan
 - the skill is recognized without missing-file issues
 
+## Verification evidence standard
+
+`npm run validate` proves the repo structure is healthy. It does **not** prove your local OpenClaw installation can discover the skill.
+
+Before publishing or telling another user that the skill is ready in a specific environment, capture both:
+
+- `npm run validate` result
+- `openclaw skills check` or `openclaw skills info pm-workbench` result
+
+If OpenClaw is not installed in the current environment, say that repo validation passed but local OpenClaw discovery was not verified.
+
 ## If validation passes but OpenClaw does not see the skill
 
 Check these first:

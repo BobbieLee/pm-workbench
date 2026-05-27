@@ -14,6 +14,21 @@ The review must produce a **dominant operating diagnosis**.
 That diagnosis should explain why at least two positive signals and two warning signals can be true at the same time.
 If the output only restates signals one by one, it is not finished.
 
+## Required core
+
+For a fast or standard operating review, preserve these fields before adding detail:
+
+- bottom line
+- signal pattern
+- dominant operating diagnosis
+- current call
+- above-the-line / below-the-line focus
+- leadership ask
+
+## Optional expansion
+
+Add function-by-function detail, what-would-change-this-call notes, and review checkpoints only when they support the diagnosis.
+
 ---
 
 # Head of Product Operating Review

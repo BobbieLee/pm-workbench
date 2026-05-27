@@ -29,13 +29,30 @@ The team is now in danger of building flashy nonsense.
 - convert the ask into a clearer product question
 - give a next move that protects the team from random solutioning
 
-## Example response shape
+## Example target output
 
-- recommendation: the request is still too vague for a build decision
-- possible meanings: demo impressiveness, activation, perceived intelligence, differentiated workflow value
-- critical clarifications: where are we losing, and what exactly looks stronger in competitors
-- reframed question: what product gap is making us feel less compelling in the moments that matter most
-- next step: run a clarification pass before solution generation
+**Recommendation:** do not turn this into a build decision yet. "Wow factor" is still an ambiguous signal, not a product requirement.
+
+Possible meanings:
+
+- demo impressiveness
+- activation speed
+- perceived AI intelligence
+- differentiated workflow value
+- sales or investor narrative weakness
+
+Critical clarifications:
+
+1. Where are we losing: demo, first use, retention, sales, or competitor comparison?
+2. What exactly looks stronger in competitors: presentation, output quality, speed, workflow, or packaging?
+
+Reframed product question:
+
+> What product gap is making us feel less compelling in the moments that matter most, and what improvement would close that gap without random feature-chasing?
+
+Next step:
+
+Run a clarification pass with the requester before feature ideation. Only move to solution generation after the team knows which moment and metric the "wow" problem is actually hurting.
 
 ## Suggested output shape
 

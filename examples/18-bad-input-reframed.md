@@ -5,6 +5,10 @@
 `pm-workbench` should not only work on clean prompts.
 One of its core jobs is to repair bad framing.
 
+## Raw input
+
+Same as the bad input below. This is intentionally malformed so the example can show correction behavior.
+
 ## Bad input
 
 > “Users don’t like the onboarding. We should probably add an AI assistant walkthrough with tips, animations, and voice guidance. Can you help me write the PRD?”
@@ -16,7 +20,9 @@ One of its core jobs is to repair bad framing.
 - no evidence, no target user segment, no specific drop-off point
 - it asks for a PRD before the framing work is done
 
-## What `pm-workbench` should do
+## What good output looks like
+
+A strong `pm-workbench` response should:
 
 - stop the flow before PRD-writing
 - separate observed problem, assumed cause, and proposed solution

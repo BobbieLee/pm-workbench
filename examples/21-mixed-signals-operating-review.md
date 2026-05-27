@@ -22,15 +22,61 @@ A strong `pm-workbench` response should:
 
 **Head of Product Operating Review**
 
-## Example response shape
+## Example target output
 
-- recommendation
-- signal pattern
-- core diagnosis
-- what not to overreact to
-- current call
-- above the line / below the line
-- leadership ask
+# Head of Product Operating Review
+
+## 1. Bottom line
+
+Activation is improving, but the product is not yet converting that improvement into durable early retention. The next focus should be activation-to-retention quality, not broader growth acceleration.
+
+## 2. Signal pattern
+
+### Positive signals
+
+- new user activation is up
+- enterprise interest is real enough for sales to be encouraged
+- the team is shipping visible work
+
+### Warning signals
+
+- early retention is flat
+- onboarding support tickets remain elevated
+- AI reliability complaints have not gone away
+
+## 3. Dominant operating diagnosis
+
+The product is getting better at starting user journeys faster than it is getting better at sustaining value after the first session.
+
+## 4. What not to overreact to
+
+Do not overreact to the activation lift as proof that growth is ready to scale. Also do not treat enterprise interest as permission to widen the roadmap before reliability complaints are under control.
+
+## 5. Current call
+
+Next period should focus on:
+
+- reducing onboarding confusion that still creates support load
+- improving AI reliability in the workflows most tied to retention
+- keeping enterprise work narrow and tied to active deal blockers
+
+## 6. Above the line / below the line
+
+### Above the line
+
+- activation-to-retention handoff
+- AI reliability on core workflows
+- narrow enterprise credibility blockers
+
+### Below the line
+
+- broad referral or growth expansion
+- nice-to-have enterprise breadth
+- additional parallel experiments that dilute execution
+
+## 7. Leadership ask
+
+Align on a tighter next-period focus and protect the team from broadening scope until retention and reliability signals improve.
 
 ## Why this is useful
 

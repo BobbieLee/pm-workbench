@@ -11,8 +11,10 @@ It is a repo-native evaluation pack for side-by-side testing that a PM, contribu
 
 - [Scenarios](scenarios.md) — realistic prompts across IC PM and product-leader work
 - [High-pressure acceptance suite](high-pressure-acceptance-suite.md) — harder, more leadership-realistic scenarios for testing judgment under ambiguity and pressure
+- [Failure regression checks](failure-regression.md) — quick checks for failure modes the skill must not regress into
 - [Rubric](rubric.md) — a scoring frame focused on PM judgment quality, not writing polish
 - [Scorecard](scorecard.md) — a copyable worksheet for comparing outputs across models or prompts
+- [Run records](runs/README.md) — a place to preserve actual side-by-side benchmark runs
 - [Worked example — product leader](worked-example-product-leader.md) — illustrative side-by-side comparison for quarterly prioritization
 - [Worked example — clarify request](worked-example-clarify-request.md) — illustrative comparison for upstream framing quality
 - [Worked example — executive summary](worked-example-exec-summary.md) — illustrative comparison for leadership-ready communication
@@ -43,6 +45,17 @@ Each worked example should make it easy to inspect:
 - representative `pm-workbench` output or target pattern
 - rubric scoring rationale
 - why the advantage is about judgment, not only formatting
+
+### What actual run records should include
+
+When you have real side-by-side outputs, save them under [`runs/`](runs/README.md) instead of only updating the worked examples. A useful run record should preserve:
+
+- exact prompt
+- model or assistant setup for both sides
+- whether follow-ups were allowed
+- raw output or faithful excerpt
+- rubric scores and short rationale
+- limitations and what `pm-workbench` should improve
 
 ### What this does **not** guarantee
 
@@ -81,6 +94,12 @@ Focus on whether the answer:
 
 If you are contributing to the repo, keep short notes about where `pm-workbench` won, tied, or lost.
 That is better than vague claims.
+
+For comparisons you want others to audit later, copy [`runs/run-template.md`](runs/run-template.md) and save the completed run under `benchmark/runs/`.
+
+### 5. Run failure regression checks
+
+Before claiming a workflow got stronger, run the relevant checks in [`failure-regression.md`](failure-regression.md). These checks focus on common ways PM answers become polished but useless.
 
 ## What this benchmark is designed to reveal
 

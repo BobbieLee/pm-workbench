@@ -105,8 +105,8 @@ At minimum, start once you know:
 
 ### Default number of follow-ups
 
-- Standard mode: 3-5
-- Fast triage mode: 2-3
+- Standard mode: 1-2
+- High-uncertainty triage mode: 3-4
 
 ### Highest-priority follow-ups
 
@@ -205,7 +205,7 @@ Use this structure when helpful:
 
 Default template when the user needs something reusable:
 
-- `references/templates/prioritization-stack.md`
+- `../templates/prioritization-stack.md`
 
 ## Output length control
 

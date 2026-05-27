@@ -5,6 +5,10 @@
 A lot of prioritization requests are malformed.
 They ask for ranking without saying what the period is supposed to accomplish.
 
+## Raw input
+
+Same as the bad input below. This is intentionally under-specified so the example can show correction behavior.
+
 ## Bad input
 
 > “Please prioritize these 9 requests for next quarter. Leadership wants progress everywhere, and all stakeholders think their item is urgent.”
@@ -16,7 +20,9 @@ They ask for ranking without saying what the period is supposed to accomplish.
 - no distinction between must-do and nice-to-have
 - “urgent” is being used as noise, not signal
 
-## What `pm-workbench` should do
+## What good output looks like
+
+A strong `pm-workbench` response should:
 
 - force clarity on the period objective first
 - surface the real capacity limit

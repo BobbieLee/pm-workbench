@@ -21,6 +21,21 @@ If 1-2 critical premises would materially change ranking, clarify those first.
 
 Produce a prioritization artifact that shows what goes first, what waits, why, and what trade-offs the team is making.
 
+## Required core
+
+For a fast or standard prioritization output, preserve these fields before adding detail:
+
+- period objective
+- constraints
+- top priorities
+- below-the-line items
+- prioritization logic
+- next planning step
+
+## Optional expansion
+
+Add scoring, dependencies, stakeholder notes, or risk commentary only when they make the stack easier to defend.
+
 ---
 
 # Prioritization Stack

@@ -82,7 +82,7 @@ Do **not** use this workflow as the primary one when:
 
 - the work has not happened yet -> use planning or launch workflows
 - the user mainly needs an executive summary of current status -> use `prepare-exec-summary`
-- the task is deep diagnosis of ongoing growth problems -> use `diagnose-growth-problem`
+- the task is deep diagnosis of ongoing growth problems rather than a completed effort review -> first clarify the diagnosis question, then use the relevant evaluation, prioritization, or executive-summary workflow
 
 ## Minimum input
 
@@ -106,8 +106,8 @@ At minimum, start once you know:
 
 ### Default number of follow-ups
 
-- Standard mode: 3-5
-- Fast review mode: 2-3
+- Standard mode: 1-2
+- High-uncertainty review mode: 3-4
 
 ### Highest-priority follow-ups
 

@@ -1,5 +1,34 @@
 # Founder Business Review
 
+## When to use
+
+Use this template when a founder needs a concise product-business review that separates narrative momentum from business truth and converts mixed signals into a next-period decision.
+
+## Output goal
+
+Produce a founder-ready review that identifies the real business pressure, the current strategic diagnosis, what to double down on, what to avoid, and the founder decision needed.
+
+## Hard requirement
+
+The review must include a main business call. If it only summarizes growth, retention, monetization, and operating signals without a founder-level decision, it is not finished.
+
+## Required core
+
+For a fast or standard founder review, preserve these fields before adding detail:
+
+- business bottom line
+- what is improving
+- what looks better than it is
+- strategic diagnosis
+- next-period focus
+- founder decision ask
+
+## Optional expansion
+
+Add risks, leading indicators, and decision choices when they help the founder choose what to double down on or delay.
+
+---
+
 ## 1. Current business situation
 
 - Review period:

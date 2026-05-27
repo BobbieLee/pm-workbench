@@ -21,6 +21,21 @@ If 1-2 critical premises would materially change the recommendation, clarify tho
 
 Produce a concise comparison output that makes the decision objective, trade-offs, recommendation, and next step easy to review.
 
+## Required core
+
+For a fast or standard decision output, preserve these fields before adding detail:
+
+- decision objective
+- options
+- decisive trade-off
+- recommended option or staged path
+- why not the others now
+- next action
+
+## Optional expansion
+
+Add comparison criteria, assumptions, risks, and what-would-change-this-call details when the decision needs a reusable memo.
+
 ---
 
 # Decision Brief

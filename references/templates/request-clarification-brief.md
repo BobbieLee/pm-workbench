@@ -21,6 +21,20 @@ If 1-2 critical premises would materially change the framing, ask about those fi
 
 Produce a short clarification brief that separates the ask, the likely underlying problem, the uncertainty, and the best next move.
 
+## Required core
+
+For a fast or standard clarification output, preserve these fields before adding detail:
+
+- original ask
+- likely intent
+- problem vs embedded solution
+- critical gaps
+- recommended next move
+
+## Optional expansion
+
+Add target scenario, known-versus-assumed detail, and stakeholder notes only when they clarify the next decision.
+
 ---
 
 # Request Clarification Brief

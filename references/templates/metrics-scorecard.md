@@ -22,6 +22,21 @@ If 1-2 critical premises would materially change the metric design, clarify thos
 
 Produce a compact metrics artifact that shows what success means, what early signals to watch, what guardrails matter, and how judgment should be made.
 
+## Required core
+
+For a fast or standard metrics output, preserve these fields before adding detail:
+
+- measurement objective
+- core success metric
+- leading indicators
+- guardrail metrics
+- observation window
+- judgment or use recommendation
+
+## Optional expansion
+
+Add baseline, target, ownership, and interpretation notes when they reduce future ambiguity.
+
 ---
 
 # Metrics Scorecard

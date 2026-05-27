@@ -101,8 +101,8 @@ At minimum, start once you know:
 
 ### Default number of follow-ups
 
-- Standard mode: 3-5
-- Fast draft mode: 2-3
+- Standard mode: 1-2
+- High-uncertainty draft mode: 3-4
 
 ### Highest-priority follow-ups
 

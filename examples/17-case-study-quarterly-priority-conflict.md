@@ -29,13 +29,30 @@ CEO wants growth, sales wants enterprise readiness, and support keeps escalating
 - state what is below the line and why
 - provide leadership-friendly framing for the trade-off
 
-## Example response shape
+## Example target output
 
-- quarter objective
-- recommended top 3
-- below-the-line set
-- main trade-off being made
-- how to explain the call to leadership and stakeholders
+**Quarter objective:** improve activation and product trust first, while keeping one enterprise credibility lane open for active revenue conversations.
+
+Recommended top 3:
+
+1. **Onboarding simplification** - fixes the most visible activation and support bottleneck.
+2. **AI answer quality tuning** - protects the core value proposition.
+3. **Enterprise audit logs** - supports sales credibility without over-expanding enterprise scope.
+
+Below the line:
+
+- growth referral loop
+- team workspace sharing
+- admin billing controls
+- conversation history search
+
+Main trade-off:
+
+The team is choosing growth quality over growth optics. It is better to repair activation and trust before amplifying acquisition or adding broader surface area.
+
+Leadership framing:
+
+> This quarter is not about making every stakeholder partially happy. It is about fixing the bottlenecks that make future growth and enterprise motion more believable.
 
 ## Suggested output shape
 

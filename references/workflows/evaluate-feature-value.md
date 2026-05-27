@@ -103,8 +103,8 @@ If you only have the first four, you can still produce an initial evaluation.
 
 ### Default number of follow-ups
 
-- Standard mode: 3-5
-- Fast evaluation: 2-3
+- Standard mode: 1-2
+- High-uncertainty evaluation: 3-4
 
 ### Highest-priority follow-ups
 

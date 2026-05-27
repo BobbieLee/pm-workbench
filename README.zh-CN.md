@@ -9,7 +9,7 @@
 它解决的是这段最容易失真的工作链路：
 **“有人提了个需求” → “我们需要一个能站得住的建议、输出物或下一步行动”**。
 
-**当前发布目标：** `v1.1.3`
+**当前发布目标：** `v1.2.0`
 
 ## 如果你只有 3 分钟，先看这里
 
@@ -98,6 +98,8 @@
 
 - [Benchmark 套件](benchmark/README.md)
 - [command benchmark 指南](benchmark/command-benchmark-guide.md)
+- [Benchmark run records](benchmark/runs/README.md)
+- [Failure regression checks](benchmark/failure-regression.md)
 - [Benchmark 贡献指南](benchmark/CONTRIBUTING-BENCHMARKS.md)
 - [适合分享的 benchmark 卡片](docs/images/pm-workbench-benchmark-card.svg)
 
@@ -146,7 +148,7 @@
 - [组合流程命令（英文）](docs/COMMANDS.md)
 - [组合流程命令（中文）](docs/COMMANDS.zh-CN.md)
 
-### 9 条 workflow 路径
+### 12 条 workflow 路径
 
 | PM 工作类型 | Workflow | 默认输出形式 |
 | --- | --- | --- |
@@ -159,6 +161,9 @@
 | 设计成功指标 | `design-metrics` | Metrics Scorecard |
 | 准备向上沟通材料 | `prepare-exec-summary` | Executive Summary |
 | 复盘上线 / 项目结果 | `write-postmortem` | Postmortem Lite |
+| 做 above-the-line / below-the-line 组合取舍 | `portfolio-review` | Portfolio Review Summary |
+| 诊断混合信号下的产品经营状态 | `head-of-product-operating-review` | Head of Product Operating Review |
+| 帮创始人区分叙事势能和商业真实 | `founder-business-review` | Founder Business Review |
 
 ### 可复用的输出物
 
@@ -298,11 +303,12 @@ pm-workbench/
 
 当前仓库快照：
 
-- 9 条 workflow reference
+- 12 条 workflow reference
 - 12 个 template
 - 5 条组合流程命令
 - 23 个 example
-- 一套包含基础对比、高压场景与 command proof 的 benchmark 资产
+- 一套包含基础对比、高压场景、command proof 与 run-record 模板的 benchmark 资产
+- 一组用于防止 PM 判断退化的 failure regression checks
 
 ## 接下来读什么
 
@@ -317,9 +323,11 @@ pm-workbench/
 - **快速试用：** [docs/TRY-3-PROMPTS.md](docs/TRY-3-PROMPTS.md)
 - **Benchmark 套件：** [benchmark/README.md](benchmark/README.md)
 - **command benchmark 指南：** [benchmark/command-benchmark-guide.md](benchmark/command-benchmark-guide.md)
+- **Failure regression checks：** [benchmark/failure-regression.md](benchmark/failure-regression.md)
 - **Benchmark 贡献指南：** [benchmark/CONTRIBUTING-BENCHMARKS.md](benchmark/CONTRIBUTING-BENCHMARKS.md)
 - **产品负责人指南：** [docs/PRODUCT-LEADER-PLAYBOOK.md](docs/PRODUCT-LEADER-PLAYBOOK.md)
 - **案例索引：** [examples/README.md](examples/README.md)
+- **中文样例：** [examples.zh-CN/README.md](examples.zh-CN/README.md)
 - **如何贡献：** [CONTRIBUTING.md](CONTRIBUTING.md)
 - **后续路线图：** [ROADMAP.md](ROADMAP.md)
 
@@ -333,6 +341,7 @@ pm-workbench/
 - examples 要体现真实 PM 使用方式，而不是抽象格式说明
 - docs 要尽量降低冷启动 adoption friction
 - benchmark 资产要让 side-by-side comparison 真正可做
+- benchmark run records 应该保留真实 prompt、原始输出、评分和限制说明，方便事后审计
 - 本地 validation 要尽早发现结构漂移
 - source-first 的安装与发版检查要尽量简单
 
@@ -340,7 +349,7 @@ pm-workbench/
 
 - `npm run validate` -> 预期应通过
 - validation 会确认 workflow、template、example 和 benchmark 链路仍然完整
-- OpenClaw 的 skill 识别结果仍可能受本地版本和 skill 路径配置影响
+- OpenClaw 的 skill 识别结果仍可能受本地版本和 skill 路径配置影响；发布或交付前应在目标环境单独运行 `openclaw skills check`
 
 ## 如何贡献
 

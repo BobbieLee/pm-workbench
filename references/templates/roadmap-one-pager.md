@@ -21,6 +21,21 @@ If 1-2 critical premises would materially change prioritization, confirm those b
 
 Produce a focused roadmap summary that makes the stage goal, top priorities, trade-offs, and success indicators clear.
 
+## Required core
+
+For a fast or standard roadmap output, preserve these fields before adding detail:
+
+- stage goal
+- what the roadmap is protecting
+- top priorities or themes
+- explicit not-now items
+- main risk or dependency
+- next alignment step
+
+## Optional expansion
+
+Add the fuller sections below only when they improve decision quality, review readiness, or stakeholder alignment. Do not fill every section just because it exists.
+
 ---
 
 # Roadmap One-Pager

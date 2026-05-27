@@ -4,6 +4,16 @@
 
 > Help me prepare a head-of-product operating review for this month. Activation improved slightly, but early retention is still flat. Sales is pushing for more enterprise features, growth wants stronger referral loops, and engineering says we are carrying too much parallel work. Support volume from onboarding confusion is still high. I need a sharp operating view for leadership, not a generic status summary.
 
+## What good output looks like
+
+A strong `pm-workbench` response should:
+
+- identify the dominant operating diagnosis behind the mixed signals
+- explain why positive and warning signals can both be true
+- recommend a next-period focus instead of producing a status recap
+- make above-the-line and below-the-line focus explicit
+- end with leadership decisions or support needed
+
 ## Output
 
 # Head of Product Operating Review

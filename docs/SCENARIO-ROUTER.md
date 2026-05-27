@@ -241,6 +241,87 @@ If the problem is already clear, move to the workflow that produces the decision
 
 ---
 
+## 10. "Leadership needs a portfolio call, not just a ranked list."
+
+### Start with
+
+- `portfolio-review`
+
+### Typical signals
+
+- multiple valid initiatives compete for one period's capacity
+- leadership needs above-the-line and below-the-line decisions
+- stakeholder pressure is real but cannot all be funded
+- the output must include a decision or alignment ask
+
+### What you should expect back
+
+- period objective
+- above-the-line bets
+- below-the-line decisions
+- main opportunity cost
+- leadership ask
+
+### Good entry prompt
+
+> Help me prepare a portfolio review for next quarter. We need to decide what is above the line, what is below the line, and what leadership needs to protect.
+
+---
+
+## 11. "The product signals are mixed. I need an operating diagnosis."
+
+### Start with
+
+- `head-of-product-operating-review`
+
+### Typical signals
+
+- activation, retention, delivery, support, sales, or quality signals conflict
+- leadership needs the real product read, not a status report
+- the team needs a next-period focus
+- some noisy work needs to stay below the line
+
+### What you should expect back
+
+- bottom line
+- signal pattern
+- dominant operating diagnosis
+- above-the-line focus
+- leadership decisions needed
+
+### Good entry prompt
+
+> Activation is up, retention is flat, support tickets are still high, and sales is pushing enterprise work. Help me turn this into a head-of-product operating review with a clear diagnosis and next focus.
+
+---
+
+## 12. "The founder needs business truth, not a motivational summary."
+
+### Start with
+
+- `founder-business-review`
+
+### Typical signals
+
+- traffic or narrative is improving but conversion, retention, or monetization is weak
+- investor pressure may distort roadmap choices
+- founder needs a next-period focus or trade-off call
+- the work spans product, growth, commercial, and operating constraints
+
+### What you should expect back
+
+- business bottom line
+- what is improving versus what only looks better
+- strategic diagnosis
+- what to double down on
+- founder decision ask
+
+### Good entry prompt
+
+> Traffic is up after a partnership push, but conversion is still weak and retention is uneven. Help me prepare a founder business review that separates narrative momentum from business truth.
+
+---
+
 ## If you are still unsure between two workflows
 
 Use this tie-breaker:
@@ -254,6 +335,9 @@ Use this tie-breaker:
 - **Need success metrics?** -> `design-metrics`
 - **Need upward communication?** -> `prepare-exec-summary`
 - **Need a review of what already happened?** -> `write-postmortem`
+- **Need above-the-line / below-the-line portfolio funding?** -> `portfolio-review`
+- **Need a diagnosis from mixed product operating signals?** -> `head-of-product-operating-review`
+- **Need founder-level business truth and next-period focus?** -> `founder-business-review`
 
 ## A practical habit
 

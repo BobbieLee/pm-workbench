@@ -22,6 +22,21 @@ If 1-2 critical premises are missing and would materially change the decision, a
 
 Produce a clear evaluation memo that helps a PM, lead, or stakeholder make a decision and understand why.
 
+## Required core
+
+For a fast or standard evaluation output, preserve these fields before adding detail:
+
+- evaluated request
+- problem behind the request
+- value judgment
+- cost / risk / opportunity cost
+- recommendation
+- next action
+
+## Optional expansion
+
+Add evidence tables, confidence levels, and conditions that change the decision when they make the recommendation easier to defend.
+
 ---
 
 # Feature Evaluation Memo

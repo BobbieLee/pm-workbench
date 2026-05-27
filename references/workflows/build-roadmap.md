@@ -106,8 +106,8 @@ At minimum, start once you know:
 
 ### Default number of follow-ups
 
-- Standard mode: 3-5
-- Fast planning mode: 2-3
+- Standard mode: 1-2
+- High-uncertainty planning mode: 3-4
 
 ### Highest-priority follow-ups
 

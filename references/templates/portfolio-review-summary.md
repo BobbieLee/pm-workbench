@@ -1,5 +1,34 @@
 # Portfolio Review Summary
 
+## When to use
+
+Use this template when a PM, product lead, or founder needs to turn competing initiatives into an above-the-line / below-the-line portfolio call for a period of work.
+
+## Output goal
+
+Produce a leadership-ready summary that makes the recommended focus, explicit non-decisions, opportunity cost, and leadership ask easy to scan.
+
+## Hard requirement
+
+The review must make the below-the-line decision visible. If the output preserves every initiative as "important later" without naming what is not funded now, it is not finished.
+
+## Required core
+
+For a fast or standard portfolio output, preserve these fields before adding detail:
+
+- review objective
+- above-the-line bets
+- below-the-line decisions
+- main opportunity cost
+- business consequence
+- leadership ask
+
+## Optional expansion
+
+Add resourcing assumptions, dependency notes, and leading indicators when leadership needs to approve or challenge the portfolio call.
+
+---
+
 ## 1. Review objective
 
 - Period under review:

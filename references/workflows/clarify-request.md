@@ -9,7 +9,7 @@ trigger_signals:
   - unclear problem
   - leadership slogan
 misuse_guard:
-  - do not use when a more upstream problem is still unresolved
+  - do not keep clarifying when the problem is already stable and the user needs evaluation, comparison, or drafting
   - do not force this workflow if the user mainly needs a different artifact
 ---
 
@@ -103,8 +103,8 @@ If the user gives only one sentence, still accept it and ask the highest-value f
 
 ### Default number of follow-ups
 
-- Standard mode: 3-5
-- Hurry mode: 1-3
+- Standard mode: 1-2
+- High-uncertainty mode: 3-4
 
 ### Highest-priority follow-ups
 
@@ -180,7 +180,7 @@ Use this structure when helpful:
 
 Default template when the user needs something reusable:
 
-- `references/templates/request-clarification-brief.md`
+- `../templates/request-clarification-brief.md`
 
 ## Output length control
 

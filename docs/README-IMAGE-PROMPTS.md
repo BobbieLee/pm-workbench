@@ -1,4 +1,4 @@
-# README Image Prompts for pm-workbench v1.1.3
+# README Image Prompts for pm-workbench v1.2.0
 
 This document defines the recommended README visual system for `pm-workbench`.
 
@@ -11,8 +11,8 @@ Goal:
 
 Recommended asset directories:
 
-- English: `assets/readme/en/`
-- Chinese: `assets/readme/zh-CN/`
+- English: `../assets/readme/en/`
+- Chinese: `../assets/readme/zh-CN/`
 
 Recommended image count for README:
 
@@ -111,8 +111,8 @@ Design a premium editorial-style hero graphic for an open-source product managem
 
 ### Suggested filenames
 
-- English: `assets/readme/en/hero-overview.png`
-- Chinese: `assets/readme/zh-CN/hero-overview.png`
+- English: `../assets/readme/en/hero-overview.png`
+- Chinese: `../assets/readme/zh-CN/hero-overview.png`
 
 ---
 
@@ -160,8 +160,8 @@ Create a split-screen comparison graphic for a GitHub README. Left side represen
 
 ### Suggested filenames
 
-- English: `assets/readme/en/generic-ai-vs-pm-workbench.png`
-- Chinese: `assets/readme/zh-CN/generic-ai-vs-pm-workbench.png`
+- English: `../assets/readme/en/generic-ai-vs-pm-workbench.png`
+- Chinese: `../assets/readme/zh-CN/generic-ai-vs-pm-workbench.png`
 
 ---
 
@@ -212,8 +212,8 @@ Design a benchmark summary graphic for a GitHub README about pm-workbench. Use a
 
 ### Suggested filenames
 
-- English: `assets/readme/en/benchmark-snapshot.png`
-- Chinese: `assets/readme/zh-CN/benchmark-snapshot.png`
+- English: `../assets/readme/en/benchmark-snapshot.png`
+- Chinese: `../assets/readme/zh-CN/benchmark-snapshot.png`
 
 ---
 
@@ -271,8 +271,8 @@ Create a product-workflow map graphic for pm-workbench. The design should show a
 
 ### Suggested filenames
 
-- English: `assets/readme/en/workflow-map.png`
-- Chinese: `assets/readme/zh-CN/workflow-map.png`
+- English: `../assets/readme/en/workflow-map.png`
+- Chinese: `../assets/readme/zh-CN/workflow-map.png`
 
 ---
 
@@ -326,8 +326,8 @@ Design a social preview card for pm-workbench for use on GitHub, X, or other pla
 
 ### Suggested filenames
 
-- English: `assets/readme/en/social-card.png`
-- Chinese: `assets/readme/zh-CN/social-card.png`
+- English planned filename: assets/readme/en/social-card.png
+- Chinese planned filename: assets/readme/zh-CN/social-card.png
 
 ---
 
@@ -335,22 +335,22 @@ Design a social preview card for pm-workbench for use on GitHub, X, or other pla
 
 ### English README
 
-- Hero overview → `assets/readme/en/hero-overview.png`
-- Generic AI vs pm-workbench → `assets/readme/en/generic-ai-vs-pm-workbench.png`
-- Benchmark snapshot → `assets/readme/en/benchmark-snapshot.png`
-- Workflow map → `assets/readme/en/workflow-map.png`
+- Hero overview -> `../assets/readme/en/hero-overview.png`
+- Generic AI vs pm-workbench -> `../assets/readme/en/generic-ai-vs-pm-workbench.png`
+- Benchmark snapshot -> `../assets/readme/en/benchmark-snapshot.png`
+- Workflow map -> `../assets/readme/en/workflow-map.png`
 
 ### Chinese README
 
-- Hero overview → `assets/readme/zh-CN/hero-overview.png`
-- Generic AI vs pm-workbench → `assets/readme/zh-CN/generic-ai-vs-pm-workbench.png`
-- Benchmark snapshot → `assets/readme/zh-CN/benchmark-snapshot.png`
-- Workflow map → `assets/readme/zh-CN/workflow-map.png`
+- Hero overview -> `../assets/readme/zh-CN/hero-overview.png`
+- Generic AI vs pm-workbench -> `../assets/readme/zh-CN/generic-ai-vs-pm-workbench.png`
+- Benchmark snapshot -> `../assets/readme/zh-CN/benchmark-snapshot.png`
+- Workflow map -> `../assets/readme/zh-CN/workflow-map.png`
 
 ### Optional external asset
 
-- Social preview → `assets/readme/en/social-card.png`
-- Social preview → `assets/readme/zh-CN/social-card.png`
+- Social preview planned filename: assets/readme/en/social-card.png
+- Social preview planned filename: assets/readme/zh-CN/social-card.png
 
 ---
 

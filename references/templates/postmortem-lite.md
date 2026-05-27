@@ -21,6 +21,22 @@ If 1-2 critical facts are still missing and would materially change the review, 
 
 Produce a concise review artifact that explains what happened, why it happened, what was learned, and what should change next.
 
+## Required core
+
+For a fast or standard postmortem output, preserve these fields before adding detail:
+
+- original goal
+- actual outcome
+- expected vs actual gap
+- what worked / did not work
+- likely causes
+- lessons
+- next actions
+
+## Optional expansion
+
+Add timelines, owners, evidence quality, and reusable takeaway when they help future execution or decision-making.
+
 ---
 
 # Postmortem Lite
